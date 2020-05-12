@@ -1,0 +1,187 @@
+@media screen and (min-width: 24px) {
+     #profiles_show .Blok-0 {
+        display: block;
+        white-space: nowrap;
+        overflow-y: hidden;
+    }
+     #profiles_show .Animes_Mangas {
+        padding: 0.5rem 0 0.2rem 0;
+    }
+     #profiles_show .Animes_Mangas .b-catalog_entry .cover .image-decor .image-cutter {
+        padding: 0 0 52% 0;
+        max-height: 24px !important;
+        max-width: none !important;
+        display: block;
+        z-index: auto;
+        margin: 0 3.035px;
+        border-radius: 6px;
+        background: linear-gradient(transparent 0%, rgba(25, 28, 29, 0.45) 100%);
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.24);
+    }
+   #profiles_show .Animes_Mangas .c-column {
+        display: inline-block;
+        max-width: none;
+        width: calc(100% / 1)!important;
+        margin: 0 0 0 0 !important;
+        clear: none!important;
+        float: none!important;
+        z-index: 3;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        overflow: hidden;
+    }
+    #profiles_show .Animes_Mangas .b-catalog_entry .cover .title {
+        position: absolute;
+        bottom: 0.7rem;
+        right: 0;
+        left: 0;
+        height: auto;
+        text-align: center;
+        padding: 0 1.2rem;
+        text-shadow: 1px 0 2px rgba(0, 0, 0, 0.8), -1px 0 2px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.8), 0 -1px 2px rgba(0, 0, 0, 0.8);
+        font-size: 13px;
+        z-index: 10;
+        opacity: 1;
+        pointer-events: none;
+        will-change: transform;
+        transition: opacity 0.28s ease;
+        -webkit-transition: opacity 0.28s ease;
+    }
+   #profiles_show .Animes_Mangas .c-column:hover> .cover .title {
+        opacity: 0;
+    }
+     #profiles_show .Animes_Mangas .b-catalog_entry .cover .image-cutter img {
+        position: absolute;
+        z-index: -1;
+        transition: none;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+     #profiles_show .Animes_Mangas .b-catalog_entry .cover .misc {
+        display: block;
+        line-height: 1;
+        position: absolute;
+        top: 0.7rem;
+        left: -7rem;
+        z-index: 10;
+        text-shadow: 1px 0 2px rgba(0, 0, 0, 0.8), -1px 0 2px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.8), 0 -1px 2px rgba(0, 0, 0, 0.8);
+        will-change: transform;
+        pointer-events: none;
+        transition: all 0.40s ease;
+        -webkit-transition: all 0.40s ease;
+        opacity: 0;
+    }
+     #profiles_show .Animes_Mangas .c-column:hover > .cover .misc {
+        left: 1rem;
+        opacity: 1;
+    }
+    #profiles_show .Animes_Mangas .b-catalog_entry .cover .misc span {
+        padding: 0.25rem;
+    }
+     body#profiles_show .Animes_Mangas .b-catalog_entry {
+        transition: none;
+        box-shadow: none;
+    }
+     #profiles_show .Animes_Mangas .b-catalog_entry:hover {
+        transform: none;
+    }
+    /*#profiles_show .Animes_Mangas .b-catalog_entry.dropped .image-decor::before,
+    #profiles_show .Animes_Mangas .b-catalog_entry.on_hold .image-decor::before,
+    #profiles_show .Animes_Mangas .b-catalog_entry.planned .image-decor::before,
+    #profiles_show .Animes_Mangas .b-catalog_entry.watching .image-decor::before,
+    #profiles_show .Animes_Mangas .b-catalog_entry.completed .image-decor::before,
+    #profiles_show .Animes_Mangas .b-catalog_entry.rewatching .image-decor::before,
+    #profiles_show .Animes_Mangas .b-catalog_entry.on_hold .image-decor::after,
+    #profiles_show .Animes_Mangas .b-catalog_entry.dropped .image-decor::after,
+    #profiles_show .Animes_Mangas .b-catalog_entry.planned .image-decor::after,
+    #profiles_show .Animes_Mangas .b-catalog_entry.watching .image-decor::after,
+    #profiles_show .Animes_Mangas .b-catalog_entry.completed .image-decor::after,
+    #profiles_show .Animes_Mangas .b-catalog_entry.rewatching .image-decor::after {
+        display: none;
+    }*/
+  
+  .p-profiles-show .Animes_Mangas .b-catalog_entry.completed .image-decor::before,
+  .p-profiles-show .Animes_Mangas .b-catalog_entry.dropped .image-decor::before, 
+.p-profiles-show .Animes_Mangas .b-catalog_entry.watching .image-decor::before,
+  .p-profiles-show .Animes_Mangas .b-catalog_entry.on_hold .image-decor::before,
+.p-profiles-show .Animes_Mangas .b-catalog_entry.planned .image-decor::before,
+  .p-profiles-show .Animes_Mangas .b-catalog_entry.rewatching .image-decor::before {
+    right: 0.7rem;
+    bottom: auto;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 5rem;
+    top: 0.5rem;
+    z-index: 11;
+    opacity: 0.68;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.24);
+}
+.p-profiles-show .Animes_Mangas .b-catalog_entry.planned .image-decor::after,.p-profiles-show .Animes_Mangas .b-catalog_entry.watching .image-decor::after,
+.p-profiles-show .Animes_Mangas .b-catalog_entry.completed .image-decor::after,.p-profiles-show .Animes_Mangas .b-catalog_entry.rewatching .image-decor::after,
+.p-profiles-show .Animes_Mangas .b-catalog_entry.on_hold .image-decor::after,.p-profiles-show .Animes_Mangas .b-catalog_entry.dropped .image-decor::after {
+    width: 24px;
+    line-height: 24px;
+    right: 0.7rem;
+    bottom: auto;
+    top: 0.5rem;
+    background: none;
+    z-index: 12;
+    font-size: 18px;
+}
+.p-profiles-show .Animes_Mangas .b-catalog_entry.watching .image-decor::before {background-color: #4c30bd;}   
+.p-profiles-show .Animes_Mangas .b-catalog_entry.completed .image-decor::before {background-color: #419541;}    
+.p-profiles-show .Animes_Mangas .b-catalog_entry.on_hold .image-decor::before {background-color: #c5833d;}
+.p-profiles-show .Animes_Mangas .b-catalog_entry.dropped .image-decor::before {background-color: #ca4929;}
+.p-profiles-show .Animes_Mangas .b-catalog_entry.planned .image-decor::before {background-color: #fdfdfd;}
+.p-profiles-show .Animes_Mangas .b-catalog_entry.rewatching .image-decor::before {background-color: #1F6F6A;}
+  
+      #profiles_show .Animes_Mangas .b-catalog_entry a .image-cutter::after {
+        position: absolute;
+        content: '';
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 10;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        border-radius: 6px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 5%;
+        pointer-events: none;
+        image-rendering: auto;
+        box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+        transition: box-shadow .45s ease;
+        -webkit-transition: box-shadow .45s ease;
+    }
+     #profiles_show .Animes_Mangas .b-catalog_entry:hover > a .image-cutter::after {
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+     #profiles_show .Animes_Mangas .c-column {
+        width: calc(100% / 2)!important;
+    }
+}
+
+@media screen and (min-width: 700px) {
+     #profiles_show .Animes_Mangas .c-column {
+        width: calc(100% / 3)!important;
+  }
+      #profiles_show .Blok-0 {
+     white-space: normal;
+    overflow-y: inherit;
+    }
+}
+@media screen and (min-width: 1024px) {
+     #profiles_show .Animes_Mangas .c-column {
+        width: calc(100% / 4)!important;
+    }
+}
