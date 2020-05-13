@@ -136,7 +136,22 @@ body {
   background-repeat: no-repeat;
   background-position: center center !important;
   background-attachment: fixed;
-  background-color: rgba(var(--menu-back), 0.5);  
+}
+body::after {
+    content: '';
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(var(--menu-back), 0.5);
 }
 .l-top_menu-v2 {
   position: sticky;
