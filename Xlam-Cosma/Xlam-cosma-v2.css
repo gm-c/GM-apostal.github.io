@@ -1,9 +1,9 @@
 @media screen and (min-width: 80px) {
-    .Blok-1 {
+    #profiles_show .Blok-1 {
         display: block;
         padding: 1% 0;
     }
-    .Person-0 {
+    #profiles_show .Person-0 {
         position: relative;
     }
     body#profiles_show .Person-0 .b-catalog_entry {
@@ -11,7 +11,7 @@
         transition: none;
         transform: none;
     }
-    .Person-0 .b-catalog_entry .cover .image-cutter img {
+    #profiles_show .Person-0 .b-catalog_entry .cover .image-cutter img {
         position: absolute;
         z-index: -1;
         transition: none;
@@ -19,7 +19,7 @@
         opacity: 0;
         visibility: hidden;
     }
-    .Person-0 .c-column {
+    #profiles_show .Person-0 .c-column {
         display: inline-block;
         margin: 0 !important;
         float: none !important;
@@ -29,7 +29,7 @@
         background: none;
         width: calc(100% / 5) !important;
     }
-    .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
+    #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
         max-height: 24px !important;
         max-width: 24px !important;
         background: linear-gradient(transparent 0%, rgba(25, 28, 29, 0.45) 100%);
@@ -37,7 +37,7 @@
         padding: 0 0 55% 98%;
         border-radius: 0.5rem;
     }
-    .Person-0 .b-catalog_entry .cover .title.two_lined {
+    #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined {
         position: absolute;
         display: grid;
         align-items: center;
@@ -60,10 +60,10 @@
         transition: opacity 0.28s ease;
         -webkit-transition: opacity 0.28s ease;
     }
-    .Person-0 .c-column:hover > .cover .title {
+    #profiles_show .Person-0 .c-column:hover > .cover .title {
         opacity: 0;
     }
-    .Person-0 .b-catalog_entry a .image-cutter::after {
+    #profiles_show .Person-0 .b-catalog_entry a .image-cutter::after {
         position: absolute;
         content: "";
         display: flex;
@@ -83,13 +83,13 @@
         transition: box-shadow 0.45s ease;
         -webkit-transition: box-shadow 0.45s ease;
     }
-    .Person-0 .b-catalog_entry:hover > a .image-cutter::after {
+    #profiles_show .Person-0 .b-catalog_entry:hover > a .image-cutter::after {
         box-shadow: none;
     }
 }
 
 @media screen and (max-width: 980px) {
-    .Person-0 .b-catalog_entry .cover .title.two_lined {
+    #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined {
         display: none;
     }
 }
