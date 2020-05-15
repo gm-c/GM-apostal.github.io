@@ -83,7 +83,7 @@
     }
       .Animes_Mangas .b-catalog_entry {
         transition: none;
-        box-shadow: none;
+        box-shadow: none !important;
     }
       .Animes_Mangas .b-catalog_entry:hover {
         transform: none;
