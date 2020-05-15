@@ -37,9 +37,6 @@
         padding: 0 0 55% 98%;
         border-radius: 0.5rem;
     }
-    .Person-0 .c-column:hover .image-decor .image-cutter {
-        box-shadow: none;
-    }
     .Person-0 .b-catalog_entry .cover .title.two_lined {
         position: absolute;
         display: grid;
