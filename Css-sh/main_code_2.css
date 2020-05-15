@@ -2223,7 +2223,7 @@ body.p-achievements.p-profiles .l-footer .links a {
   .b-catalog_entry .cover .title.two_lined {
     font-size: 11.5px;
   }
-#profiles_show .b-catalog_entry .cover .title.two_lined {
+  .b-catalog_entry .cover .title.two_lined {
     display: grid;
     height: 34px;
     align-items: center;
