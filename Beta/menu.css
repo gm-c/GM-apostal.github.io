@@ -1,0 +1,618 @@
+@media screen and (min-width: 1025px) {
+    .l-top_menu-v2 {
+        position: sticky;
+        top: 0;
+    }
+    .l-top_menu-v2 .active .submenu {
+        max-height: calc(100vh - 46px);
+        overflow: auto;
+    }
+}
+
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype"), url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+
+.l-top_menu-v2 .icon-other::before,
+.l-top_menu-v2 .menu-icon::before,
+.l-top_menu-v2 .menu-dropdown > span::before,
+.l-top_menu-v2 .submenu > a::before,
+.l-top_menu-v2 .global-search .clear::before,
+.l-top_menu-v2 .global-search .search-marker::before {
+    /*Шрифт-Иконок-меню*/
+    display: block;
+    width: 1em !important;
+    font-family: "Material Icons" !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    letter-spacing: normal;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+}
+.l-top_menu-v2 .icon-anime_list::before {
+    content: "video_library";
+}
+.l-top_menu-v2 .icon-manga_list::before {
+    content: "library_books";
+}
+.l-top_menu-v2 .icon-characters::before {
+    content: "face";
+}
+.l-top_menu-v2 .icon-profile::before {
+    content: "person";
+}
+.l-top_menu-v2 .icon-home::before {
+    content: "home";
+}
+.l-top_menu-v2 .menu-icon.search::before {
+    content: "search";
+}
+.l-top_menu-v2 .icon-anime::before {
+    content: "ondemand_video";
+}
+.l-top_menu-v2 .icon-manga::before {
+    content: "photo_album";
+}
+.l-top_menu-v2 .icon-ranobe::before {
+    content: "book";
+}
+.l-top_menu-v2 .icon-clubs::before {
+    content: "group_work";
+}
+.l-top_menu-v2 .icon-collections::before {
+    content: "widgets";
+}
+.l-top_menu-v2 .icon-reviews::before {
+    content: "rate_review";
+}
+.l-top_menu-v2 .menu-icon.forum::before,
+.l-top_menu-v2 .icon-forum::before {
+    content: "forum";
+}
+.l-top_menu-v2 .icon-calendar::before {
+    content: "today";
+}
+.l-top_menu-v2 .menu-icon.contest::before,
+.l-top_menu-v2 .icon-contests::before {
+    content: "equalizer";
+    transform: scale(-1, 1);
+}
+.l-top_menu-v2 .icon-info::before {
+    content: "info";
+}
+.l-top_menu-v2 .icon-socials::before {
+    content: "share";
+}
+.l-top_menu-v2 .menu-icon.moderation::before,
+.l-top_menu-v2 .icon-moderation::before {
+    content: "flag";
+}
+.l-top_menu-v2 .menu-icon.mail::before,
+.l-top_menu-v2 .icon-mail::before {
+    content: "mail";
+}
+.l-top_menu-v2 .icon-achievements::before {
+    content: "stars";
+}
+.l-top_menu-v2 .icon-settings::before {
+    content: "settings";
+}
+.l-top_menu-v2 .icon-site_rules::before {
+    content: "assignment_late";
+}
+.l-top_menu-v2 .icon-faq::before {
+    content: "help";
+}
+.l-top_menu-v2 .icon-sign_out::before {
+    content: "open_in_new";
+}
+.l-top_menu-v2 .icon-people::before {
+    content: "people";
+}
+.l-top_menu-v2 .icon-users::before {
+    content: "account_circle";
+}
+.l-top_menu-v2 .menu-icon.trigger::before,
+.l-top_menu-v2 .icon-other::before {
+    content: "menu";
+}
+.l-top_menu-v2 .icon-play::before {
+    content: "play_circle_filled";
+}
+.l-top_menu-v2 .global-search .clear::before {
+    content: "clear";
+    color: inherit;
+}
+.l-top_menu-v2 .global-search .search-marker::before {
+    content: "search";
+}
+.l-top_menu-v2 .icon-articles::before {
+    content: "assignment";
+}
+
+.l-top_menu-v2 .menu-icon.trigger:before {
+    background: none;
+}
+.l-top_menu-v2 .menu-icon.search {
+    padding: 1em;
+}
+.l-top_menu-v2 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 56px;
+    background-color: #1a153f;
+    border: 0;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.24);
+    color: #f1f1f3;
+}
+.l-top_menu-v2 .logo-container {
+    padding: 0 8px;
+    color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+.l-top_menu-v2 .logo-container::after {
+    content: attr(title);
+}
+.l-top_menu-v2 .logo-container .glyph {
+    margin: 0 1em 0 0;
+}
+.l-top_menu-v2 .logo-container .logo {
+    display: none;
+}
+.l-top_menu-v2 .menu-icon,
+.l-top_menu-v2 .menu-dropdown {
+    margin-right: 0;
+}
+.l-top_menu-v2 .menu-icon,
+.l-top_menu-v2 .menu-dropdown > span {
+    height: 56px;
+}
+.l-top_menu-v2 .menu-icon:focus,
+.l-top_menu-v2 .menu-dropdown > span:focus {
+    background-color: #2b274d;
+}
+.l-top_menu-v2 .menu-icon {
+    padding: 1em;
+}
+.l-top_menu-v2 .menu-icon::before {
+    color: #bdbcc8;
+}
+.l-top_menu-v2 .menu-icon.contest::after,
+.l-top_menu-v2 .menu-icon.mail::after {
+    top: auto;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    margin-left: 11px;
+    background-color: #1e2460;
+    border: 0;
+    color: #fafafa;
+    font-family: inherit;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 22px;
+}
+.l-top_menu-v2 .menu-icon.contest::after {
+    content: attr(data-count);
+}
+.l-top_menu-v2 .menu-dropdown > span {
+    padding: 0 1em;
+    background: transparent;
+}
+.l-top_menu-v2 .menu-dropdown > span a {
+    height: 56px;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+}
+@media (min-width: 1025px) {
+    .l-top_menu-v2 .menu-dropdown > span a:hover {
+        background-color: #3f3b5e;
+    }
+    .l-top_menu-v2 .menu-dropdown > span a:active {
+        background-color: #474364;
+    }
+}
+.l-top_menu-v2 .menu-dropdown > span span {
+    margin: auto 1em;
+    font-size: inherit;
+}
+.l-top_menu-v2 .menu-dropdown.active > span {
+    background-color: #302b51;
+}
+.l-top_menu-v2 .menu-dropdown.main > span:not(.mobile) {
+    padding-left: 1em;
+}
+.l-top_menu-v2 .menu-dropdown.main > span:not(.mobile) span {
+    margin-left: 1em;
+}
+.l-top_menu-v2 .menu-dropdown.profile > span img {
+    height: 32px;
+    margin-right: -6px;
+    border-radius: 50%;
+}
+.l-top_menu-v2 .submenu {
+    background-color: #302b51;
+    border: 0;
+    border-color: #302b52;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.l-top_menu-v2 .submenu::after {
+    content: "";
+    display: block;
+    height: 0.5em;
+}
+.l-top_menu-v2 .submenu > a:hover {
+    background-color: #3f3b5e;
+    color: #ffffff;
+}
+.l-top_menu-v2 .submenu > .legend {
+    padding: 0.5rem 1rem;
+    margin-top: 0.25rem;
+    font-size: 0.75em;
+    line-height: 1.5rem;
+}
+.l-top_menu-v2 .submenu > .legend:first-child {
+    margin: 0;
+}
+.l-top_menu-v2 .submenu > a {
+    padding: 0.5em 1em;
+    color: inherit;
+}
+.l-top_menu-v2 .submenu > a:active,
+.l-top_menu-v2 .submenu > a.active {
+    background: #3f3b5e;
+    color: inherit;
+}
+.l-top_menu-v2 .submenu > a::before {
+    margin-right: 16px;
+    color: #bdbcc8;
+}
+.l-top_menu-v2 .submenu > a.icon-mail span.text {
+    display: flex;
+    position: static;
+}
+.l-top_menu-v2 .submenu > a.icon-mail span.unread {
+    margin-left: auto;
+    padding-left: 0.5em;
+    color: inherit;
+    font-size: 0.875em;
+}
+.l-top_menu-v2 .submenu > a.icon-mail span.unread span {
+    color: inherit;
+}
+.l-top_menu-v2 .submenu > a.icon-mail span.unread span:not(:last-child)::after {
+    background: #9e9e9e;
+    height: 14px;
+    margin: -2px 4px 0;
+}
+@media (min-width: 1025px) {
+    .l-top_menu-v2 .submenu > a.icon-mail:hover span.unread span {
+        color: inherit;
+    }
+}
+.l-top_menu-v2 .menu-icon.trigger {
+    width: auto;
+}
+.l-top_menu-v2 .icon-avatar img {
+    width: 32px;
+    height: 32px;
+    margin: 0 -8px 0 0;
+    border-radius: 50%;
+}
+.l-top_menu-v2 .icon-anime_list::before,
+.l-top_menu-v2 .icon-manga_list::before,
+.l-top_menu-v2 .icon-characters::before {
+    background: none;
+}
+@media (max-width: 767px) {
+    .l-top_menu-v2 .submenu > a::before {
+        margin-right: 32px;
+    }
+    .l-top_menu-v2 .menu-logo .menu-dropdown {
+        margin-right: 0.5em;
+    }
+    .l-top_menu-v2 .menu-dropdown.profile > span {
+        padding: 0 8px;
+    }
+    .l-top_menu-v2 .menu-dropdown.profile > span img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+    .l-top_menu-v2 .menu-dropdown.profile > span[data-unread_count]::after {
+        top: auto;
+        width: 22px;
+        height: 22px;
+        margin-top: -11px;
+        margin-left: 11px;
+        background-color: #1e2460;
+        border: 0;
+        color: #fafafa;
+        font-family: inherit;
+        font-size: 0.75em;
+        font-weight: bold;
+        line-height: 22px;
+    }
+    .l-top_menu-v2 .icon-anime_list::before,
+    .l-top_menu-v2 .icon-manga_list::before,
+    .l-top_menu-v2 .icon-characters::before {
+        height: auto;
+        margin: 0 16px 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .l-top_menu-v2 .menu-dropdown.main,
+    .l-top_menu-v2 .logo-container {
+        margin-right: 1em;
+    }
+    .l-top_menu-v2 .logo-container {
+        padding: 0 24px 0 8px;
+        margin-right: 0;
+    }
+    .l-top_menu-v2 .menu-icon:hover,
+    .l-top_menu-v2 .menu-dropdown:hover > span {
+        background-color: #2b274d;
+    }
+    .l-top_menu-v2 .menu-dropdown > span a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: auto;
+        padding: inherit;
+        margin: 0;
+    }
+    .l-top_menu-v2 .menu-dropdown.main {
+        margin-right: 0;
+    }
+    .l-top_menu-v2 .submenu > a {
+        height: auto;
+        font-size: inherit;
+        line-height: 1.5em;
+    }
+    .l-top_menu-v2 .icon-anime_list::before,
+    .l-top_menu-v2 .icon-manga_list::before,
+    .l-top_menu-v2 .icon-characters::before {
+        height: auto;
+        margin: 0;
+    }
+}
+
+.l-top_menu-v2 .global-search {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: inherit;
+}
+@media (min-width: 1025px) {
+    .l-top_menu-v2 .global-search {
+        padding: 0 1em;
+    }
+    .x1000 .l-top_menu-v2 .global-search {
+        max-width: 1000px;
+    }
+    .l-top_menu-v2 .global-search > label {
+        position: relative;
+        display: block;
+    }
+    .l-top_menu-v2 .global-search .search-results {
+        right: 16px;
+        left: 16px;
+        width: auto;
+    }
+}
+@media (min-width: 1820px) {
+    .x1000 .l-top_menu-v2 .global-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 0 1.5em;
+    }
+}
+@media (min-width: 2020px) {
+    .x1200 .l-top_menu-v2 .global-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 0 1.5em;
+    }
+}
+.l-top_menu-v2 .global-search + .menu-icon {
+    margin-left: auto;
+}
+.l-top_menu-v2 .global-search ~ .menu-dropdown.profile {
+    margin-left: 0;
+}
+.l-top_menu-v2 .global-search input {
+    display: block;
+    padding: 0 48px;
+    margin: 8px 0;
+    background: #342f55;
+    background: rgba(241, 241, 243, 0.12);
+    border: 0;
+    border-radius: 3px;
+    color: inherit;
+    font-size: inherit;
+    line-height: 40px;
+}
+.l-top_menu-v2 .global-search input::placeholder {
+    color: inherit;
+}
+.l-top_menu-v2 .global-search .clear,
+.l-top_menu-v2 .global-search .search-marker {
+    bottom: 0;
+    width: auto;
+    height: 40px;
+    padding: 8px;
+    margin: auto;
+    font-size: inherit;
+}
+.l-top_menu-v2 .global-search .clear {
+    top: 0;
+    right: 0.5em;
+    color: #757575;
+}
+.l-top_menu-v2 .global-search .clear:hover,
+.l-top_menu-v2 .global-search .clear:active {
+    color: #1e2460;
+}
+.l-top_menu-v2 .global-search .hotkey-marker {
+    right: 0.75rem;
+    border-color: #817f95;
+    color: #817f95;
+    line-height: 19px;
+}
+.l-top_menu-v2 .global-search .search-marker {
+    left: 0.5rem;
+}
+.l-top_menu-v2 .global-search .search-results {
+    top: 56px;
+    padding: 0.5em 0;
+    background: #ffffff;
+    color: #212121;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found::before {
+    background-color: #ef5350;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found,
+.l-top_menu-v2 .global-search .search-results .search-mode {
+    padding: 0.25em 0.5em;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+    line-height: 2;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found::before,
+.l-top_menu-v2 .global-search .search-results .search-mode::before {
+    margin: 0 1.75em 0 0.5em !important;
+}
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item {
+    padding: 0.75em 0.5em;
+}
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:hover {
+    background: #ededed;
+}
+.l-top_menu-v2 .global-search .search-results .search-mode:hover {
+    background: #e4e4e4;
+}
+@media (min-width: 1025px) {
+    .l-top_menu-v2 .global-search .search-results .search-mode:hover::before {
+        background: rgba(30, 36, 96, 0.4);
+    }
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item,
+.l-top_menu-v2 .global-search .search-results .search-mode {
+    border: 0;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found::before,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item::before,
+.l-top_menu-v2 .global-search .search-results .search-mode::before {
+    width: 4px;
+    margin: 0 16px 0 0;
+    border-radius: 2px;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found.active,
+.l-top_menu-v2 .global-search .search-results .nothing_found:focus,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus,
+.l-top_menu-v2 .global-search .search-results .search-mode.active,
+.l-top_menu-v2 .global-search .search-results .search-mode:focus {
+    background: #ededed;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found.active::before,
+.l-top_menu-v2 .global-search .search-results .nothing_found:focus::before,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item.active::before,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus::before,
+.l-top_menu-v2 .global-search .search-results .search-mode.active::before,
+.l-top_menu-v2 .global-search .search-results .search-mode:focus::before {
+    background: #1e2460;
+}
+.l-top_menu-v2 .global-search .search-results .search-mode:active,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:active {
+    background: #e4e4e4;
+}
+.l-top_menu-v2 .global-search .search-results .search-mode:active::before,
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:active::before {
+    background: #181d4d;
+}
+.l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item::before {
+    width: auto;
+    margin: 0;
+    background: #dddddd !important;
+}
+
+@media (max-width: 1024px) {
+    .l-top_menu-v2.is-search-mobile {
+        margin-bottom: 0;
+    }
+    .l-top_menu-v2.is-search-mobile .global-search {
+        top: 0;
+        padding: 0;
+        background: #1a153f;
+        z-index: 10;
+    }
+    .l-top_menu-v2.is-search-mobile .global-search .search-results {
+        margin-top: 0;
+    }
+}
+.l-top_menu-v2.is-search-focus .global-search input,
+.l-top_menu-v2.is-search-mobile .global-search input {
+    background-color: #fff;
+    color: #212121;
+}
+.l-top_menu-v2.is-search-focus .global-search .hotkey-marker,
+.l-top_menu-v2.is-search-mobile .global-search .hotkey-marker {
+    display: none;
+}
+@media (min-width: 960px) {
+    #profiles_show .l-top_menu-v2 {
+        background-color: transparent;
+        background-image: linear-gradient(#1a153f, transparent);
+        box-shadow: none;
+        z-index: 11;
+    }
+    #profiles_show .l-top_menu-v2.is-search-shade ~ .b-to-top::before,
+    #profiles_show .l-top_menu-v2:hover ~ .b-to-top::before {
+        opacity: 1;
+    }
+    #profiles_show .b-to-top::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 56px;
+        background: #1a153f;
+        box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.24);
+        z-index: 9;
+        opacity: 0;
+        visibility: visible;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+    }
+    #profiles_show .b-to-top.active::before {
+        opacity: 1;
+    }
+}
+
+/*_____________________конец___________________________*/
