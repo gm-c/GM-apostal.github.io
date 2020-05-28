@@ -1,0 +1,63 @@
+.cc-2.block.b-edit_styles .c-column:nth-child(2n + 1),
+.cc-2.block.b-edit_styles .c-column:last-child { width: 100%; }
+
+/* Редизайн кнопки свернуть/развернуть */
+.b-edit_styles .edit_style .style_css label,
+.b-edit_styles .new_style .style_css label {
+    background: #797aa6;
+    border-radius: 2px 2px 0 0;
+    padding: 4px 10px;
+    color: #fafafa;
+    margin-top: 4px; /* возможно придётся настраивать вручную, что бы добиться эффекта единного интерфейса */
+}
+.b-edit_styles .edit_style .style_css .editor-expand,
+.b-edit_styles .edit_style .style_css .editor-collapse {
+    color: #ddf5ff;
+    background: #0009;
+    border-radius: 2px;
+    text-transform: uppercase;
+    min-width: 5.5rem;
+    font-size: 0.875rem !important;
+    padding: 6px 10px;
+    font-weight: 700 !important;
+    border: none;
+}
+.b-edit_styles .edit_style .style_css .editor-collapse:hover,
+.b-edit_styles .edit_style .style_css .editor-expand:hover {
+    color: #d9baf6;
+    transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
+}
+/* CSS Редактор */
+.cm-s-solarized.cm-s-light {
+    background-color: #282638;
+    color: #fff;
+    text-shadow: none;
+}
+.b-edit_styles .edit_style .style_css .CodeMirror,
+.b-edit_styles .new_style .style_css .CodeMirror {
+    border: none !important;
+}
+.cm-searching {
+    background-color: #fafafa30;
+}
+.CodeMirror-search-field {
+    width: 400px !important;
+    background: #0009 !important;
+    color: #fff !important;
+}
+.cm-s-solarized.cm-s-light div.CodeMirror-selected { background: #44424a90;}
+.cm-s-solarized.cm-s-light .CodeMirror-gutters { background-color: #36334d;}
+.cm-s-solarized.cm-s-light .CodeMirror-linenumber { color: #858396;}
+.cm-s-solarized .cm-builtin { color: #fad430;}
+.cm-s-solarized .cm-def { color: #fcc28c;}
+.cm-s-solarized .cm-string { color: #c3e88d;}
+.cm-s-solarized .cm-variable-2 { color: #9d9efe}
+.cm-s-solarized .cm-variable-3 { color: #c792ea;}
+.cm-s-solarized .cm-number { color: #94fca0;}
+.cm-s-solarized .cm-property { color: #80cbc4;}
+.cm-s-solarized .cm-variable { color: #89ddff;}
+.cm-s-solarized .cm-tag { color: #ff5370;}
+.cm-s-solarized .cm-atom { color: #f77669;}
+.cm-s-solarized .cm-keyword { color: #c792ea;}
+.cm-s-solarized .cm-comment {color: #5c7e8c;}
+.cm-s-solarized .cm-qualifier {color: #ffcb6b;}
