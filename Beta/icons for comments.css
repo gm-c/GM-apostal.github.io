@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+        
+@font-face { /*___________Загрузить ИЗБ_____Иконки_________________*/
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+
+#profiles_show .b-to-top .arrow::before,
+#profiles_show .buttons .editor-bold::before,
+#profiles_show .buttons .editor-italic::before,
+#profiles_show .buttons .editor-underline::before,
+#profiles_show .buttons .editor-strike::before,
+#profiles_show .buttons .editor-link::before,
+#profiles_show .buttons .editor-image::before,
+#profiles_show .buttons .editor-quote::before,
+#profiles_show .buttons .editor-spoiler::before,
+#profiles_show .buttons .editor-file::before,
+#profiles_show .buttons .editor-smiley::before {
+    /*Отдельные иконки в профиле ! Смайлы итд*/
+    font-family: "Material Icons" !important;
+    width: 1em;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1 !important;
+    letter-spacing: normal;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    color: #afaaf3;
+}
+#profiles_show .b-to-top .arrow::before {
+    content: "arrow_upward";
+    color: #ddd;
+    text-shadow: 0px 0px 1px #000;
+}
+
+#profiles_show .buttons .editor-bold::before {
+    content: "format_bold";
+}
+#profiles_show .buttons .editor-italic::before {
+    content: "format_italic";
+}
+#profiles_show .buttons .editor-underline::before {
+    content: "format_underlined";
+}
+#profiles_show .buttons .editor-strike::before {
+    content: "strikethrough_s";
+}
+#profiles_show .buttons .editor-link::before {
+    content: "insert_link";
+}
+#profiles_show .buttons .editor-image::before {
+    content: "add_photo_alternate";
+}
+#profiles_show .buttons .editor-quote::before {
+    content: "format_quote";
+}
+#profiles_show .buttons .editor-spoiler::before {
+    content: "error_outline";
+}
+#profiles_show .buttons .editor-file::before {
+    content: "attach_file";
+}
+#profiles_show .buttons .editor-smiley::before {
+    content: "insert_emoticon";
+  }
+}
