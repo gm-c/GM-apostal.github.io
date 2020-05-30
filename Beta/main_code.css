@@ -1,0 +1,2516 @@
+@media screen and (min-width: 768px) {
+        
+body#profiles_show .l-page > div {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    body#profiles_show .l-page,
+    body#profiles_show.x1000 .l-page,
+    body#profiles_show.x1200 .l-page {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        border: none;
+        background: transparent !important;
+        transition: none;
+        animation: none;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    body#profiles_show .b-catalog_entry {
+        background: transparent;
+        z-index: 35;
+    }
+    body#profiles_show .profile-content {
+        margin-top: 0 !important;
+    }
+    html #profiles_show {
+        height: 100%;
+        min-height: 100%;
+        background: rgb(33, 26, 62) !important;
+    }
+
+    #profiles_show::-webkit-scrollbar {
+        width: 10px;
+        overflow: visible;
+    }
+    #profiles_show::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #2a2363;
+        transition: none;
+    }
+    #profiles_show::-webkit-scrollbar-thumb:hover {
+        background: #4c3fb3;
+    }
+    #profiles_show::-webkit-scrollbar-track {
+        background: linear-gradient(135deg, #1a143e 20%, rgba(0, 0, 0, 0.68) 100%);
+    }
+
+    #profiles_show .profile-content {
+        /*Контент*/
+        overflow: visible;
+        width: 100%;
+        right: auto;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+        border: none;
+    }
+
+ 
+    * .c-brief header.head h1 {
+        /*Ник_обернуть в тень*/
+        text-shadow: 2px -2px 0px rgb(26, 21, 62), -2px 2px 0px rgb(27, 21, 61), -2px -2px 0px rgb(27, 21, 61), 2px 2px 0px rgb(26, 21, 63), 0px -2px 0px rgb(26, 20, 62), 0px 2px 0px rgb(26, 21, 61), 2px 0px 0px rgb(27, 22, 63),
+            -2px 0px 0px rgb(26, 21, 63);
+        font-family: cursive;
+    }
+
+    .p-profiles .profile-head .c-brief header .notice span::after {
+        /*Промежуток - разделения) Можно убрать*/
+        content: "-";
+        color: #ddd;
+        font-weight: normal;
+    }
+
+    #profiles_show .profile-head .c-history.x3 {
+        /*Контроль истории_по центру профиля*/
+        margin: 11.5vh 20%;
+        float: right;
+        width: 60%;
+        z-index: 10;
+        text-align: center;
+        position: relative;
+    }
+
+    #profiles_show .profile-head .c-history.x3 .subheadline > a:before {
+        /*Иконка-по центру*/
+        content: "\\_f187";
+        font: normal normal normal 26px/1.5 FontAwesome;
+        position: static;
+        margin-right: 5px;
+        margin-bottom: -7px;
+        color: #bbb;
+        display: inline-block;
+    }
+
+    /*________________________________________________*/
+
+    #profiles_show .l-page:before,
+    #profiles_show .l-page:after {
+        display: none;
+    }
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar,
+    #profiles_show .profile-head .c-info .c-additionals,
+    #profiles_show .lifetime,
+    #profiles_show .profile-content .activity,
+    #profiles_show .profile-content .c-right .cc-2a > .c-column,
+    #profiles_show.x1200 .profile-content .c-right > .block:last-child,
+    #profiles_show.x1000 .profile-content .c-right > .block:last-child,
+    #profiles_show .about {
+        /*Общий контроль отступов в профиле*/
+        padding: 3.1rem 1.5%;
+        position: relative;
+        margin: 0 0 0 0;
+    }
+
+    /*_________________В профиле Обо мне_ком итд_________________*/
+    #profiles_show .b-stats_bar .title,
+    #profiles_show .profile-head .c-info .c-additionals b,
+    #profiles_show .lifetime .title .label,
+    #profiles_show .profile-content .activity .title,
+    #profiles_show .subheadline {
+        position: relative;
+        font-size: 48px;
+        display: block;
+        color: #ddd;
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+    }
+    /*________________________________________________*/
+    #profiles_show .subheadline {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0 !important;
+        line-height: 60px;
+        text-transform: none;
+        padding-bottom: 25px;
+        font-family: "Comfortaa";
+    }
+    #profiles_show .headline > a,
+    #profiles_show .midheadline > a,
+    #profiles_show .subheadline > a {
+        margin: 0 auto;
+        padding: 0;
+        z-index: 2;
+        text-decoration: none;
+        color: #ddd;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .headline > a:hover,
+    #profiles_show .midheadline > a:hover,
+    #profiles_show .subheadline > a:hover,
+    #profiles_show .b-stats_bar.anime .title:hover,
+    #profiles_show .b-stats_bar.manga .title:hover {
+        color: #afaaf3;
+    }
+    #profiles_show div.block > .subheadline.m10 a {
+        width: 300px;
+    }
+    #profiles_show div.block > .subheadline.m3 a {
+        width: 180px;
+    }
+    #profiles_show .achievements > .subheadline a {
+        width: 350px;
+    }
+    #profiles_show div.subheadline > [title="Друзья"],
+    #profiles_show div.subheadline > [title="Friends"] {
+        width: 250px;
+    }
+    #profiles_show div.subheadline > [title="Clubs"],
+    #profiles_show div.subheadline > [title="Клубы"] {
+        width: 190px;
+    }
+    #profiles_show div.block > .subheadline > [title="Избранное"],
+    #profiles_show div.block > .subheadline > [title="Favorites"] {
+        width: 320px;
+    }
+    #profiles_show div.block > .subheadline.m0 {
+        width: 180px;
+        margin: auto !important;
+        top: 95px;
+        z-index: 13;
+        position: relative;
+    }
+
+    #profiles_show .subheadline > a:before {
+        display: none;
+    }
+
+    #profiles_show .profile-head .c-brief {
+        /*Контроль блока Автаркии */
+        position: relative;
+        display: table;
+        vertical-align: middle;
+        text-align: center;
+        top: -0vh;
+        z-index: 11;
+        margin: 0 auto;
+    }
+
+    #profiles_show .profile-head .c-brief .avatar img {
+        /*Сама Ава_Округлить_Тень*/
+        border-radius: 50%;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    #profiles_show .profile-head .c-brief .avatar {
+        margin: 0;
+        display: inline-block;
+        float: none;
+        max-width: 168px;
+        opacity: 1;
+    }
+
+    #profiles_show header.head .misc {
+        padding: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: -5px;
+        font-size: 14px;
+        opacity: 0.85;
+    }
+
+    #profiles_show .profile-head .c-brief header.head h1,
+    #profiles_show .profile-head .c-brief header.head h2 {
+        font-size: 34px;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    #profiles_show .profile-head .c-brief header .notice {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.25;
+        text-shadow: 0 1px 2px #000000;
+    }
+    .b-tooltipped.dotted {
+        border-bottom: none;
+    }
+    #profiles_show .profile-head .c-history.x3 .subheadline {
+        padding: 0 0 24px 0;
+        font-size: 24px;
+        transition: none;
+    }
+
+    #profiles_show .profile-head .c-history.x3 .subheadline > a {
+        color: #fff;
+        display: inline-block;
+        background: transparent;
+        text-align: center;
+        padding: 0 15px;
+        border-radius: 3px;
+        line-height: 0;
+        font-size: 0;
+        width: auto;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+        transition: none;
+    }
+
+    #profiles_show .profile-head .c-history .entry {
+        border: none;
+        margin: 0;
+        display: inline-block;
+        padding: 5px 15px;
+        width: 32%;
+        background: rgba(0, 0, 0, 0.8);
+        margin-top: 0px;
+        bottom: 5px;
+        border-radius: 7px;
+        background: linear-gradient(#1a153f, rgba(0, 0, 0, 0.8));
+    }
+
+    /*________________________________________________*/
+
+    #profiles_show .profile-head .c-history .entry:nth-child(1) {
+        /*История*/
+        position: relative;
+        right: 4em;
+        padding-top: 5px;
+    }
+    #profiles_show .profile-head .c-history .entry:nth-child(2) {
+        /*История*/
+        position: relative;
+        right: 0.4em;
+        margin: 0 2%;
+    }
+    #profiles_show .profile-head .c-history .entry:nth-child(3) {
+        /*История*/
+        left: 3.2em;
+        position: relative;
+    }
+
+    #profiles_show .profile-head .c-history .entry:nth-child(1)::after,
+    #profiles_show .profile-head .c-history .entry:nth-child(2)::after {
+        /*История*/
+        content: "";
+        display: block;
+        width: 30px;
+        border-radius: 4px;
+        height: 30px;
+        position: absolute;
+        left: 105.5%;
+        top: 21%;
+        transform: rotate(-45deg);
+        background-image: linear-gradient(#1a153f, rgba(0, 0, 0, 0.8));
+    }
+
+    /*________________________________________________*/
+
+    @keyframes go_text {
+        /*Текст в истории движется*/
+        25% {
+            text-indent: -80em;
+        }
+        25.000000001% {
+            text-indent: 25em;
+        }
+        50% {
+            text-indent: 0em;
+        }
+    }
+    #profiles_show .profile-head .c-history .entry .misc {
+        text-align: center;
+        text-overflow: clip;
+        animation: go_text 18s ease-in-out infinite;
+    }
+    #profiles_show .profile-head .c-history .entry .misc:not(time)::before,
+    #profiles_show .profile-head .c-history .entry .misc:not(time)::after {
+        content: "";
+        display: inline-table;
+    }
+
+    /*------------Вариант-(1)------------*/
+    /*------------Вариант-(2)----Заменить float: none; на float: left;*/
+    #profiles_show .profile-head .c-history .entry .image-name {
+        border-radius: 37px;
+        overflow: hidden;
+        width: 32px;
+        height: 32px;
+        margin-top: 2px;
+        float: left;
+        margin-left: -7px;
+        margin-right: 5px;
+    }
+
+    /*------------Вариант-(3)------------*/
+    /*#profiles_show .profile-head .c-history .entry img {
+    float: left;
+    border-radius: 10px;
+    position: relative;
+    right: 7px;
+    margin: 0;
+    max-height: 60px;
+    max-width: 40px;
+}
+  #profiles_show .profile-head .c-history .entry .title {
+    text-align: center;
+}*/
+
+    /* Если используется вариант Три! то закрыть этот Код */
+
+    #profiles_show .profile-head .c-history .entry img {
+        margin: 0;
+    }
+    #profiles_show .profile-head .c-history .entry a {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+
+    #profiles_show .profile-head .c-history .entry a::before,
+    #profiles_show .profile-head .c-history .entry a::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    #profiles_show .profile-head .c-history .entry a::before {
+        content: attr(title);
+        color: #fff;
+        top: -44px;
+        left: 0;
+        background: linear-gradient(#1a153f, rgba(0, 0, 0, 0.8));
+        text-align: center;
+        border-radius: 3px;
+        line-height: 30px;
+        white-space: nowrap;
+        padding: 0 10px;
+        font-weight: 700;
+    }
+
+    #profiles_show .profile-head .c-history .entry a::after {
+        top: -14px;
+        left: 6px;
+        color: #1a153f;
+        border: 7px solid transparent;
+        border-top: 7px solid;
+    }
+
+    #profiles_show .profile-head .c-history .entry:hover a::before,
+    #profiles_show .profile-head .c-history .entry:hover a::after {
+        display: block;
+    }
+    /*------------Вариант-3-(Конец)------------*/
+
+    #profiles_show .profile-head .c-info {
+        position: absolute;
+        top: 100vh;
+        width: 100vw;
+        z-index: 1;
+        overflow: visible;
+    }
+
+    #profiles_show .b-stats_bar.anime .title,
+    #profiles_show .b-stats_bar.manga .title {
+        margin: 0 auto 87px;
+        width: 378px;
+        text-decoration: none;
+        transition: 0.3s ease-out;
+    }
+
+    #profiles_show .b-stats_bar.anime .title::after,
+    #profiles_show .b-stats_bar.manga .title::after {
+        content: "";
+        position: relative;
+        top: 35px;
+        display: block;
+        width: 75px;
+        height: 4px;
+        background: #ddd;
+        margin: 0 auto;
+        pointer-events: none;
+    }
+    #profiles_show .b-stats_bar .stat_names .stat_name a {
+        pointer-events: none;
+        text-decoration: none;
+    }
+    #profiles_show .profile-head .b-stats_bar .stat_names .stat_name .size {
+        display: inline-flex;
+        font-family: cursive;
+        font-size: 35px;
+        position: relative;
+        width: 170px;
+        height: 170px;
+        line-height: 3.25;
+        border-radius: 50%;
+        opacity: 0.8;
+        color: #ddd;
+        pointer-events: auto;
+        justify-content: center;
+    }
+
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility {
+        position: absolute;
+        display: block;
+        float: none;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        width: 150px;
+        margin: 0 auto;
+        top: 130px;
+        left: 0;
+        right: 0;
+        font-size: 0;
+        line-height: 1;
+    }
+
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement {
+        font-size: 0;
+        text-decoration: none;
+        float: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 !important;
+    }
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.anime .compatibility::before,
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.anime .compatibility a::before {
+        /*Иконка-Списка аниме*/
+        position: relative;
+        content: "\\_f008";
+        font: normal normal normal 36px/1 FontAwesome;
+        text-rendering: auto;
+        color: #ddd;
+        -webkit-font-smoothing: antialiased;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.manga .compatibility::before,
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.manga .compatibility a::before {
+        /*Иконка-Списка манга*/
+        position: relative;
+        content: "\\_f0c0";
+        font: normal normal normal 36px/1 FontAwesome;
+        text-rendering: auto;
+        color: #ddd;
+        -webkit-font-smoothing: antialiased;
+        transition: 0.3s ease-out;
+    }
+
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.anime .compatibility a::before,
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.manga .compatibility a::before {
+        content: "";
+    }
+
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.anime .compatibility:hover::before,
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar.manga .compatibility:hover::before {
+        color: #afaaf3;
+    }
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate {
+        position: fixed;
+        font-weight: bold;
+        display: inline-flex;
+        white-space: normal;
+        font-size: 12px;
+        width: 34px;
+        height: 34px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-image: linear-gradient(#1a153f, transparent);
+        box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.24);
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 1rem;
+        right: 1.5rem;
+        color: rgba(223, 223, 223, 0.89);
+    }
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate:hover {
+        color: #afaaf3;
+    }
+    /*#profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate:before {
+    content: "[ "
+}
+
+#profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate::after {
+    content: "% ]"
+}*/
+
+    #profiles_show .b-stats_bar.anime .bar,
+    #profiles_show .b-stats_bar.manga .bar {
+        display: none;
+    }
+
+    #profiles_show .b-stats_bar .stat_names .stat_name::after,
+    #profiles_show .b-stats_bar .stat_names .stat_name .size::before,
+    #profiles_show .b-stats_bar .stat_names .stat_name .size::after {
+        display: none;
+    }
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate::before,
+    #profiles_show .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate::after {
+        display: none;
+    }
+    #profiles_show .b-stats_bar .stat_names {
+        display: inline-flex;
+        font-size: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 25;
+        margin: 2rem auto 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        line-height: 1.65;
+    }
+
+    #profiles_show .profile-head .b-stats_bar .stat_names .stat_name {
+        display: inline-flex;
+        font-size: 0;
+        z-index: 26;
+        justify-content: center;
+        width: calc(100% / 5);
+    }
+
+    #profiles_show .profile-head .c-info .c-additionals b {
+        margin-bottom: 0;
+        font-size: 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #profiles_show .profile-head .c-info .c-additionals b::before {
+        display: block;
+        content: "Активность";
+        font-size: 48px;
+        cursor: text;
+    }
+    #profiles_show .profile-head .c-info .c-additionals div {
+        width: calc(100% / 8) !important;
+        min-width: 160px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        top: 4rem;
+        margin: 0 1rem;
+    }
+    #profiles_show .profile-head .c-info .c-additionals div::after {
+        display: none;
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a {
+        display: grid;
+        height: 120px;
+        width: 170px;
+        font-size: 38px;
+        color: #fff;
+        left: auto;
+        position: relative;
+        line-height: 2.34;
+        word-spacing: 100vw;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(#1a153f, transparent);
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.34);
+        bottom: 0;
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a:hover,
+    #profiles_show .profile-head .c-info .c-additionals div a:active {
+        text-decoration: none;
+        color: #fff;
+        opacity: 1;
+    }
+
+    #profiles_show .profile-head .c-info .c-additionals div a::before {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a[href*="reviews"]:before {
+        content: "Рецензии";
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a[href*="versions"]:before {
+        content: "Правки";
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a[href*="uploads"]:before {
+        content: "Загрузки";
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a[href*="comments"]:before {
+        content: "Комментариев";
+    }
+    #profiles_show .profile-head .c-info .c-additionals div a[href*="summaries"]:before {
+        content: "Отзывы";
+    }
+
+    #profiles_show .profile-head .c-info .c-additionals div a::after {
+        content: "";
+        display: block;
+        width: 60%;
+        margin: 0 20%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: 42.5px;
+    }
+    .p-profiles .profile-head .c-info .c-additionals div {
+        display: inline-flex;
+        font-size: 12px;
+        line-height: 1.45;
+        justify-content: center;
+    }
+    #profiles_show .profile-head .c-info .c-additionals b::after {
+        position: relative;
+        content: "\\_f0f6";
+        font: normal normal normal 36px/1 FontAwesome;
+        text-rendering: auto;
+        color: #ddd;
+        -webkit-font-smoothing: antialiased;
+        transition: 0.3s ease-out;
+        top: 2.5rem;
+    }
+
+    #profiles_show .profile-head .c-info .c-additionals div::before {
+        content: "";
+        position: fixed;
+        display: block;
+        width: 75px;
+        height: 4px;
+        background: #ddd;
+        margin: 0 auto;
+        pointer-events: none;
+        left: 0;
+        right: 0;
+        top: 7.3rem;
+    }
+    #profiles_show.x1200 .profile-content .c-left,
+    #profiles_show.x1000 .profile-content .c-left {
+        /*margin-top: 1271px; 53*/
+        width: 100vw;
+        margin: 79.45rem 0 0 0;
+        float: none;
+    }
+    #profiles_show .lifetime .title {
+        position: relative;
+    }
+    #profiles_show .lifetime .title .label {
+        margin-bottom: 100px;
+    }
+    #profiles_show .lifetime .title .label::after {
+        content: "";
+        display: block;
+        width: 75px;
+        height: 4px;
+        background: #ddd;
+        margin: 0 auto;
+    }
+    #profiles_show .lifetime .title .value {
+        float: none;
+        position: absolute;
+        top: 100px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 25px 0;
+        border: none;
+        font-size: 24px;
+        color: #ddd;
+        line-height: 36px;
+        font-weight: 400;
+    }
+    #profiles_show .lifetime .title .value:before {
+        font: normal normal normal 36px/1 FontAwesome;
+        content: "\\_f017";
+        margin-right: 10px;
+        color: #ddd;
+        position: relative;
+        top: 4px;
+    }
+    #profiles_show .lifetime .bar {
+        height: 50px;
+        line-height: 30px;
+        border-radius: 3px;
+    }
+    #profiles_show .lifetime .cuts .cut {
+        height: 30px;
+        width: 0;
+    }
+    #profiles_show .lifetime .cuts .cut::before {
+        content: "";
+        position: absolute;
+        left: -5px;
+        top: 33.5px;
+        border: 8px solid transparent;
+        border-bottom: 8px solid #ddd;
+    }
+    #profiles_show .b-stats_bar.lifetime .bar .first {
+        background: rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(#1a153f, transparent);
+    }
+    #profiles_show .b-stats_bar.lifetime .bar .third {
+        background: rgba(0, 8, 51, 0.8);
+        background-image: linear-gradient(#351461, transparent);
+    }
+    #profiles_show .lifetime .times {
+        height: 0;
+    }
+    #profiles_show .lifetime .times .time {
+        position: relative;
+        top: -30px;
+        height: 30px;
+        top: -42px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #profiles_show .lifetime .times .time.checked {
+        color: #bbb;
+    }
+    #profiles_show .lifetime .times .time.checked::before {
+        content: "☠";
+        color: #bbb;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #profiles_show .profile-content .activity {
+        background: #f5f5f5;
+    }
+    #profiles_show .profile-content .graph {
+        height: 160px;
+        margin-top: 70px;
+        border-bottom-color: rgb(16, 13, 46);
+        margin-bottom: 16px;
+    }
+    #profiles_show .activity .graph.vertical .line .bar {
+        background: rgba(0, 0, 0, 0.75);
+        background-image: linear-gradient(#201854, transparent);
+        box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.9);
+        border-radius: 15px 15px 0 0;
+    }
+    #profiles_show .profile-content .activity .title {
+        margin-bottom: 25px;
+    }
+    #profiles_show .bar.vertical .line {
+        border: 0;
+    }
+    #profiles_show .bar.vertical .line .x_label {
+        font-size: 14px;
+        color: #ddd;
+        font-weight: 700;
+        z-index: 1;
+    }
+    #profiles_show .bar.vertical .line .bar-container .value.mini,
+    #profiles_show .bar.vertical .line .bar-container .value {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    #profiles_show.x1200 .profile-content .c-right,
+    #profiles_show.x1000 .profile-content .c-right {
+        width: 100vw;
+        margin-bottom: 0;
+    }
+    #profiles_show .profile-content .c-right .cc-2a {
+        margin: 0 !important;
+    }
+    #profiles_show .profile-content .c-right .cc-2a > .c-column,
+    #profiles_show.x1200 .profile-content .c-right .cc-2a > .c-column {
+        width: 100%;
+        display: block;
+        background: none;
+        margin: 0;
+    }
+
+    #profiles_show .cc-friends .b-user,
+    #profiles_show .b-clubs.one-line .b-club {
+        float: none;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+    #profiles_show .cc-friends .b-user {
+        margin-bottom: 25px;
+        width: 16.6%;
+        top: 25px;
+    }
+    #profiles_show .b-clubs.one-line .b-club {
+        margin-bottom: 25px;
+        width: 50%;
+    }
+    #profiles_show .b-clubs.one-line .b-club:nth-child(-n + 2) {
+        margin-top: 19px;
+    }
+    #profiles_show .cc-friends .b-user a,
+    #profiles_show .b-clubs.one-line .b-club a {
+        width: calc(100% - 20px);
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(#1a153f, transparent);
+        margin: 0 10px;
+        padding: 5px;
+        padding-bottom: 35px;
+        border-radius: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: background 0.5s ease-out;
+    }
+    #profiles_show .cc-friends .b-user a:hover,
+    #profiles_show .b-clubs.one-line .b-club a:hover {
+        background: linear-gradient(rgba(52, 0, 74, 0.8), rgba(0, 0, 0, 0.8));
+    }
+    #profiles_show .cc-friends .b-user a::before,
+    #profiles_show .b-clubs.one-line .b-club a::before {
+        content: attr(title);
+        position: absolute;
+        font-size: 16px;
+        color: #fff;
+        top: 0;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #profiles_show .cc-friends .b-user a::before {
+        left: 35px;
+        top: 34px;
+        height: 42px;
+        line-height: 42px;
+        width: calc(100% - 70px);
+        text-align: center;
+    }
+    #profiles_show .b-clubs.one-line .b-club a::before {
+        left: 40px;
+        height: 58px;
+        line-height: 58px;
+        width: calc(100% - 85px);
+        top: 40px;
+        text-align: center;
+    }
+    #profiles_show .cc-friends .b-user a img,
+    #profiles_show .b-clubs.one-line .b-club a img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50px;
+        float: none;
+    }
+    #profiles_show.x1200 .profile-content .cc-2,
+    #profiles_show.x1000 .profile-content .cc-2 {
+        margin-bottom: 0;
+    }
+
+    /*________________вариант 2 изб__________________________*/
+
+    .p-profiles-show .cc-favourites .c-column {
+        float: none;
+        clear: none;
+        z-index: 35;
+        position: relative;
+        margin: 0 0.5% 20px 0.5% !important;
+        display: inline-block;
+        width: calc(100% / 10 - 0.1 * 0.1em - 1 * 1%);
+    }
+
+    #profiles_show .cc-favourites .c-column .cover {
+        overflow: hidden;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    /*есть косяк !! изображения теряет чёткость) поэтому пусть работает только в профиле*/
+    #profiles_show .b-catalog_entry .cover .image-decor img {
+        /*Избранное-img выровнять v-2*/
+        position: absolute;
+        top: 0;
+        right: -100%;
+        left: -100%;
+        width: auto;
+        min-width: 100%;
+        max-width: none;
+        height: 100%;
+        min-height: 100%;
+        margin: auto;
+    }
+    #profiles_show .b-catalog_entry .cover .image-cutter {
+        max-width: none !important;
+        max-height: none !important;
+    }
+    #profiles_show .b-catalog_entry .cover .image-cutter::before {
+        /*Конец*/
+        content: "";
+        display: block;
+        padding-bottom: 155.5%;
+    }
+    /*__________________ANIME______________________*/
+
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="planned"] .size {
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(#1a153f, transparent);
+        border: 6px solid #08cabe;
+        transition: 0.3s ease-out;
+    }
+
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="planned"]::before {
+        content: "В планах";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 3.75rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="planned"]::after {
+        content: "\\_f073";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1.5rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="watching,rewatching"]::before {
+        content: "Смотрю";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 6.25rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="watching,rewatching"]::after {
+        content: "\\_f0a4";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 4rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="watching,rewatching"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #08cabe;
+        top: -2.5rem;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="completed"]::before {
+        content: "Просмотрено";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 3.75rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="completed"]::after {
+        content: "\\_f046";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1.5rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="completed"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #08cabe;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="on_hold"]::before {
+        content: "Отложено";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 6.25rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="on_hold"]::after {
+        content: "\\_f25b";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 4rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="on_hold"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #08cabe;
+        top: -2.5rem;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="dropped"]::before {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        content: "Хлам";
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 3.75rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="dropped"]::after {
+        content: "\\_f1f8";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1.5rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="dropped"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #08cabe;
+        transition: 0.3s ease-out;
+    }
+    /*__________________КОНЕЦ______________________*/
+
+    /*__________________MANGA_____________________*/
+
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="planned"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #155785;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="planned"]::before {
+        content: "В планах";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 3.75rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="planned"]::after {
+        content: "\\_f02e";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1.5rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="watching,rewatching"]::before {
+        content: "Читаю";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 6.25rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="watching,rewatching"]::after {
+        content: "\\_f02d";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 4rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="watching,rewatching"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #155785;
+        top: -2.5rem;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="completed"]::before {
+        content: "Прочитано";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 3.75rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="completed"]::after {
+        content: "\\_f046";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1.5rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="completed"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #155785;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="on_hold"]::before {
+        content: "Отложено";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 6.25rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="on_hold"]::after {
+        content: "\\_f017";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 4rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="on_hold"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #155785;
+        top: -2.5rem;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="dropped"]::before {
+        content: "Хлам";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+        z-index: 3;
+        bottom: 3.75rem;
+        color: #ddd;
+        font-family: cursive;
+        opacity: 0.8;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="dropped"]::after {
+        content: "\\_f1f8";
+        font: normal normal normal 30px/1 FontAwesome;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1.5rem;
+        color: #ddd;
+        opacity: 0.8;
+        pointer-events: none;
+        transition: 0.3s ease-out;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="dropped"] .size {
+        background-image: linear-gradient(#1a153f, transparent);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 6px solid #155785;
+        transition: 0.3s ease-out;
+    }
+
+    /*__________________КОНЕЦ______________________*/
+
+    /*__________________Наводка______________________*/
+
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="planned"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #1d24b7 inset, 0 -220px 70px -120px #6d65ad inset, 0 -280px 70px -120px #00fffa inset;
+        border: 6px solid #6258a9;
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="watching,rewatching"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #ab3da4 inset, 0 -220px 70px -120px #5244bd inset, 0 -280px 70px -120px #7400ff inset;
+        border: 6px solid #0498ff;
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="completed"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #c340de inset, 0 -220px 70px -120px #176093 inset, 0 -280px 70px -120px #008fff inset;
+        border: 6px solid #324b84;
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="on_hold"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #06d8a5 inset, 0 -220px 70px -120px #dc3e7c inset, 0 -280px 70px -120px #69009a inset;
+        border: 6px solid #1a153f;
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.anime .stat_name[data-type="dropped"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #dd5202 inset, 0 -220px 70px -120px #1f00ad inset, 0 -280px 70px -120px #000000 inset;
+        border: 6px solid rgba(0, 80, 158, 0.65);
+        background-image: none;
+    }
+
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="planned"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #dd5202 inset, 0 -220px 70px -120px #1f00ad inset, 0 -280px 70px -120px #000000 inset;
+        border: 6px solid rgba(0, 80, 158, 0.65);
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="watching,rewatching"] .size:hover {
+        box-shadow: 0 -150px 70px -120px rgba(0, 255, 252, 0.7) inset, 0 -220px 70px -120px #1f00ad inset, 0 -280px 70px -120px #000000 inset;
+        border: 6px solid rgba(164, 2, 221, 0.39);
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="completed"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #000 inset, 0 -220px 70px -120px #ff0202 inset, 0 -280px 70px -120px #000 inset;
+        border: 6px solid rgba(0, 0, 0, 0.4);
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="on_hold"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #b100ff inset, 0 -220px 70px -120px #000000 inset, 0 -280px 70px -120px #1202ff inset;
+        border: 6px solid #2196f3;
+        background-image: none;
+    }
+    #profiles_show .b-stats_bar.manga .stat_name[data-type="dropped"] .size:hover {
+        box-shadow: 0 -150px 70px -120px #000000 inset, 0 -220px 70px -120px rgba(18, 2, 255, 0.58) inset, 0 -280px 70px -120px #000000 inset;
+        border: 6px solid rgba(255, 0, 0, 0.5);
+        background-image: none;
+    }
+    /*__________________конец______________________*/
+
+    /*Список аниме,Список манги*/
+
+    @media screen and (max-width: 900px) {
+        #profiles_show .profile-head .b-stats_bar .stat_names .stat_name .size {
+            width: 142px;
+            height: 142px;
+            font-size: 25px;
+        }
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="planned"]::before,
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="completed"]::before,
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="dropped"]::before,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="planned"]::before,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="completed"]::before,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="dropped"]::before {
+            bottom: 3.5rem;
+        }
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="planned"]::after,
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="completed"]::after,
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="dropped"]::after,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="planned"]::after,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="completed"]:after,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="dropped"]::after {
+            font: normal normal normal 26px/1 FontAwesome;
+            bottom: 1.5rem;
+        }
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="watching,rewatching"]::before,
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="on_hold"]:before,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="watching,rewatching"]::before,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="on_hold"]::before {
+            bottom: 5.95rem;
+        }
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="watching,rewatching"]::after,
+        #profiles_show .b-stats_bar.anime .stat_name[data-type="on_hold"]::after,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="watching,rewatching"]::after,
+        #profiles_show .b-stats_bar.manga .stat_name[data-type="on_hold"]::after {
+            font: normal normal normal 26px/1 FontAwesome;
+            bottom: 4rem;
+        }
+        #profiles_show .cc-friends .b-user {
+            /*Увеличить контейнер Друзей*/
+            width: 33.3%;
+        }
+        #profiles_show .cc-friends .b-user:nth-child(1n + 7) {
+            /*Убрать лишних друзей */
+            display: none;
+        }
+        #profiles_show .profile-head .c-brief .avatar img {
+            /*avatar 768px */
+            width: 125px;
+        }
+        #profiles_show .profile-head .c-history .entry {
+            /*История 768px_Округлить внешний блок  */
+            border-radius: 7px;
+        }
+        #profiles_show .profile-head .c-history .entry .image-name {
+            /*История 768px */
+            float: left;
+            margin-left: -7px;
+            margin-right: 7px;
+        }
+        #profiles_show .profile-head .c-history .entry:nth-child(1)::after,
+        #profiles_show .profile-head .c-history .entry:nth-child(2)::after {
+            left: 108%;
+            top: 25%;
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    /*-----------Конец------------- */
+
+    /*______________Лента____________*/
+
+    #profiles_show .b-topic {
+        width: 1200px;
+        margin: 0 auto 20px auto !important;
+        background-color: rgba(26, 21, 63, 0.55) !important;
+        border: none !important;
+        border-radius: 12px !important;
+        padding: 0 !important;
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    #profiles_show .b-comments .b-comment {
+        padding: 10px 0.5% 1.25% 0.5%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        border: solid 4px rgba(26, 21, 63, 0.9);
+        border-radius: 12px;
+        background: linear-gradient(rgba(130, 98, 218, 0.6), rgba(26, 21, 63, 0.8));
+    }
+    #profiles_show .b-comment > .inner header .name-date {
+        /*При наводке в Ленте высвечивается удалить_редактировать...) подвинуть */
+        line-height: 1.25;
+    }
+    #profiles_show .b-form {
+        padding: 0 1.5% 50px 1.5%;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    #profiles_show .b-topic > .editor-container {
+        margin: 0;
+        padding-top: 1%;
+        border-radius: 0;
+    }
+    #profiles_show .b-topic > .editor-container,
+    #profiles_show .b-topic > .b-comments {
+        background: none;
+        border-radius: 0;
+    }
+    #profiles_show .b-topic > .b-comments {
+        padding: 4.5rem 0 1% 0;
+        margin: 16px 0 0 0;
+    }
+    @media screen and (max-width: 1210px) {
+        #profiles_show .b-topic {
+            width: 100%;
+        }
+    }
+
+    #profiles_show .block {
+        margin: auto auto 0 auto !important;
+    }
+    #profiles_show .about {
+        /*box-shadow: inset 0px 22px 18px -18px #000;*/
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        padding-bottom: 2%;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    #profiles_show .b-comment > .inner header img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.5);
+    }
+    /*______________конец____________*/
+    #profiles_show .b-shiki_editor .body .editor textarea {
+        background: none;
+        border: none;
+        height: 110px;
+        min-height: 110px;
+        max-height: 110px;
+    }
+    #profiles_show .text.required.editor-area.pastable {
+        background: rgba(26, 21, 63, 0.5);
+        height: 110px;
+        min-height: 110px;
+        max-height: 110px;
+        padding: 3px 7px 5px !important;
+        border: 3.5px solid rgba(26, 21, 63, 0.55);
+        border-radius: 12px;
+    }
+    /*______________жуткая полоска____________*/
+    #profiles_show .b-ajax::before {
+        background: none !important;
+    }
+    /*______________конец____________*/
+
+    /*______________и так ясно____________*/
+    #profiles_show .l-footer {
+        padding: 0;
+    }
+    #profiles_show .l-footer::before {
+        /*Версия*/
+        content: "v2.3.8-Бета";
+    }
+    #profiles_show .l-footer::before {
+        display: block;
+        height: 0px;
+        font-size: 18px;
+        color: #dd5202;
+        text-align: center;
+        pointer-events: none;
+        bottom: 58px;
+        position: relative;
+    }
+    #profiles_show .b-comments .comments-loader,
+    #profiles_show .b-comments .comments-hider,
+    #profiles_show .b-comments .comments-expander {
+        color: #ddd;
+        border: none !important;
+        border-radius: 3rem;
+        background-color: rgba(26, 21, 63, 0.5);
+        transition: background 0.3s ease-out;
+        margin: 0 1.2% 20px 1.2%;
+        font-size: 13px;
+        padding: 6px 0 4px 0 !important;
+        font-weight: normal;
+        text-transform: none;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+    }
+    #profiles_show .b-comments .comments-loader:hover,
+    #profiles_show .b-comments .comments-hider:hover,
+    #profiles_show .b-comments .comments-expander:hover {
+        color: #f0d6f7;
+        background-color: rgba(26, 21, 63, 0.7);
+        border: none !important;
+    }
+    #profiles_show .b-comments .comments-loader:active,
+    #profiles_show .b-comments .comments-hider:active,
+    #profiles_show .b-comments .comments-expander:active {
+        border: none solid rgba(26, 21, 63, 0.55);
+        background-color: rgba(26, 21, 63, 0.5);
+    }
+    #profiles_show .b-form input[type="submit"],
+    #profiles_show .b-button,
+    #profiles_show .b-shiki_editor.previewed footer .unpreview,
+    #profiles_show .b-shiki_editor footer .cancel {
+        padding: 2px 10px;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 18px;
+        background-color: rgba(27, 21, 63, 0.8);
+        transition: 0.3s ease-out;
+        text-transform: none;
+        border: none;
+        font-size: 13px;
+        font-weight: normal;
+        color: #fff;
+        line-height: 23px;
+    }
+    #profiles_show .b-form input[type="submit"]:hover,
+    #profiles_show .b-button:hover,
+    #profiles_show .b-shiki_editor footer .cancel:hover {
+        background-color: rgba(73, 43, 115, 0.8);
+        color: #f0d6f7;
+    }
+    #profiles_show .b-shiki_editor footer .about-bb_codes {
+        /*Примеры bb-cod_убираем с основного блока все*/
+        text-decoration: none;
+        background: none;
+        transition: none;
+        border: none;
+        padding: 0;
+    }
+    #profiles_show .b-shiki_editor footer .about-bb_codes a {
+        /*Делаем Ссылочную кнопку*/
+        padding: 6.5px 10px;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 18px;
+        background: rgba(27, 21, 63, 0.8);
+        transition: 0.3s ease-out;
+        text-transform: none;
+        font-size: 13px;
+        font-weight: normal;
+        color: #fff;
+        text-decoration: none;
+    }
+    #profiles_show .b-shiki_editor footer .about-bb_codes a:hover {
+        background-color: rgba(73, 43, 115, 0.8);
+        color: #f0d6f7;
+    }
+    #profiles_show .subheadline-buttons {
+        position: absolute;
+        right: 1.25rem !important;
+        margin: 0 !important;
+        top: 1rem;
+        background: linear-gradient(135deg, #1d184d 20%, #000000 100%);
+        border-radius: 50%;
+        opacity: 0.9;
+        transition: opacity 0.2s ease;
+        -webkit-transition: opacity 0.2s ease;
+    }
+    #profiles_show .subheadline-buttons:hover {
+        opacity: 1;
+    }
+    #profiles_show .about .item-edit::before,
+    #profiles_show .about .item-edit::after {
+        width: 22px !important;
+        height: 22px !important;
+        font-size: 11px !important;
+        color: #bbb;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+        z-index: 5;
+    }
+
+    /*______________конец____________*/
+
+    /*_____________________конец_________________________*/
+    #profiles_show .buttons > .editor-controls {
+        padding: 5px 5px 1px 5px;
+        border: 3.5px solid rgba(26, 21, 63, 0.55);
+        background-color: rgba(26, 21, 63, 0.5);
+        border-radius: 60px;
+        bottom: 0;
+    }
+    #profiles_show .buttons .editor-italic,
+    #profiles_show .buttons .editor-underline,
+    #profiles_show .buttons .editor-strike,
+    #profiles_show .buttons .editor-image,
+    #profiles_show .buttons .editor-quote,
+    #profiles_show .buttons .editor-spoiler,
+    #profiles_show .buttons .editor-smiley {
+        margin-left: 0.9375rem;
+    }
+    #profiles_show .b-shiki_editor aside.buttons .editor-link,
+    #profiles_show .b-shiki_editor aside.buttons .editor-file {
+        margin-left: 2.1875rem;
+        /*_____________________конец_________________________*/
+    }
+
+    @keyframes bratan {
+        /* Кружок  загрузки Диалогов-аниме Манги-Песов-всего-Анимация загрузке всего! можно подключить  не только в профиле*/
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #profiles_show .ajax-loading {
+        background: none;
+    }
+
+    #profiles_show .b-ajax::after {
+        width: 30px;
+        height: 31px;
+        content: "\\_f1ce";
+        color: #afaaf3;
+        font: normal normal normal 30px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: transparent;
+        animation: bratan 0.7s linear infinite;
+    }
+    #profiles_show .ajax-loading::after {
+        content: "\\_f1ce";
+        width: 25.5px;
+        height: 25.7px;
+        color: #afaaf3;
+        font: normal normal normal 26px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        top: 50%;
+        margin-right: -18px;
+        position: absolute;
+        margin-top: -18px;
+        right: 50%;
+        animation: bratan 0.7s linear infinite;
+        /* ____________Конец_________________  */
+    }
+
+    /*__________________Ачивки_____________________*/
+
+    #profiles_show .b-achievement .c-image .inner a img {
+        border-radius: 15px;
+    }
+    #profiles_show .achievements .header {
+        justify-content: center;
+        margin-bottom: 10px;
+        padding-right: 20px;
+    }
+    #profiles_show .achievements .header .title {
+        color: #ddd;
+        z-index: 2;
+    }
+
+    #profiles_show .achievements .cc-achievements .b-achievement:nth-child(1n) {
+        width: 48.35%;
+        clear: none;
+        float: none !important;
+        display: inline-block;
+        margin-right: 1.5%;
+        z-index: 30;
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    #profiles_show .cc-3 > .c-column > .header > .title {
+        display: none;
+    }
+    #profiles_show .cc-3 > .c-column {
+        width: 50%;
+        height: 100%;
+        float: none;
+        clear: none;
+        left: 0.1rem;
+        padding: 0;
+        margin: 0 0 0 0;
+        top: 35px;
+        display: inline-block;
+    }
+    #profiles_show .achievements .cc-achievements .b-achievement:nth-child(4),
+    #profiles_show .achievements .cc-achievements .b-achievement:nth-child(2) {
+        display: none;
+    }
+
+    #profiles_show .achievements > .subheadline {
+        position: relative;
+        z-index: 10;
+        top: 40px;
+    }
+    #profiles_show .b-achievement .c-image .inner a .border {
+        border: none !important;
+    }
+    #profiles_show .b-achievement.is-badge::before {
+        width: calc(100% - 10px);
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0 0 15px 15px;
+        text-align: center;
+        pointer-events: none;
+        opacity: 0;
+        line-height: 10px;
+        font-size: 13px;
+        padding: 0;
+        transition: 0.4s;
+    }
+    #profiles_show .b-achievement.is-badge:hover:before {
+        height: calc(100% - 10px);
+        padding-top: 23%;
+        border-radius: 14.5px;
+        opacity: 1;
+    }
+    #profiles_show .b-achievement .c-image .inner {
+        transition: 0.4s ease-out;
+    }
+    #profiles_show .b-achievement .c-image .inner:hover {
+        transform: scale(1.2);
+        filter: brightness(70%) blur(2px);
+    }
+    #profiles_show .b-achievement.is-badge .c-image {
+        border-radius: 14.5px;
+        overflow: hidden;
+    }
+    #profiles_show .cc-3 > .c-column:nth-child(3n + 3) {
+        padding-right: 1.6%;
+        display: none;
+    }
+    #profiles_show .achievements .cc-franchises .b-badge:nth-child(1n + 7) {
+        display: none;
+    }
+    #profiles_show .achievements .cc-franchises .b-badge:nth-child(4n) {
+        margin-right: 1.5%;
+    }
+    #profiles_show .achievements .cc-franchises .b-badge:nth-child(4n + 1) {
+        clear: none;
+    }
+    #profiles_show .achievements .cc-franchises .b-badge {
+        width: 15.15%;
+        left: 0.7%;
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        border-radius: 20px;
+    }
+    #profiles_show .b-badge img,
+    #profiles_show .b-badge .no-image {
+        width: 100%;
+        border-radius: 16px;
+    }
+    #profiles_show .achievements .header .size {
+        font-size: 0px;
+    }
+    #profiles_show .achievements .header .size::before {
+        position: relative;
+        content: "Франшизы";
+        display: block;
+        font-weight: bold;
+        font-size: 48px;
+        /*__________________Конец_____________________*/
+    }
+    /*__________Иконка на верх сайта_______*/
+
+    #profiles_show .b-to-top .slide,
+    #profiles_show .b-to-top.active .slide,
+    #profiles_show .b-to-top .slide::before {
+        display: none;
+    }
+    #profiles_show .b-to-top .arrow {
+        width: 64px;
+        height: 40px;
+        left: 10px;
+        top: 80px;
+        padding-top: 5px;
+        font-size: 24px;
+        z-index: 25;
+        opacity: 0.8;
+        pointer-events: auto;
+        transition: 0.4s ease-out;
+        background-color: rgba(26, 21, 63, 0.72);
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+    }
+    #profiles_show .b-to-top .arrow:hover {
+        background-color: #1a143e;
+        /*__________конец_______*/
+    }
+    /* Иконка_Загрузить комен..... */
+    #profiles_show .b-comments .comments-collapser {
+        position: absolute;
+        font-size: 0px;
+        margin: 5.1px 30px 0 0;
+        border: none;
+        padding: 0;
+    }
+    #profiles_show .b-comments .comments-collapser::after {
+        content: "\\_f0a7";
+        font: normal normal normal 18px/ 1.3 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+        color: #ddd;
+        transition: 0.3s;
+    }
+    #profiles_show .b-comments .comments-collapser:hover::after {
+        color: #afaaf3;
+        /* __________Конец______________ */
+
+        /* __________Оффтоп Ru_En____________  */
+    }
+    body#profiles_show[data-locale="ru"] .b-offtopic_marker.off::before,
+    body#profiles_show[data-locale="en"] .b-offtopic_marker.off::before {
+        padding: 3px 6px 3px 4px !important;
+        border: none !important;
+        border-radius: 1rem !important;
+        background-color: rgb(33, 26, 68) !important;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+        text-shadow: 0 0 2px #000 !important;
+        color: #afaaf3 !important;
+        transition: all 0.25s ease;
+        text-transform: none !important;
+        font-size: 11px !important;
+    }
+    body#profiles_show[data-locale="ru"] .b-offtopic_marker.off:hover::before,
+    body#profiles_show[data-locale="en"] .b-offtopic_marker.off:hover::before {
+        background-color: rgba(76, 41, 123, 0.7) !important;
+        color: #ddd !important;
+    }
+    body#profiles_show[data-locale="ru"] .b-offtopic_marker::before,
+    body#profiles_show[data-locale="en"] .b-offtopic_marker::before {
+        padding: 3px 4px 3px 4px !important;
+        border: none !important;
+        border-radius: 1rem !important;
+        background-color: rgba(138, 0, 78, 0.9) !important;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+        text-shadow: 0 0 2px #000 !important;
+        color: #ddd !important;
+        transition: all 0.25s ease;
+        text-transform: none !important;
+        font-size: 11px !important;
+    }
+    body#profiles_show[data-locale="ru"] .b-offtopic_marker:hover::before,
+    body#profiles_show[data-locale="en"] .b-offtopic_marker.active:hover::before {
+        background-color: rgba(113, 2, 65, 0.9) !important;
+
+        /* __________Конец____________  */
+    }
+    /* _______Цитата_________ */
+    #profiles_show .b-quote {
+        background: rgba(30, 23, 66, 0.8);
+        border: 2px dashed #1a153f;
+        border-radius: 4px;
+        color: #ddd;
+    }
+    #profiles_show .b-quote .quoteable:before {
+        color: #afaaf3;
+        /* _______конец_________ */
+    }
+    /* Ссылка, Ссылка на картинку, Цитата */
+    #profiles_show .b-shiki_editor .images .link-value,
+    #profiles_show .b-shiki_editor .quotes .link-value,
+    #profiles_show .b-shiki_editor .links .link-value {
+        background-color: rgba(26, 21, 63, 0.75);
+        border-color: #1a153f;
+        /* конец */
+    }
+    /*При наводке по персонажем_Аниме окно) но и диалог цвета некоторые*/
+
+    #profiles_show .b-comment > .inner header .name-date a.name {
+        font-size: 14px;
+        color: #f0d6f7;
+    }
+    #profiles_show .b-link {
+        color: rgb(255, 177, 177);
+    }
+    #profiles_show .b-catalog_entry-tooltip .inner a.name {
+        color: rgba(253, 210, 255, 0.9);
+    }
+    #profiles_show .b-catalog_entry-tooltip .inner .line .key {
+        color: rgba(169, 223, 255, 0.9);
+        text-shadow: 0 1px 2px #000;
+    }
+    #profiles_show .tooltip-inner {
+        width: 496px;
+        background: none repeat scroll 0 0 rgba(26, 21, 63, 0.9);
+        background-image: linear-gradient(#1a153f, transparent);
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        border: none;
+        color: #ddd;
+        padding: 12px;
+        font-size: 13px;
+    }
+    #profiles_show .p-profiles-favourites .tooltip.minified .tooltip-inner,
+    #profiles_show .tooltip.minified .tooltip-inner {
+        width: 350px;
+    }
+    #profiles_show .tooltip-details .b-comment.shiki-object {
+        border: none !important;
+    }
+    #profiles_show .tooltip-inner .close {
+        background: none;
+        color: #ddd;
+    }
+    #profiles_show .b-comment .inner .name-date a.name .normal {
+        color: #afaaf3;
+    }
+
+    #profiles_show .b-tag[href] {
+        padding: 2px 6px 1px 6px !important;
+        margin: 2px 4px 2px 0 !important;
+        border-radius: 2px;
+        color: #b1b7ff;
+        text-transform: none;
+        font-weight: normal;
+        background: rgba(35, 35, 35, 0.6);
+        border: none;
+        border-radius: 10px;
+    }
+
+    #profiles_show .b-tag[href]:hover,
+    #profiles_show .b-tag[href]:focus,
+    #profiles_show .b-tag[href].active {
+        margin: 2px 4px 2px 0 !important;
+        padding: 2px 6px 1px 6px !important;
+        background-color: rgb(38, 29, 88);
+        border: none;
+        color: #ddd !important;
+    }
+
+    #profiles_show .b-catalog_entry-tooltip .inner .additional-images .link .title {
+        color: #afaaf3;
+        text-align: center;
+        text-shadow: 0 1px 2px #000;
+
+        /*_____________________Конец___________________________*/
+    }
+
+    #profiles_show .b-catalog_entry {
+        padding: 5px;
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        transition: 0.2s ease-out;
+        will-change: transform;
+    }
+
+    #profiles_show .b-catalog_entry:hover {
+        /*Анимация блока обо мне наводка на аниме-мангу-персонажей итд*/
+        box-shadow: -20px 20px 0 -17px #afaaf3, 20px -20px 0 -17px #afaaf3, 20px 20px 0 -20px #1a153f, 0 0 0 2px #1a153f;
+        -webkit-transform: translateY(-6px);
+        -moz-transform: translateY(-6px);
+        -o-transform: translateY(-6px);
+    }
+    #profiles_show .cc-4a > .c-column {
+        padding: 0 !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    .p-profiles-show .about a,
+    .b-catalog_entry .cover:hover .title {
+        text-decoration: none !important;
+    }
+    #profiles_show .b-catalog_entry .cover .misc span {
+        text-align: center;
+        color: #f0d6f7;
+        font-weight: bold;
+        text-shadow: 1px -1px 0px #1a153f, -1px 1px 0px #1a153f, -1px -1px 0px #1a153f, 1px 1px 0px #1a153f, 0px -1px 0px #1a153f, 0px 1px 0px #1a153f, 1px 0px 0px #1a153f, -1px 0px 0px #1a153f;
+        text-decoration: none !important;
+    }
+    #profiles_show .b-catalog_entry .cover .title {
+        text-align: center;
+        color: #afaaf3;
+        text-shadow: 1px -1px 0px #1a153f, -1px 1px 0px #1a153f, -1px -1px 0px #1a153f, 1px 1px 0px #1a153f, 0px -1px 0px #1a153f, 0px 1px 0px #1a153f, 1px 0px 0px #1a153f, -1px 0px 0px #1a153f;
+    }
+    #profiles_show a.cover:hover .name-en {
+        /* Сериалы_с-RU-EN*/
+        display: inline;
+    }
+    #profiles_show a.cover:hover .name-ru {
+        display: none;
+    }
+    .b-catalog_entry .cover .title.two_lined {
+        max-height: 21px;
+        text-align: center;
+    }
+
+    #profiles_show .b-code {
+        /*Цвет консоли BB-COD-CSS-COD*/
+        background: rgba(26, 21, 63, 0.9);
+        border-radius: 4px;
+        text-shadow: 0 1px 2px #000;
+    }
+    #profiles_show .l-footer .links,
+    #profiles_show .l-footer .copyright,
+    #profiles_show .profile-head .c-brief header h1.aliases::after,
+    .b-feedback > .marker-positioner,
+    .b-feedback > .hover-activator {
+        font-size: 0px;
+        display: none;
+    }
+
+    #profiles_show .b-catalog_entry.planned .image-decor::before,
+    #profiles_show .b-catalog_entry.watching .image-decor::before,
+    #profiles_show .b-catalog_entry.completed .image-decor::before,
+    #profiles_show .b-catalog_entry.rewatching .image-decor::before,
+    #profiles_show .b-catalog_entry.on_hold .image-decor::before,
+    #profiles_show .b-catalog_entry.dropped .image-decor::before {
+        /*Заменить иконки - убрать с брошена, Смотрю,Просмотрено, ИТД*/
+        font-family: "Arial", sans-serif !important;
+        text-transform: uppercase;
+        top: 0 !important;
+        left: 0;
+        right: 0;
+        width: 100% !important;
+        height: 12px;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 0 0 0 transparent;
+        color: #fff;
+        font-size: 9px;
+        line-height: 1.5;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-shadow: 0 1px 2px #000;
+    }
+    #profiles_show .b-catalog_entry.planned .image-decor::after,
+    #profiles_show .b-catalog_entry.watching .image-decor::after,
+    #profiles_show .b-catalog_entry.completed .image-decor::after,
+    #profiles_show .b-catalog_entry.rewatching .image-decor::after,
+    #profiles_show .b-catalog_entry.on_hold .image-decor::after,
+    #profiles_show .b-catalog_entry.dropped .image-decor::after {
+        display: none;
+    }
+    #profiles_show .b-catalog_entry.planned .image-decor::before {
+        content: "в планах";
+        background: rgba(43, 122, 227, 0.95);
+    }
+    #profiles_show .b-catalog_entry.watching .image-decor::before {
+        content: "смотрю";
+        background: rgba(79, 145, 232, 0.95);
+    }
+    #profiles_show .b-catalog_entry.rewatching .image-decor::before {
+        content: "пересматриваю";
+        background: rgba(79, 145, 232, 0.95);
+    }
+    #profiles_show .b-catalog_entry.completed .image-decor::before {
+        content: "просмотрено";
+        background: rgba(64, 191, 117, 0.95);
+    }
+    #profiles_show .b-catalog_entry.on_hold .image-decor::before {
+        content: "отложено";
+        background: #757575;
+    }
+    #profiles_show .b-catalog_entry.dropped .image-decor::before {
+        content: "брошено";
+        background: #ef5350;
+    }
+
+    #profiles_show .b-height_shortener .shade {
+        /*Кнопка развернуть-Свернуть*/
+        background: none;
+    }
+    #profiles_show .b-height_shortener .expand {
+        width: 280px;
+        margin: 8px auto;
+        padding: 4px;
+        color: #afaaf3;
+        text-align: center;
+        border-radius: 4px;
+    }
+    #profiles_show .b-height_shortener .expand:hover {
+        color: #fff;
+    }
+    #profiles_show .b-height_shortener .expand::after {
+        display: none;
+    }
+    #profiles_show .b-height_shortener .expand span {
+        border: none;
+        font-size: 14px;
+        padding: 2px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.06);
+        display: inline-block;
+        border-radius: 0;
+        transition: 0.3s ease;
+    }
+    #profiles_show .b-height_shortener .expand:hover span {
+        background: #1a143e;
+        border-radius: 50px;
+    }
+    #profiles_show .b-height_shortener .expand span::before,
+    #profiles_show .b-height_shortener .expand span::after {
+        content: "expand_more";
+        font-family: "Material Icons";
+        display: inline;
+        vertical-align: middle;
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 0;
+        text-transform: none;
+        font-weight: normal;
+        margin: 20px;
+        opacity: 0;
+        transition: inherit;
+    }
+    #profiles_show .b-height_shortener .expand:hover span::before,
+    #profiles_show .b-height_shortener .expand:hover span::after {
+        opacity: 1;
+        margin: 0;
+        border-radius: 100%;
+    } /*-------------------------*/
+
+    #profiles_show .b-comments-notifier {
+        width: 40px;
+        height: 34px;
+        top: 90%;
+        line-height: 2;
+        font-size: 18px;
+        background: rgba(26, 21, 63, 0.72);
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        transition: 0.4s ease-out;
+    }
+    #profiles_show .b-comments-notifier:hover {
+        background-color: #1a143e;
+    }
+    #profiles_show .b-shiki_editor .controls {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    #profiles_show .profile-head .c-brief .avatar .profile-actions {
+        /* Меню С права_бета */
+        position: fixed;
+        width: 62px;
+        height: 62px;
+        bottom: 10%;
+        right: 5%;
+        text-align: center;
+        background: transparent;
+        opacity: 0.8;
+        border-radius: 50px;
+        z-index: 3;
+        overflow: visible;
+        transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .c-brief .avatar .profile-actions:hover {
+        opacity: 1;
+        transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .c-brief .avatar .profile-actions:before {
+        content: "";
+        display: block;
+        width: 62px;
+        height: 62px;
+        background: linear-gradient(6deg, #855ad4, #99a1ff);
+        border-radius: 50px;
+        border: 2px solid #1a153f;
+        transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    #profiles_show .profile-head .c-brief .avatar .profile-actions:hover:before {
+        height: 320px;
+        margin-top: -258px;
+    }
+    #profiles_show .profile-head .c-brief .avatar .profile-actions::after {
+        font: normal normal normal 40px/1.5 FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: auto;
+        content: "\\_f0c9";
+        position: absolute;
+        display: block;
+        width: 62px;
+        height: 62px;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        border-radius: 50px;
+        border: 2px solid #1a153f;
+        transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+        background: linear-gradient(135deg, #1d184d 20%, #000000 100%);
+    }
+    #profiles_show .profile-head .c-brief .avatar .profile-actions:hover:after {
+        background-color: rgb(130, 86, 181);
+    }
+    #profiles_show .profile-head a.mail.b-tooltipped {
+        /* Иконка письма_Почта*/
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 5px;
+        right: 0;
+        margin: 0 auto !important;
+        top: 10px;
+        opacity: 0;
+        border-radius: 50px;
+        transition: all 450ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .profile-actions:hover a.mail.b-tooltipped {
+        top: -242px;
+        opacity: 1;
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+    #profiles_show .profile-head a.settings.b-tooltipped {
+        /* Иконка Настройки */
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 5px;
+        right: 0;
+        margin: 0 auto;
+        top: 10px;
+        opacity: 0;
+        border-radius: 50px;
+        transition: all 450ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .profile-actions:hover a.settings.b-tooltipped {
+        top: -180px;
+        opacity: 1;
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+    #profiles_show .profile-head a.ban.b-tooltipped {
+        /* Иконка_История бан */
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 5px;
+        right: 0;
+        margin: 0 auto;
+        top: 10px;
+        opacity: 0;
+        border-radius: 50px;
+        transition: all 450ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .profile-actions:hover a.ban.b-tooltipped {
+        top: -65px;
+        opacity: 1;
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+    /*_____________________________________ */
+
+    #profiles_show .profile-head a.talk.b-tooltipped {
+        /* Иконка письма_Написать */
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 5px;
+        right: 0;
+        margin: 0 auto !important;
+        top: 10px;
+        opacity: 0;
+        border-radius: 50px;
+        transition: all 450ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .profile-actions:hover a.talk.b-tooltipped {
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+        top: -245px;
+        opacity: 1;
+    }
+    #profiles_show .profile-head a.ignore-add.ignore-action.b-tooltipped,
+    #profiles_show .profile-head a.ignore-remove.ignore-action.b-tooltipped {
+        /* Иконка_Добавить в Игнор */
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 5px;
+        margin: 0 auto;
+        right: 0;
+        top: 10px;
+        opacity: 0;
+        border-radius: 50px;
+        transition: all 450ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .profile-actions:hover a.ignore-add.ignore-action.b-tooltipped,
+    #profiles_show .profile-head .profile-actions:hover a.ignore-remove.ignore-action.b-tooltipped {
+        top: -185px;
+        opacity: 1;
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+    #profiles_show .profile-head a.fav-add.friend-action.b-tooltipped,
+    #profiles_show .profile-head a.fav-remove.friend-action.b-tooltipped {
+        /* Иконка_ Добавить_Удалить_Из Друзей */
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 5px;
+        margin: 0 auto;
+        right: 0;
+        top: 10px;
+        opacity: 0;
+        border-radius: 50px;
+        transition: all 450ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    #profiles_show .profile-head .profile-actions:hover a.fav-add.friend-action.b-tooltipped,
+    #profiles_show .profile-head .profile-actions:hover a.fav-remove.friend-action.b-tooltipped {
+        box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+        opacity: 1;
+        top: -125px;
+    }
+    #profiles_show .profile-head .profile-actions .mail::before,
+    #profiles_show .profile-head .profile-actions .talk::before {
+        /*Иконка*/
+        content: "\\_f0e0";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 4px;
+        margin: 0;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .settings::before {
+        /*Иконка*/
+        content: "\\_f013";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: 1px auto;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .ban::before {
+        /*Иконка*/
+        content: "\\_f0e3";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .ignore-add::before {
+        /*Иконка*/
+        content: "\\_f2a8";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .fav-remove::before {
+        /*Иконка*/
+        content: "\\_f235";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        width: 50px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .ignore-remove::before {
+        /*Иконка*/
+        content: "\\_f25b";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .fav-add::before {
+        /*Иконка*/
+        content: "\\_f234";
+        font: normal normal normal 24px/1.75 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    #profiles_show .profile-head .profile-actions .mail:hover::before,
+    #profiles_show .profile-head .profile-actions .talk:hover::before,
+    #profiles_show .profile-head .profile-actions .fav-remove:hover::before,
+    #profiles_show .profile-head .profile-actions .ban:hover::before,
+    #profiles_show .profile-head .profile-actions .fav-add:hover::before,
+    #profiles_show .profile-head .profile-actions .settings:hover::before,
+    #profiles_show .profile-head .profile-actions .ignore-add:hover::before,
+    #profiles_show .profile-head .profile-actions .ignore-remove:hover::before {
+        /*наводка на Иконки*/
+        transform: rotate(-360deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    /*OFF*/
+    #profiles_show .profile-head .c-brief .avatar .profile-actions {
+        display: none;
+    }
+}
+/* Подгоняем Достижения под размер экрана */
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    #profiles_show .achievements .cc-franchises .b-badge:nth-child(1n + 7) {
+        display: block;
+    }
+}
+/* конец */
+
+@media screen and (min-width: 768px) {
+    #profiles_show .cc-6-g0 > .c-column {
+        /*Персонажи в ленте*/
+        width: 15.5% !important;
+        margin: 10px 0.5% 10px 0.5%;
+    }
+    #profiles_show .cc-7-g0 > .c-column {
+        /*Персонажи в ленте*/
+        width: 13.15% !important;
+        margin: 10px 0.5% 10px 0.5%;
+    }
+    #profiles_show .cc-8-g0 > .c-column {
+        /*Персонажи в ленте*/
+        width: 11.4% !important;
+        margin: 10px 0.5% 10px 0.5%;
+    }
+    #profiles_show .cc-9-g0 > .c-column {
+        /*Персонажи в ленте*/
+        width: 10% !important;
+        margin: 10px 0.5% 10px 0.5%;
+    }
+    #profiles_show .cc-4 > .c-column {
+        margin: 10px 1.5% 10px 1.5%;
+    } /*Персонажи в ленте-v2*/
+    #profiles_show .cc-5 > .c-column {
+        margin: 10px 1.6% 10px 1.6%;
+    } /*Персонажи в ленте-v2*/
+    #profiles_show .cc-6-g15 > .c-column {
+        margin: 10px 0.6% 10px 0.6%;
+    } /*Персонажи в ленте-v2*/
+    #profiles_show .cc-7-g15 > .c-column {
+        margin: 10px 0.6% 10px 0.6%;
+    } /*Персонажи в ленте-v2*/
+    #profiles_show .cc-8-g15 > .c-column {
+        margin: 10px 0.625% 10px 0.625%;
+    } /*Персонажи в ленте-v2*/
+    #profiles_show .cc-9-g15 > .c-column {
+        margin: 10px 0.65% 14px 0.65%; /*Персонажи в ленте-v2*/
+    }
+}
