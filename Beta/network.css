@@ -24,4 +24,20 @@
         opacity: 0.5;
         z-index: -1;
     }
+        #profiles_show .b-topic:first-child::before {
+        /*Сетка над блоком Обо мне*/
+        content: "";
+        display: block;
+        position: fixed;
+        background: url("/\x/i.ibb.co/x8b1KTK/2x2.png");
+        opacity: 0.4;
+        filter: blur(0.6px);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 }
