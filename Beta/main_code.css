@@ -702,13 +702,6 @@ body#profiles_show .l-page > div {
         right: 0;
         top: 7.3rem;
     }
-    #profiles_show.x1200 .profile-content .c-left,
-    #profiles_show.x1000 .profile-content .c-left {
-        /*margin-top: 1271px; 53*/
-        width: 100vw;
-        margin: 79.45rem 0 0 0;
-        float: none;
-    }
     #profiles_show .lifetime .title {
         position: relative;
     }
