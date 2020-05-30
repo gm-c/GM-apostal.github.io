@@ -1,3 +1,5 @@
+@media screen and (min-width: 768px) {
+    
 #profiles_show .profile-head {
         display: block;
         position: relative;
@@ -85,3 +87,4 @@
         background-position: top center;
         background-attachment: fixed;
     }
+}
