@@ -2180,7 +2180,7 @@ body#profiles_show .l-page > div {
     #profiles_show .b-comments-notifier {
         width: 40px;
         height: 34px;
-        top: 90%;
+        top: 3rem!important;
         line-height: 2;
         font-size: 18px;
         background: rgba(26, 21, 63, 0.72);
