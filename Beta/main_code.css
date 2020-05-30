@@ -599,6 +599,10 @@ body#profiles_show .l-page > div {
         cursor: text;
     }
     #profiles_show .profile-head .c-info .c-additionals div {
+        display: inline-flex;
+        font-size: 0;
+        line-height: 1.45;
+        justify-content: center;    
         width: calc(100% / 8) !important;
         min-width: 160px;
         position: relative;
@@ -671,12 +675,6 @@ body#profiles_show .l-page > div {
         background: #fff;
         position: absolute;
         bottom: 42.5px;
-    }
-    .p-profiles .profile-head .c-info .c-additionals div {
-        display: inline-flex;
-        font-size: 12px;
-        line-height: 1.45;
-        justify-content: center;
     }
     #profiles_show .profile-head .c-info .c-additionals b::after {
         position: relative;
