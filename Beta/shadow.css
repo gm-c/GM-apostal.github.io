@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+    
+    /*Между швами присутствует полоска !! на ярком фоне дает глубину картинкам_можно убрать тень _ или закрыть швы картинкой итд*/
+    #profiles_show .profile-head .c-lists-info > .b-stats_bar.anime::after,
+    #profiles_show .profile-head .c-lists-info > .b-stats_bar.manga::after,
+    #profiles_show .profile-head .c-info .c-additionals::after,
+    #profiles_show.x1200 .profile-content .c-right .cc-2a > .c-column:nth-child(1)::after,
+    #profiles_show.x1000 .profile-content .c-right .cc-2a > .c-column:nth-child(1)::after,
+    #profiles_show.x1200 .profile-content .c-right .cc-2a > .c-column:nth-child(2)::after,
+    #profiles_show.x1000 .profile-content .c-right .cc-2a > .c-column:nth-child(2)::after,
+    #profiles_show .profile-content .cc-2.block .c-column.c-right .block::after,
+    #profiles_show .lifetime.b-stats_bar::after,
+    #profiles_show .profile-content .activity::after,
+    #profiles_show .achievements::after,
+    #profiles_show .about::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        top: -0.5px;
+        left: 0;
+        z-index: 11;
+        background: rgba(0, 0, 0, 0.15);
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgb(0, 0, 0);
+    }
+ }
