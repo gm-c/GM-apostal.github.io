@@ -58,7 +58,7 @@
     content: "search";
 }
 .l-top_menu-v2 .icon-anime::before {
-    content: "ondemand_video";
+    content: "shop_two";
 }
 .l-top_menu-v2 .icon-manga::before {
     content: "photo_album";
@@ -67,7 +67,7 @@
     content: "book";
 }
 .l-top_menu-v2 .icon-clubs::before {
-    content: "group_work";
+    content: "pets";
 }
 .l-top_menu-v2 .icon-collections::before {
     content: "widgets";
@@ -120,7 +120,7 @@
     content: "people";
 }
 .l-top_menu-v2 .icon-users::before {
-    content: "account_circle";
+    content: "group";
 }
 .l-top_menu-v2 .menu-icon.trigger::before,
 .l-top_menu-v2 .icon-other::before {
