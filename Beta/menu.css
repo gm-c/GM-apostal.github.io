@@ -147,13 +147,8 @@
     padding: 1em;
 }
 .l-top_menu-v2 {
-    position: fixed;
-    width: 100%;
-    top: 0;
     height: 56px;
-    background-color: #1a153f;
     border: 0;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.24);
     color: #f1f1f3;
 }
 .l-top_menu-v2 .logo-container {
