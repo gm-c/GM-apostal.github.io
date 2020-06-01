@@ -1,9 +1,4 @@
-@media screen and (min-width: 1025px) {
-    .l-top_menu-v2 {
-        position: sticky;
-        top: 0;
-    }
-    .l-top_menu-v2 .active .submenu {
+.l-top_menu-v2 .active .submenu {
         max-height: calc(100vh - 46px);
         overflow: auto;
     }
@@ -147,6 +142,8 @@
     padding: 1em;
 }
 .l-top_menu-v2 {
+    position: sticky;
+    top: 0;
     height: 56px;
     border: 0;
     background-color: rgb(26, 21, 63);
