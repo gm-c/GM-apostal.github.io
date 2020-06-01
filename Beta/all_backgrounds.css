@@ -55,7 +55,6 @@
         z-index: 9;
     }
     #profiles_show .achievements {
-        width: 100vw;
         bottom: 0px !important;
         padding: 0 2.5rem 100px 2.5rem;
         z-index: 9;
