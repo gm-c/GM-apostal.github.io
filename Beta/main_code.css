@@ -685,6 +685,7 @@ body#profiles_show .l-page > div {
         -webkit-font-smoothing: antialiased;
         transition: 0.3s ease-out;
         top: 2.5rem;
+        left: 0.2rem;
     }
 
     #profiles_show .profile-head .c-info .c-additionals div::before {
