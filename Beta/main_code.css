@@ -1717,7 +1717,7 @@ body#profiles_show .l-page > div {
     }
 
     #profiles_show .achievements .cc-achievements .b-achievement:nth-child(1n) {
-        width: 48.35%;
+        width: 48.498%;
         clear: none;
         float: none !important;
         display: inline-block;
@@ -1736,7 +1736,7 @@ body#profiles_show .l-page > div {
         height: 100%;
         float: none;
         clear: none;
-        left: 0.1rem;
+        left: 0.18rem;
         padding: 0;
         margin: 0 0 0 0;
         top: 35px;
