@@ -9,7 +9,8 @@ body#profiles_show .l-page > div {
     body#profiles_show.x1000 .l-page,
     body#profiles_show.x1200 .l-page {
         max-width: 100% !important;
-        margin: 0 auto !important;
+        width: 100%;
+        margin: -3.5rem auto 0 auto !important;
         padding: 0 !important;
         border: none;
         background: transparent !important;
@@ -417,7 +418,7 @@ body#profiles_show .l-page > div {
     #profiles_show .profile-head .c-info {
         position: absolute;
         top: 100vh;
-        width: 100vw;
+        width: 100%;
         z-index: 1;
         overflow: visible;
     }
@@ -818,7 +819,7 @@ body#profiles_show .l-page > div {
     }
     #profiles_show.x1200 .profile-content .c-right,
     #profiles_show.x1000 .profile-content .c-right {
-        width: 100vw;
+        width: 100%;
         margin-bottom: 0;
     }
     #profiles_show .profile-content .c-right .cc-2a {
