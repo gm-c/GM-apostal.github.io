@@ -4,6 +4,12 @@
         overflow: auto;
     }
 }
+ @font-face {
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype"), url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+    }
 
 .l-top_menu-v2 .icon-other::before,
 .l-top_menu-v2 .menu-icon::before,
@@ -603,9 +609,3 @@
     }
 }
 /*_____________________конец___________________________*/
- @font-face {
-        font-family: "Material Icons";
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype"), url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
-    }
