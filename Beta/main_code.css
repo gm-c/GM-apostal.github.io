@@ -299,7 +299,6 @@
     }
     #profiles_show .notice > span .b-tooltipped.dotted.mobile {
         padding-left: 0.4rem;
-        top: 0.05rem;
         position: relative;
     }
     .b-tooltipped.dotted {
