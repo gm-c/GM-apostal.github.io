@@ -198,14 +198,19 @@ body#profiles_show .l-page > div {
     #profiles_show .profile-head .c-brief {
         /*Контроль блока Автаркии */
         position: relative;
-        display: table;
+        display: block;
+        width: 100%;
+        pointer-events: none;
         vertical-align: middle;
         text-align: center;
         top: -0vh;
         z-index: 11;
         margin: 0 auto;
     }
-
+    #profiles_show .profile-head .c-brief .avatar,
+    #profiles_show .profile-head .c-brief header {
+        pointer-events: auto;
+}
     #profiles_show .profile-head .c-brief .avatar img {
         /*Сама Ава_Округлить_Тень*/
         border-radius: 50%;
