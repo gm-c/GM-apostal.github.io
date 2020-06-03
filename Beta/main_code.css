@@ -1,6 +1,6 @@
+
 @media screen and (min-width: 768px) {
-        
-body#profiles_show .l-page > div {
+    body#profiles_show .l-page > div {
         width: 100%;
         position: relative;
         overflow: hidden;
@@ -59,7 +59,6 @@ body#profiles_show .l-page > div {
         border: none;
     }
 
- 
     * .c-brief header.head h1 {
         /*Ник_обернуть в тень*/
         text-shadow: 2px -2px 0px rgb(26, 21, 62), -2px 2px 0px rgb(27, 21, 61), -2px -2px 0px rgb(27, 21, 61), 2px 2px 0px rgb(26, 21, 63), 0px -2px 0px rgb(26, 20, 62), 0px 2px 0px rgb(26, 21, 61), 2px 0px 0px rgb(27, 22, 63),
@@ -210,7 +209,7 @@ body#profiles_show .l-page > div {
     #profiles_show .profile-head .c-brief .avatar,
     #profiles_show .profile-head .c-brief header {
         pointer-events: auto;
-}
+    }
     #profiles_show .profile-head .c-brief .avatar img {
         /*Сама Ава_Округлить_Тень*/
         border-radius: 50%;
@@ -243,11 +242,62 @@ body#profiles_show .l-page > div {
         font-weight: normal;
     }
 
-    #profiles_show .profile-head .c-brief header .notice {
-        font-size: 14px;
-        color: #fff;
-        line-height: 1.25;
-        text-shadow: 0 1px 2px #000000;
+    #profiles_show .profile-head .notice {
+        display: flex;
+        left: 1rem;
+        position: absolute;
+        top: 90vh;
+        border-radius: 100px;
+        width: 50px;
+        height: 30px;
+        opacity: 0.7;
+        border: 2px solid #1a153f;
+        background: linear-gradient(6deg, #855ad4, #99a1ff);
+        align-items: center;
+        justify-content: center;
+        transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1) 25ms;
+        pointer-events: auto;
+    }
+    #profiles_show .profile-head .notice:hover {
+        opacity: 9;
+        padding: 0 0 0 3rem;
+        width: 630px;
+    }
+
+    #profiles_show .profile-head .notice::after {
+        font: normal normal normal 26px/1.5 FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: auto;
+        content: "\\_f1b0";
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        z-index: 5;
+        border-radius: 50px;
+        border: 2px solid #1a153f;
+        background: linear-gradient(135deg, #1d184d 20%, #000000 100%);
+        left: -0.18rem;
+    }
+
+    #profiles_show .profile-head .notice span {
+        opacity: 0;
+        line-height: 1.45;
+        height: 20px;
+        display: flex;
+        transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1) 25ms;
+        overflow: hidden;
+    }
+    #profiles_show .profile-head .notice:hover span {
+        opacity: 1;
+    }
+    #profiles_show .notice > span .b-tooltipped.dotted.mobile {
+        padding-left: 0.4rem;
+        top: 0.05rem;
+        position: relative;
     }
     .b-tooltipped.dotted {
         border-bottom: none;
@@ -608,7 +658,7 @@ body#profiles_show .l-page > div {
         display: inline-flex;
         font-size: 0;
         line-height: 1.45;
-        justify-content: center;    
+        justify-content: center;
         width: calc(100% / 8) !important;
         min-width: 160px;
         position: relative;
@@ -2185,7 +2235,7 @@ body#profiles_show .l-page > div {
     #profiles_show .b-comments-notifier {
         width: 40px;
         height: 34px;
-        top: 3.5rem!important;
+        top: 3.5rem !important;
         line-height: 2;
         font-size: 18px;
         background: rgba(26, 21, 63, 0.72);
