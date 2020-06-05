@@ -2092,14 +2092,13 @@
         text-align: center;
         color: #afaaf3;
         text-shadow: 1px -1px 0px #1a153f, -1px 1px 0px #1a153f, -1px -1px 0px #1a153f, 1px 1px 0px #1a153f, 0px -1px 0px #1a153f, 0px 1px 0px #1a153f, 1px 0px 0px #1a153f, -1px 0px 0px #1a153f;
-    }
-    #profiles_show a.cover:hover .name-en {
-        /* Сериалы_с-RU-EN*/
+    }  /* Сериалы_с-RU-EN*/
+     /* #profiles_show a.cover:hover .name-en {
         display: inline;
     }
     #profiles_show a.cover:hover .name-ru {
         display: none;
-    }
+    }*/
     .b-catalog_entry .cover .title.two_lined {
         max-height: 21px;
         text-align: center;
