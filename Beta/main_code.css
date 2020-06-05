@@ -2124,62 +2124,62 @@
     
             /*Заменить иконки - убрать с брошена, Смотрю,Просмотрено, ИТД*/
     
-    /*#profiles_show .b-catalog_entry.planned .image-decor::before,
-    #profiles_show .b-catalog_entry.watching .image-decor::before,
-    #profiles_show .b-catalog_entry.completed .image-decor::before,
-    #profiles_show .b-catalog_entry.rewatching .image-decor::before,
-    #profiles_show .b-catalog_entry.on_hold .image-decor::before,
-    #profiles_show .b-catalog_entry.dropped .image-decor::before {
-        font-family: "Arial", sans-serif !important;
-        text-transform: uppercase;
-        top: 0 !important;
-        left: 0;
-        right: 0;
-        width: 100% !important;
-        height: 12px;
-        border: none;
-        border-radius: 0;
-        box-shadow: 0 0 0 0 transparent;
-        color: #fff;
-        font-size: 9px;
-        line-height: 1.5;
-        text-align: center;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        text-shadow: 0 1px 2px #000;
-    }
-    #profiles_show .b-catalog_entry.planned .image-decor::after,
-    #profiles_show .b-catalog_entry.watching .image-decor::after,
-    #profiles_show .b-catalog_entry.completed .image-decor::after,
-    #profiles_show .b-catalog_entry.rewatching .image-decor::after,
-    #profiles_show .b-catalog_entry.on_hold .image-decor::after,
-    #profiles_show .b-catalog_entry.dropped .image-decor::after {
-        display: none;
-    }
-    #profiles_show .b-catalog_entry.planned .image-decor::before {
-        content: "в планах";
-        background: rgba(43, 122, 227, 0.95);
-    }
-    #profiles_show .b-catalog_entry.watching .image-decor::before {
-        content: "смотрю";
-        background: rgba(79, 145, 232, 0.95);
-    }
-    #profiles_show .b-catalog_entry.rewatching .image-decor::before {
-        content: "пересматриваю";
-        background: rgba(79, 145, 232, 0.95);
-    }
-    #profiles_show .b-catalog_entry.completed .image-decor::before {
-        content: "просмотрено";
-        background: rgba(64, 191, 117, 0.95);
-    }
-    #profiles_show .b-catalog_entry.on_hold .image-decor::before {
-        content: "отложено";
-        background: #757575;
-    }
-    #profiles_show .b-catalog_entry.dropped .image-decor::before {
-        content: "брошено";
-        background: #ef5350;
-    }*/
+#profiles_show .cc-favourites .b-catalog_entry.planned .image-decor::before,
+#profiles_show .cc-favourites .b-catalog_entry.watching .image-decor::before,
+#profiles_show .cc-favourites .b-catalog_entry.completed .image-decor::before,
+#profiles_show .cc-favourites .b-catalog_entry.rewatching .image-decor::before,
+#profiles_show .cc-favourites .b-catalog_entry.on_hold .image-decor::before,
+#profiles_show .cc-favourites .b-catalog_entry.dropped .image-decor::before {
+    font-family: "Arial", sans-serif !important;
+    text-transform: uppercase;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    height: 12px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 transparent;
+    color: #fff;
+    font-size: 9px;
+    line-height: 1.5;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-shadow: 0 1px 2px #000;
+}
+#profiles_show .cc-favourites .b-catalog_entry.planned .image-decor::after,
+#profiles_show .cc-favourites .b-catalog_entry.watching .image-decor::after,
+#profiles_show .cc-favourites .b-catalog_entry.completed .image-decor::after,
+#profiles_show .cc-favourites .b-catalog_entry.rewatching .image-decor::after,
+#profiles_show .cc-favourites .b-catalog_entry.on_hold .image-decor::after,
+#profiles_show .cc-favourites .b-catalog_entry.dropped .image-decor::after {
+    display: none;
+}
+#profiles_show .cc-favourites .b-catalog_entry.planned .image-decor::before {
+    content: "в планах";
+    background: rgba(43, 122, 227, 0.95);
+}
+#profiles_show .cc-favourites .b-catalog_entry.watching .image-decor::before {
+    content: "смотрю";
+    background: rgba(79, 145, 232, 0.95);
+}
+#profiles_show .cc-favourites .b-catalog_entry.rewatching .image-decor::before {
+    content: "пересматриваю";
+    background: rgba(79, 145, 232, 0.95);
+}
+#profiles_show .cc-favourites .b-catalog_entry.completed .image-decor::before {
+    content: "просмотрено";
+    background: rgba(64, 191, 117, 0.95);
+}
+#profiles_show .cc-favourites .b-catalog_entry.on_hold .image-decor::before {
+    content: "отложено";
+    background: #757575;
+}
+#profiles_show .cc-favourites .b-catalog_entry.dropped .image-decor::before {
+    content: "брошено";
+    background: #ef5350;
+}
 
     
     
