@@ -6,7 +6,7 @@
     #profiles_show .Person-1 {
         position: relative;
         max-height: 1px;
-        padding-bottom: 11.58%;
+        padding-bottom: 11.11%;
     }
     body#profiles_show .Person-1 .b-catalog_entry {
         box-shadow: none;
@@ -32,8 +32,8 @@
         width: calc(100% / 7) !important;
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
-        max-height: 24px !important;
-        padding-bottom: 105%;
+        max-height: 1px !important;
+        padding-bottom: 100%;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         background: linear-gradient(rgba(255, 0, 0, 0.33) 0%, rgba(0, 163, 245, 0.3) 100%);
         margin: 0 1.45%;
