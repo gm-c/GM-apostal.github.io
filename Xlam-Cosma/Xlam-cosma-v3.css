@@ -6,7 +6,7 @@
     #profiles_show .Person-1 {
         position: relative;
         max-height: 1px;
-        padding-bottom: 11.11%;
+        padding-bottom: 8.625%;
     }
     body#profiles_show .Person-1 .b-catalog_entry {
         box-shadow: none;
@@ -29,7 +29,7 @@
         padding: 0;
         max-width: none;
         background: none;
-        width: calc(100% / 7) !important;
+        width: calc(100% / 9) !important;
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
         max-height: 1px !important;
@@ -68,19 +68,16 @@
         opacity: 0;
     }
     #profiles_show .Person-1:nth-child(2) .c-column {
-        left: calc(15% - 7.8%);
+        left: calc(15% - 9.32%);
     }
     #profiles_show .Person-1:nth-child(3) .c-column {
-        left: calc(15% - 0.65%);
+        left: calc(15% - 3.65%);
     }
     #profiles_show .Person-1:nth-child(4) .c-column {
-        left: calc(30% - 8.5%);
+        left: calc(25% - 8%);
     }
     #profiles_show .Person-1:nth-child(5) .c-column {
-        left: calc(15% - 0.65%);
-    }
-    #profiles_show .Person-1:nth-child(6) .c-column {
-        left: calc(15% - 7.8%);
+        left: calc(35% - 1.3%);
     }
     #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
