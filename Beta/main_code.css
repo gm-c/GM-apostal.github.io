@@ -2120,7 +2120,12 @@
         display: none;
     }
 
-    #profiles_show .b-catalog_entry.planned .image-decor::before,
+    
+    
+    
+    
+    
+    /*#profiles_show .b-catalog_entry.planned .image-decor::before,
     #profiles_show .b-catalog_entry.watching .image-decor::before,
     #profiles_show .b-catalog_entry.completed .image-decor::before,
     #profiles_show .b-catalog_entry.rewatching .image-decor::before,
@@ -2176,8 +2181,14 @@
     #profiles_show .b-catalog_entry.dropped .image-decor::before {
         content: "брошено";
         background: #ef5350;
-    }
+    }*/
 
+    
+    
+    
+    
+    
+    
     #profiles_show .b-height_shortener .shade {
         /*Кнопка развернуть-Свернуть*/
         background: none;
