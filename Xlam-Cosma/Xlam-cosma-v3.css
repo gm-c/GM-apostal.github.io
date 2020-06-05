@@ -105,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1450px) {
     #profiles_show .Person-1 .b-catalog_entry .cover .title.two_lined {
         display: none;
     }
