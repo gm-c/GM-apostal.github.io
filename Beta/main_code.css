@@ -2123,7 +2123,7 @@
     
     
     
-    
+            /*Заменить иконки - убрать с брошена, Смотрю,Просмотрено, ИТД*/
     
     /*#profiles_show .b-catalog_entry.planned .image-decor::before,
     #profiles_show .b-catalog_entry.watching .image-decor::before,
@@ -2131,7 +2131,6 @@
     #profiles_show .b-catalog_entry.rewatching .image-decor::before,
     #profiles_show .b-catalog_entry.on_hold .image-decor::before,
     #profiles_show .b-catalog_entry.dropped .image-decor::before {
-        /*Заменить иконки - убрать с брошена, Смотрю,Просмотрено, ИТД*/
         font-family: "Arial", sans-serif !important;
         text-transform: uppercase;
         top: 0 !important;
