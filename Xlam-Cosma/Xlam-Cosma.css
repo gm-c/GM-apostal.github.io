@@ -165,22 +165,27 @@
         box-shadow: none;
     }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
       #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 3)!important;
-    }
-}
-@media screen and (min-width: 1150px) {
-      #profiles_show .Animes_Mangas .c-column {
-        width: calc(100% / 4)!important;
-  }
+     }
        #profiles_show .Blok-0 {
          white-space: normal;
-         overflow-y: inherit;
+         overflow-y: inherit;    
+    }
+}
+@media screen and (min-width: 1200px) {
+      #profiles_show .Animes_Mangas .c-column {
+        width: calc(100% / 4)!important;
     }
 }
 @media screen and (min-width: 1598px) {
       #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 5)!important;
+    }
+}
+@media screen and (min-width: 1900px) {
+      #profiles_show .Animes_Mangas .c-column {
+        width: calc(100% / 6)!important;
     }
 }
