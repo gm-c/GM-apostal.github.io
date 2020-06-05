@@ -22,7 +22,7 @@
     #profiles_show .Animes_Mangas .c-column {
         display: inline-block;
         max-width: none;
-        width: calc(100% / 2) !important;
+        width: calc(100% / 3) !important;
         margin: 0 0 0 0 !important;
         clear: none !important;
         float: none !important;
@@ -181,7 +181,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
     #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 3) !important;
     }
