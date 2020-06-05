@@ -29,7 +29,7 @@
         z-index: 3;
         background: none;
         box-shadow: none;
-        padding: 0;
+        padding: 0.3rem;
         overflow: hidden;
     }
     #profiles_show .Animes_Mangas .b-catalog_entry .cover .title {
