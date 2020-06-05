@@ -191,19 +191,18 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 4) !important;
     }
 }
-
-@media screen and (min-width: 1598px) {
+@media screen and (min-width: 1200px) {
     #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 5) !important;
     }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1560px) {
     #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 6) !important;
     }
