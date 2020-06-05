@@ -1,9 +1,9 @@
-@media screen and (min-width: 80px) {
- .Blok-2 {
+@media screen and (min-width: 768px) {
+    #profiles_show .Blok-2 {
         display: block;
         padding: 1% 0 5% 0;
     }
- .Person-1 {
+    #profiles_show .Person-1 {
         position: relative;
         max-height: 1px;
         padding-bottom: 11.58%;
@@ -13,7 +13,7 @@
         transition: none;
         transform: none;
     }
- .Person-1 .b-catalog_entry .cover .image-cutter img {
+    #profiles_show .Person-1 .b-catalog_entry .cover .image-cutter img {
         position: absolute;
         z-index: -1;
         transition: none;
@@ -21,27 +21,27 @@
         opacity: 0;
         visibility: hidden;
     }
-.Person-1 .c-column {
+    #profiles_show .Person-1 .c-column {
         display: inline-block;
         margin: 0 !important;
-        float: none!important;
-        clear: none!important;
+        float: none !important;
+        clear: none !important;
         padding: 0;
         max-width: none;
         background: none;
-        width: calc(100% / 7)!important;
+        width: calc(100% / 7) !important;
     }
- .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
+    #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
         max-height: 24px !important;
         padding-bottom: 105%;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         background: linear-gradient(rgba(255, 0, 0, 0.33) 0%, rgba(0, 163, 245, 0.3) 100%);
         margin: 0 1.45%;
     }
-     .Person-1 .c-column:hover .image-decor .image-cutter {
+    #profiles_show .Person-1 .c-column:hover .image-decor .image-cutter {
         box-shadow: none;
     }
-     .Person-1 .b-catalog_entry .cover .title.two_lined {
+    #profiles_show .Person-1 .b-catalog_entry .cover .title.two_lined {
         position: absolute;
         display: grid;
         align-items: center;
@@ -64,27 +64,27 @@
         transition: opacity 0.28s ease;
         -webkit-transition: opacity 0.28s ease;
     }
-     .Person-1 .c-column:hover> .cover .title {
+    #profiles_show .Person-1 .c-column:hover > .cover .title {
         opacity: 0;
-    }  
-       .Person-1:nth-child(2) .c-column {
+    }
+    #profiles_show .Person-1:nth-child(2) .c-column {
         left: calc(15% - 7.8%);
     }
-     .Person-1:nth-child(3) .c-column {
+    #profiles_show .Person-1:nth-child(3) .c-column {
         left: calc(15% - 0.65%);
     }
-       .Person-1:nth-child(4) .c-column {
+    #profiles_show .Person-1:nth-child(4) .c-column {
         left: calc(30% - 8.5%);
     }
-         .Person-1:nth-child(5) .c-column {
+    #profiles_show .Person-1:nth-child(5) .c-column {
         left: calc(15% - 0.65%);
     }
-          .Person-1:nth-child(6) .c-column {
+    #profiles_show .Person-1:nth-child(6) .c-column {
         left: calc(15% - 7.8%);
     }
-   .Person-1 .b-catalog_entry a .image-cutter::after {
+    #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
-        content: '';
+        content: "";
         display: flex;
         top: 0;
         bottom: 0;
@@ -99,17 +99,17 @@
         pointer-events: none;
         image-rendering: auto;
         box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
-        transition: box-shadow .45s ease;
-        -webkit-transition: box-shadow .45s ease;
+        transition: box-shadow 0.45s ease;
+        -webkit-transition: box-shadow 0.45s ease;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     }
- .Person-1 .b-catalog_entry:hover > a .image-cutter::after {
+    #profiles_show .Person-1 .b-catalog_entry:hover > a .image-cutter::after {
         box-shadow: none;
     }
 }
 
 @media screen and (max-width: 980px) {
- .Person-1 .b-catalog_entry .cover .title.two_lined {
+    #profiles_show .Person-1 .b-catalog_entry .cover .title.two_lined {
         display: none;
     }
 }
