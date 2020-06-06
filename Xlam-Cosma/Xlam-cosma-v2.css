@@ -124,3 +124,8 @@
         width: calc(100% / 6) !important;
     }
 }
+@media screen and (min-width: 1900px) {
+        #profiles_show .Person-0 .c-column {
+        width: calc(100% / 7) !important;
+    }
+}
