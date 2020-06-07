@@ -6,7 +6,7 @@
     #profiles_show .Person-1 {
         position: relative;
         max-height: 1px;
-        padding-bottom: 8.625%;
+        padding-bottom: 8.6%;
     }
     body#profiles_show .Person-1 .b-catalog_entry {
         box-shadow: none;
@@ -68,16 +68,16 @@
         opacity: 0;
     }
     #profiles_show .Person-1:nth-child(2) .c-column {
-        left: calc(15% - 9.32%);
+        left: calc(15% - 9.39%);
     }
     #profiles_show .Person-1:nth-child(3) .c-column {
-        left: calc(15% - 3.65%);
+        left: calc(15% - 3.8%);
     }
     #profiles_show .Person-1:nth-child(4) .c-column {
-        left: calc(25% - 8%);
+        left: calc(25% - 8.21%);
     }
     #profiles_show .Person-1:nth-child(5) .c-column {
-        left: calc(35% - 1.3%);
+        left: calc(35% - 1.49%);
     }
     #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
@@ -89,8 +89,8 @@
         right: 0;
         margin: auto;
         z-index: 10;
-        width: calc(100% - 8px);
-        height: calc(100% - 8px);
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
         border-radius: 0;
         background-repeat: no-repeat !important;
         pointer-events: none;
