@@ -1,0 +1,348 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .p-animes_collection-index .menu-slide-outer.x199 .l-menu,
+    .p-animes_collection-index.x1000 .menu-slide-outer.x199 .l-menu:nth-child(2n) {
+        position: absolute;
+        margin: auto;
+        width: 98%;
+        top: auto;
+        left: 0;
+        right: 0;
+    }
+    .p-animes_collection-index [data-base_path="/animes"],
+    .p-animes_collection-index [data-base_path="/mangas"],
+    .p-animes_collection-index [data-base_path="/ranobe"] {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        padding: 0.3125rem;
+        border-radius: 0.4rem;
+        float: left;
+        overflow: hidden;
+    }
+    .p-animes_collection-index .menu-slide-outer.x199 .l-content {
+        width: 75.7%;
+        float: left;
+        margin: 18.1rem 0 1% 0;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .p-animes_collection-index .block {
+        display: inline-block;
+        width: -webkit-calc(100% / 4 - 0.1 * 0.1em - 1 * 0.6%);
+        margin: 03px 0.3% 3px 0.3% !important;
+        height: 8.1875rem;
+        float: left;
+        padding: 0.3125rem;
+        border-radius: 0.4rem;
+        box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.13);
+        overflow-x: hidden;
+        background: rgba(var(--hover-bottoms-1), 0.25);
+    }
+    .p-animes_collection-index .b-block_list li {
+        display: inline-block;
+        width: 100%;
+        margin: 1px 0 2px 1% !important;
+        float: left;
+        border-radius: 0.3rem;
+        background: rgba(var(--hover-bottoms-1), 0.24);
+        box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.13);
+    }
+    .p-animes_collection-index .b-block_list li.selected {
+        background: rgba(var(--shadows-color), 0.15);
+        border-radius: 10px;
+    }
+    .p-animes_collection-index.x1200 .cc-entries > .c-column,
+    .p-mangas_collection-index.x1200 .cc-entries > .c-column,
+    .p-recommendations-index.x1200 .cc-entries > .c-column,
+    .p-userlist_comparer-show.x1200 .cc-entries > .c-column,
+    .p-animes_collection-index.x1200 .cc-entries > .c-column,
+    .p-mangas_collection-index.x1200 .cc-entries > .c-column,
+    .p-recommendations-index.x1200 .cc-entries > .c-column,
+    .p-userlist_comparer-show.x1200 .cc-entries > .c-column,
+    .p-animes_collection-index.x1000 .cc-entries > .c-column,
+    .p-mangas_collection-index.x1000 .cc-entries > .c-column,
+    .p-recommendations-index.x1000 .cc-entries > .c-column,
+    .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
+        display: inline-block;
+        width: -webkit-calc(100% / 6 - 0.1 * 0.1em - 1 * 1%)!important;
+        margin: 0 0.5% 25px 0.5% !important;
+        padding: 3px!important;
+        float: none !important;
+    }
+    .p-animes_collection-index.x1200 .cc-entries > .c-column:nth-child(7n),
+    .p-mangas_collection-index.x1200 .cc-entries > .c-column:nth-child(7n),
+    .p-recommendations-index.x1200 .cc-entries > .c-column:nth-child(7n),
+    .p-userlist_comparer-show.x1200 .cc-entries > .c-column:nth-child(7n),
+    .p-animes_collection-index.x1000 .cc-entries > .c-column:nth-child(7n),
+    .p-mangas_collection-index.x1000 .cc-entries > .c-column:nth-child(7n),
+    .p-recommendations-index.x1000 .cc-entries > .c-column:nth-child(7n),
+    .p-userlist_comparer-show.x1000 .cc-entries > .c-column:nth-child(7n) {
+        float: none !important;
+        display: none;
+    }
+    .p-animes_collection-index .b-catalog_entry .cover .image-cutter img {
+        position: absolute;
+        top: 0;
+    }
+    .p-animes_collection-index .b-catalog_entry .cover .image-cutter::before {
+        content: "";
+        display: block;
+        padding-bottom: 155.5%;
+    }
+    .p-animes_collection-index .block.genres > .b-spoiler label,
+    .p-animes_collection-index .block.anime-params-block .b-spoiler label {
+        display: none;
+    }
+    .p-animes_collection-index .block.genres > .b-spoiler .content,
+    .p-animes_collection-index .block.anime-params-block .b-spoiler .content {
+        display: block;
+    }
+    .p-animes_collection-index .m10 {
+        margin-bottom: 5px !important;
+    }
+    .p-animes_collection-index div.block > .m5 {
+        line-height: 1.5;
+        height: 24px;
+    }
+    .p-animes_collection-index .b-spoiler .content .inner,
+    .p-animes_collection-index .b-spoiler .content .inner-prgrph {
+        border-bottom: 0;
+        border-radius: 0;
+        padding: 0;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list li:before,
+    .p-animes_collection-index .b-collection-filters .b-block_list li:before {
+        margin-right: 10px;
+        margin-left: 1px;
+    }
+    .p-animes_collection-index .b-collection-filters .b-block_list li.selected:before {
+        margin-bottom: 0;
+    }
+    .p-animes_collection-index [data-base_path="/animes"] > .block:nth-child(0n + 3),
+    .p-animes_collection-index [data-base_path="/animes"] > .block.scores,
+    .p-animes_collection-index [data-base_path="/animes"] > .block.durations,
+    .p-animes_collection-index [data-base_path="/mangas"] > .block:nth-child(0n + 3) {
+        display: none;
+    }
+    .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.scores.anime-params [data-value="6"],
+    .p-animes_collection-index [data-base_path="/ranobe"] .b-block_list.scores.anime-params [data-value="6"],
+    .p-animes_collection-index [data-base_path="/animes"] .b-block_list.orders.anime-params.subcontent [data-value="id_desc"],
+    .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.orders.anime-params.subcontent [data-value="id_desc"],
+    .p-animes_collection-index [data-base_path="/ranobe"] .b-block_list.orders.anime-params.subcontent [data-value="id_desc"],
+    .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.kinds.anime-params [data-value="doujin"] {
+        margin-left: 0 !important;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list li::before,
+    .p-animes_collection-index .b-collection-filters .b-block_list li::before {
+        line-height: 1;
+        font-size: 17px;
+    }
+
+    .p-animes_collection-index .b-block_list {
+        width: 100%;
+    }
+    .p-animes_collection-index .b-block_list li {
+        font-size: 12px;
+        line-height: 20.34px;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list li > input,
+    .p-animes_collection-index .b-collection-filters .b-block_list li > input {
+        pointer-events: none;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list .filter::before,
+    .p-animes_collection-index .b-collection-filters .b-block_list .filter::before {
+        padding-right: 24px;
+    }
+    .p-animes_collection-index .item-sign::before,
+    .p-animes_collection-index .item-sign::after {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: -0.1rem;
+        right: 0.5rem;
+        z-index: 3;
+        line-height: 20px;
+        font-size: 12px;
+        background: rgba(var(--menu-back), 0.7);
+        border-radius: 50%;
+    }
+    .p-animes_collection-index .menu-toggler.ipad-expanded,
+    .p-animes_collection-index .l-page .menu-toggler {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .p-animes_collection-index .menu-slide-outer.x199 .l-menu,
+    .p-animes_collection-index.x1000 .menu-slide-outer.x199 .l-menu:nth-child(2n) {
+        position: absolute;
+        margin: auto;
+        width: 98%;
+        top: auto;
+        left: 0;
+        right: 0;
+    }
+    .p-animes_collection-index [data-base_path="/animes"],
+    .p-animes_collection-index [data-base_path="/mangas"],
+    .p-animes_collection-index [data-base_path="/ranobe"] {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        padding: 0.3125rem;
+        border-radius: 0.4rem;
+        float: left;
+        overflow: hidden;
+    }
+    .p-animes_collection-index .menu-slide-outer.x199 .l-content {
+        width: 100%;
+        float: left;
+        margin: 18.1rem 0 1% 0;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .p-animes_collection-index .block {
+        display: inline-block;
+        width: -webkit-calc(100% / 4 - 0.1 * 0.1em - 1 * 0.6%);
+        margin: 03px 0.3% 3px 0.3% !important;
+        height: 8.1875rem;
+        float: left;
+        padding: 0.3125rem;
+        border-radius: 0.4rem;
+        box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.13);
+        overflow-x: hidden;
+        background: rgba(var(--hover-bottoms-1), 0.25);
+    }
+    .p-animes_collection-index .b-block_list li {
+        display: inline-block;
+        width: 49%;
+        margin: 1px 0 2px 1% !important;
+        float: left;
+        border-radius: 0.3rem;
+        background: rgba(var(--hover-bottoms-1), 0.24);
+        box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.13);
+    }
+    .p-animes_collection-index .b-block_list li.selected {
+        background: rgba(var(--shadows-color), 0.15);
+        border-radius: 10px;
+    }
+    .p-animes_collection-index.x1200 .cc-entries > .c-column,
+    .p-mangas_collection-index.x1200 .cc-entries > .c-column,
+    .p-recommendations-index.x1200 .cc-entries > .c-column,
+    .p-userlist_comparer-show.x1200 .cc-entries > .c-column,
+    .p-animes_collection-index.x1200 .cc-entries > .c-column,
+    .p-mangas_collection-index.x1200 .cc-entries > .c-column,
+    .p-recommendations-index.x1200 .cc-entries > .c-column,
+    .p-userlist_comparer-show.x1200 .cc-entries > .c-column,
+    .p-animes_collection-index.x1000 .cc-entries > .c-column,
+    .p-mangas_collection-index.x1000 .cc-entries > .c-column,
+    .p-recommendations-index.x1000 .cc-entries > .c-column,
+    .p-userlist_comparer-show.x1000 .cc-entries > .c-column {
+        display: inline-block;
+        width: -webkit-calc(100% / 8 - 0.1 * 0.1em - 1 * 1%)!important;
+        margin: 0 0.5% 25px 0.5% !important;
+        padding: 3px!important;
+        float: none !important;
+    }
+    .p-animes_collection-index.x1200 .cc-entries > .c-column:nth-child(5n),
+    .p-mangas_collection-index.x1200 .cc-entries > .c-column:nth-child(5n),
+    .p-recommendations-index.x1200 .cc-entries > .c-column:nth-child(5n),
+    .p-userlist_comparer-show.x1200 .cc-entries > .c-column:nth-child(5n),
+    .p-animes_collection-index.x1000 .cc-entries > .c-column:nth-child(5n),
+    .p-mangas_collection-index.x1000 .cc-entries > .c-column:nth-child(5n),
+    .p-recommendations-index.x1000 .cc-entries > .c-column:nth-child(5n),
+    .p-userlist_comparer-show.x1000 .cc-entries > .c-column:nth-child(5n) {
+        float: none !important;
+        display: none;
+    }
+    .p-animes_collection-index .b-catalog_entry .cover .image-cutter img {
+        position: absolute;
+        top: 0;
+    }
+    .p-animes_collection-index .b-catalog_entry .cover .image-cutter::before {
+        content: "";
+        display: block;
+        padding-bottom: 155.5%;
+    }
+    .p-animes_collection-index .block.genres > .b-spoiler label,
+    .p-animes_collection-index .block.anime-params-block .b-spoiler label {
+        display: none;
+    }
+    .p-animes_collection-index .block.genres > .b-spoiler .content,
+    .p-animes_collection-index .block.anime-params-block .b-spoiler .content {
+        display: block;
+    }
+    .p-animes_collection-index .m10 {
+        margin-bottom: 5px !important;
+    }
+    .p-animes_collection-index div.block > .m5 {
+        line-height: 1.5;
+        height: 24px;
+    }
+    .p-animes_collection-index .b-spoiler .content .inner,
+    .p-animes_collection-index .b-spoiler .content .inner-prgrph {
+        border-bottom: 0;
+        border-radius: 0;
+        padding: 0;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list li:before,
+    .p-animes_collection-index .b-collection-filters .b-block_list li:before {
+        margin-right: 10px;
+        margin-left: 1px;
+    }
+    .p-animes_collection-index .b-collection-filters .b-block_list li.selected:before {
+        margin-bottom: 0;
+    }
+    .p-animes_collection-index [data-base_path="/animes"] > .block:nth-child(0n + 3),
+    .p-animes_collection-index [data-base_path="/animes"] > .block.scores,
+    .p-animes_collection-index [data-base_path="/animes"] > .block.durations,
+    .p-animes_collection-index [data-base_path="/mangas"] > .block:nth-child(0n + 3) {
+        display: none;
+    }
+    .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.scores.anime-params [data-value="6"],
+    .p-animes_collection-index [data-base_path="/ranobe"] .b-block_list.scores.anime-params [data-value="6"],
+    .p-animes_collection-index [data-base_path="/animes"] .b-block_list.orders.anime-params.subcontent [data-value="id_desc"],
+    .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.orders.anime-params.subcontent [data-value="id_desc"],
+    .p-animes_collection-index [data-base_path="/ranobe"] .b-block_list.orders.anime-params.subcontent [data-value="id_desc"],
+    .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.kinds.anime-params [data-value="doujin"] {
+        margin-left: 30% !important;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list li::before,
+    .p-animes_collection-index .b-collection-filters .b-block_list li::before {
+        line-height: 1;
+        font-size: 17px;
+    }
+    .p-animes_collection-index .b-block_list {
+        width: 100%;
+    }
+    .p-animes_collection-index .b-block_list li {
+        font-size: 12px;
+        line-height: 20.34px;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list li > input,
+    .p-animes_collection-index .b-collection-filters .b-block_list li > input {
+        pointer-events: none;
+    }
+    .p-animes_collection-index .b-collection-filters .block-list .filter::before,
+    .p-animes_collection-index .b-collection-filters .b-block_list .filter::before {
+        padding-right: 24px;
+    }
+    .p-animes_collection-index .item-sign::before,
+    .p-animes_collection-index .item-sign::after {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: -0.1rem;
+        right: 0.5rem;
+        z-index: 3;
+        line-height: 20px;
+        font-size: 12px;
+        background: rgba(var(--menu-back), 0.7);
+        border-radius: 50%;
+    }
+}
