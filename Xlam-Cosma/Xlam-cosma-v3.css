@@ -1,12 +1,13 @@
 @media screen and (min-width: 768px) {
     #profiles_show .Blok-2 {
         display: block;
-        padding: 1% 0 5% 0;
+        padding: 0 0 4% 0;
     }
     #profiles_show .Person-1 {
         position: relative;
-        max-height: 1px;
-        padding-bottom: 8.6%;
+        max-height: 0;
+        height: 0;
+        padding-bottom: 11.88%;
     }
     body#profiles_show .Person-1 .b-catalog_entry {
         box-shadow: none;
@@ -21,6 +22,9 @@
         opacity: 0;
         visibility: hidden;
     }
+    #profiles_show .Person-1 .b-catalog_entry .cover .image-decor {
+        margin: -3.85%;
+    }
     #profiles_show .Person-1 .c-column {
         display: inline-block;
         margin: 0 !important;
@@ -29,14 +33,17 @@
         padding: 0;
         max-width: none;
         background: none;
-        width: calc(100% / 9) !important;
+        width: calc(100% / 7) !important;
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
-        max-height: 1px !important;
+        max-height: 0 !important;
+        height: 0;
         padding-bottom: 100%;
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        background: linear-gradient(rgba(255, 0, 0, 0.33) 0%, rgba(0, 163, 245, 0.3) 100%);
-        margin: 0 1.45%;
+        background: url("//i.ibb.co/2WZqD3C/tv011.gif"), url("//img-fotki.yandex.ru/get/176331/222405017.193/0_133290_3a93113f_orig");
+        background-size: contain;
+        /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+        clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        /*background: linear-gradient(rgba(255, 0, 0, 0.33) 0%, rgba(0, 163, 245, 0.3) 100%);*/
     }
     #profiles_show .Person-1 .c-column:hover .image-decor .image-cutter {
         box-shadow: none;
@@ -67,17 +74,23 @@
     #profiles_show .Person-1 .c-column:hover > .cover .title {
         opacity: 1;
     }
+    #profiles_show .Person-1:nth-child(1) .c-column {
+        left: calc(35% - 13.6%);
+    }
     #profiles_show .Person-1:nth-child(2) .c-column {
-        left: calc(15% - 9.39%);
+        left: calc(15% - 15%);
     }
     #profiles_show .Person-1:nth-child(3) .c-column {
-        left: calc(15% - 3.8%);
+        left: calc(15% - 7.8%);
     }
     #profiles_show .Person-1:nth-child(4) .c-column {
-        left: calc(25% - 8.21%);
+        left: calc(15% - 15%);
     }
     #profiles_show .Person-1:nth-child(5) .c-column {
-        left: calc(35% - 1.49%);
+        left: calc(25% - 17.8%);
+    }
+    #profiles_show .Person-1:nth-child(6) .c-column {
+        left: calc(35% - 6.3%);
     }
     #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
@@ -89,8 +102,8 @@
         right: 0;
         margin: auto;
         z-index: 10;
-        width: calc(100% - 5px);
-        height: calc(100% - 5px);
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
         border-radius: 0;
         background-repeat: no-repeat !important;
         pointer-events: none;
@@ -98,9 +111,11 @@
         box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
         transition: box-shadow 0.45s ease;
         -webkit-transition: box-shadow 0.45s ease;
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
     }
     #profiles_show .Person-1 .b-catalog_entry:hover > a .image-cutter::after {
         box-shadow: none;
+        filter: blur(4px);
     }
 }
