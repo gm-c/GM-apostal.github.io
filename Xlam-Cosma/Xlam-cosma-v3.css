@@ -1,10 +1,11 @@
 @media screen and (min-width: 768px) {
     #profiles_show .Blok-2 {
         display: block;
-        padding: 0 0 4% 0;
+        padding: 0 0 4%;
     }
     #profiles_show .Person-1 {
         position: relative;
+        pointer-events: none;
         height: 0;
         padding-bottom: 11.88%;
     }
@@ -14,11 +15,7 @@
         transform: none;
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-cutter img {
-        position: absolute;
-        z-index: -1;
-        transition: none;
         display: none;
-        opacity: 0;
         visibility: hidden;
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor {
@@ -33,7 +30,11 @@
         padding: 0;
         max-width: none;
         background: none;
+        pointer-events: none;
         width: calc(100% / 7) !important;
+    }
+    #profiles_show .Person-1 .c-column .image-cutter {
+        pointer-events: auto;
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
         max-height: 0 !important;
@@ -41,9 +42,7 @@
         padding-bottom: 100%;
         background: url("//i.ibb.co/2WZqD3C/tv011.gif"), url("//img-fotki.yandex.ru/get/176331/222405017.193/0_133290_3a93113f_orig");
         background-size: contain;
-        /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
         clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-        /*background: linear-gradient(rgba(255, 0, 0, 0.33) 0%, rgba(0, 163, 245, 0.3) 100%);*/
     }
     #profiles_show .Person-1 .c-column:hover .image-decor .image-cutter {
         box-shadow: none;
@@ -94,8 +93,8 @@
     }
     #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
-        content: "";
         display: flex;
+        content: "";
         top: 0;
         bottom: 0;
         left: 0;
@@ -112,39 +111,40 @@
         transition: box-shadow 0.45s ease;
         -webkit-transition: box-shadow 0.45s ease;
         clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-        /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
     }
     #profiles_show .Person-1 .b-catalog_entry:hover > a .image-cutter::after {
         box-shadow: none;
         filter: blur(4px);
     }
     #profiles_show .Person-1 .c-column .image-decor::after {
-        font-size: 16px;
         position: absolute;
-        content: "";
         display: flex;
+        content: "";
         top: 1.15rem;
         width: 100%;
         height: 100%;
+        font-size: 16px;
         color: #bbb;
         justify-content: center;
         align-items: center;
+        pointer-events: none;
         opacity: 0;
         transition: opacity 0.2s;
         -webkit-transition: opacity 0.2s;
         text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
     }
     #profiles_show .Person-1 .c-column .image-decor::before {
-        font-size: 32px;
         position: absolute;
-        content: "";
         display: flex;
+        content: "";
+        font-size: 32px;
         color: #bbb;
         bottom: 1.25rem;
         width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
+        pointer-events: none;
         z-index: 1;
         opacity: 0;
         text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
