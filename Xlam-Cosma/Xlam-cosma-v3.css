@@ -20,6 +20,7 @@
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor {
         margin: -3.85%;
+        z-index: 1;
         transition: none;
     }
     #profiles_show .Person-1 .c-column {
@@ -146,7 +147,7 @@
         justify-content: center;
         align-items: center;
         pointer-events: none;
-        z-index: 1;
+        z-index: 2;
         opacity: 0;
         text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
         transition: opacity 0.2s;
