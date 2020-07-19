@@ -34,16 +34,13 @@
         pointer-events: none;
         width: calc(100% / 7) !important;
     }
-    #profiles_show .Person-1 .c-column .image-cutter {
-        pointer-events: auto;
-    }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
-        max-height: 0 !important;
         height: 0;
         padding-bottom: 100%;
-        background: url("//i.ibb.co/2WZqD3C/tv011.gif"), url("//img-fotki.yandex.ru/get/176331/222405017.193/0_133290_3a93113f_orig");
-        background-size: contain;
+        background: url("//i.ibb.co/2WZqD3C/tv011.gif"), url("//i.imgur.com/pOYKfnt.gif");
         clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        background-size: contain;
+        pointer-events: auto;
     }
     #profiles_show .Person-1 .c-column:hover .image-decor .image-cutter {
         box-shadow: none;
@@ -91,6 +88,9 @@
     }
     #profiles_show .Person-1:nth-child(6) .c-column {
         left: calc(35% - 6.3%);
+    }
+    .Person-1 .image-cutter::after {
+        background: url("//ia.wampi.ru/2020/07/19/nyh.jpg") center 20% / cover, url("//i.imgur.com/qnLMaeC.jpg") center 20% / cover;
     }
     #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
