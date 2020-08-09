@@ -34,7 +34,7 @@
     #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
         max-height: 24px !important;
         max-width: 100% !important;
-        padding: 0 0 50% 0;
+        padding: 0 0 140% 0;
         margin: 0;
         background: linear-gradient(transparent 0%, rgba(30, 63, 51, 0.4) 100%);
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
@@ -76,12 +76,13 @@
         right: 0;
         margin: auto;
         z-index: 10;
-        width: calc(100% - 6px);
-        height: calc(100% - 6px);
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
         border-radius: 0.4rem;
         pointer-events: none;
         image-rendering: auto;
-        background-repeat: no-repeat !important;
+        background-repeat: no-repeat;
+        background-color: #333;
         box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
         transition: box-shadow 0.45s ease;
         -webkit-transition: box-shadow 0.45s ease;
@@ -99,7 +100,7 @@
 
 @media screen and (min-width: 800px) {
     #profiles_show .Person-0 .c-column {
-        width: calc(100% / 3) !important;
+        width: calc(100% / 5) !important;
         }
     #profiles_show .Blok-1 {
         white-space: normal;
@@ -109,13 +110,13 @@
 
 @media screen and (min-width: 1024px) {
     #profiles_show .Person-0 .c-column {
-        width: calc(100% / 4) !important;
+        width: calc(100% / 7) !important;
     }
 }
 
 @media screen and (min-width: 1200px) {
     #profiles_show .Person-0 .c-column {
-        width: calc(100% / 5) !important;
+        width: calc(100% / 8) !important;
     }
 }
 
