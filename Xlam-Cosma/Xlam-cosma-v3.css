@@ -87,7 +87,7 @@
         left: calc(25% - 17.8%);
     }
     #profiles_show .Person-1:nth-child(6) .c-column {
-        left: calc(35% - 13.6%);
+        left: calc(0% - 0%);
     }
     .Person-1 .image-cutter::after {
         background: url("//ia.wampi.ru/2020/07/19/nyh.jpg") center 20% / cover, url("//i.imgur.com/qnLMaeC.jpg") center 20% / cover;
