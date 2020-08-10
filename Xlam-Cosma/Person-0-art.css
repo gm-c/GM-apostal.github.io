@@ -89,7 +89,7 @@
     background: url(//desu.shikimori.one/system/user_images/original/208335/706843.jpg) 10% 50% / 200%;
 }
 .Person-0 a[href*="/99661-"] .image-cutter::after {
-    background: url(//nyaa.shikimori.one/system/user_images/original/208335/1059790.jpg) center 15% / cover;
+    background: url(//nyaa.shikimori.one/system/user_images/original/208335/1059790.jpg) 35% 15% / cover;
 }
 .Person-0 a[href*="/9719-"] .image-cutter::after {
     background: url(//moe.shikimori.one/system/user_images/original/208335/1060487.jpg) 50% 53% / 135%;
@@ -109,6 +109,36 @@
 .Person-0 a[href*="/69411-"] .image-cutter::after {
     background: url(//nyaa.shikimori.one/system/user_images/original/208335/1060435.jpg) 25% 25% / 235%;
 }
-.Person-0 a[href*="/143196-"] .image-cutter::after {
-    background: url(//nyaa.shikimori.one/system/user_images/original/208335/1159640.jpg) 50% 50% / 125%;
+.Person-0 a[href*="/41374-"] .image-cutter::after {
+    background: url(//dere.shikimori.one/system/user_images/original/208335/1159679.jpg) 50% 12% / 165%;
+}
+.Person-0 a[href*="/75284-"] .image-cutter::after {
+    background: url(//nyaa.shikimori.one/system/user_images/original/208335/1159685.jpg) 90% 50% / 125%;
+}
+.Person-0 a[href*="/13390-"] .image-cutter::after {
+    background: url(//desu.shikimori.one/system/user_images/original/208335/1159688.jpg) 73% 15% / 200%;
+}
+.Person-0 a[href*="/55133-"] .image-cutter::after {
+    background: url(//nyaa.shikimori.one/system/user_images/original/208335/1159690.jpg) 73% 25% / 200%;
+}
+.Person-0 a[href*="/6043-"] .image-cutter::after {
+    background: url(//kawai.shikimori.one/system/user_images/original/208335/1159691.jpg) 47% 6% / 300%;
+}
+.Person-0 a[href*="/z37698-"] .image-cutter::after {
+    background: url(//desu.shikimori.one/system/user_images/original/208335/1159693.jpg) 30% 50% / 160%;
+}
+.Person-0 a[href*="/31418-"] .image-cutter::after {
+    background: url(//dere.shikimori.one/system/user_images/original/208335/1159694.jpg) 67% 35% / 260%;
+}
+.Person-0 a[href*="/z52723-"] .image-cutter::after {
+    background: url(//nyaa.shikimori.one/system/user_images/original/208335/1159695.jpg) 50% 25% / 180%;
+}
+.Person-0 a[href*="/20476-"] .image-cutter::after {
+    background: url(//moe.shikimori.one/system/user_images/original/208335/1159697.jpg) 47% 25% / 200%;
+}
+.Person-0 a[href*="/5190-"] .image-cutter::after {
+    background: url(//desu.shikimori.one/system/user_images/original/208335/1159703.jpg) 25% 25% / 250%;
+}
+.Person-0 a[href*="/48993-"] .image-cutter::after {
+    background: url(//kawai.shikimori.one/system/user_images/original/208335/1159711.jpg) 45% 15% / 250%;
 }
