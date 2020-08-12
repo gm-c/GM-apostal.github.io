@@ -32,7 +32,7 @@
         width: calc(100% / 3) !important;
     }
     #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
-        max-height: 0 !important;
+        max-height: 1px !important;
         max-width: 100% !important;
         padding: 0 0 140% 0;
         margin: 0;
