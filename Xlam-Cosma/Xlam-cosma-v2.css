@@ -32,7 +32,7 @@
         width: calc(100% / 3) !important;
     }
     #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
-        max-height: 24px !important;
+        max-height: 0 !important;
         max-width: 100% !important;
         padding: 0 0 140% 0;
         margin: 0;
@@ -120,14 +120,3 @@
         width: calc(100% / 8) !important;
     }
 }
-
-/*@media screen and (min-width: 1560px) {
-        #profiles_show .Person-0 .c-column {
-        width: calc(100% / 6) !important;
-    }
-}
-@media screen and (min-width: 1900px) {
-        #profiles_show .Person-0 .c-column {
-        width: calc(100% / 7) !important;
-    }
-}*/
