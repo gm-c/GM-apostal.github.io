@@ -1,99 +1,199 @@
 @media screen and (min-width: 768px) {
-    #profiles_show .Blok-1 {
-        display: block;
-        padding: 1% 0 0 0;
-        white-space: nowrap;
-        overflow-y: hidden;
-    }
-    #profiles_show .Person-0 {
-        position: relative;
-    }
-    body#profiles_show .Person-0 .b-catalog_entry {
-        box-shadow: none;
-        transition: none;
-        transform: none;
-    }
-    #profiles_show .Person-0 .b-catalog_entry .cover .image-cutter img {
-        position: absolute;
-        z-index: -1;
-        transition: none;
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-    #profiles_show .Person-0 .c-column {
-        display: inline-block;
-        margin: 0 !important;
-        float: none !important;
-        clear: none !important;
-        padding: 0.35rem;
-        max-width: none;
-        background: none;
-        width: calc(100% / 3) !important;
-    }
-    #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
-        max-height: 1px !important;
-        max-width: 100% !important;
-        padding: 0 0 140% 0;
-        margin: 0;
-        background-image: none;
-        background: url(/\x/i.ibb.co/2WZqD3C/tv011.gif), url(/\x/i.imgur.com/pOYKfnt.gif);
-        background-size: contain;
-        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
-        border-radius: 0.5rem;
-    }
-    #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined {
-        position: absolute;
-        display: grid;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        white-space: normal;
-        pointer-events: none;
-        margin: 0 auto;
-        padding: 0 1rem;
-        bottom: 1rem;
-        right: 0;
-        left: 0;
-        max-width: 90px;
-        height: 17px;
-        font-size: 11.5px;
-        text-shadow: 1px 0 2px rgba(0, 0, 0, 0.8), -1px 0 2px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.8), 0 -1px 2px rgba(0, 0, 0, 0.8);
-        z-index: 10;
-        opacity: 1;
-        background: none;
-        line-height: 1.6;
-        transition: opacity 0.28s ease;
-        -webkit-transition: opacity 0.28s ease;
-    }
-    #profiles_show .Person-0 .c-column:hover > .cover .title {
-        opacity: 0;
-    }
-    #profiles_show .Person-0 .b-catalog_entry a .image-cutter::after {
-        position: absolute;
-        content: "";
-        display: flex;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        z-index: 10;
-        width: calc(100% - 6px);
-        height: calc(100% - 6px);
-        border-radius: 0.4rem;
-        pointer-events: none;
-        image-rendering: auto;
-        background-repeat: no-repeat;
-        background-color: #333;
-        box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
-        transition: box-shadow 0.45s ease;
-        -webkit-transition: box-shadow 0.45s ease;
-    }
-    #profiles_show .Person-0 .b-catalog_entry:hover > a .image-cutter::after {
-        box-shadow: none;
-    }
-    #profiles_show .Person-0 .c-column .image-decor::after {
+  #profiles_show .Blok-1 {
+    display: block;
+    padding: 1% 0 0 0;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  #profiles_show .Person-0,
+  #profiles_show .Person-01,
+  #profiles_show .Person-02,
+  #profiles_show .Person-03,
+  #profiles_show .Person-04,
+  #profiles_show .Person-05,
+  #profiles_show .Person-06,
+  #profiles_show .Person-07,
+  #profiles_show .Person-08,
+  #profiles_show .Person-09,
+  #profiles_show .Person-010 {
+    position: relative;
+  }
+  body#profiles_show .Person-0 .b-catalog_entry,
+  body#profiles_show .Person-01 .b-catalog_entry,
+  body#profiles_show .Person-02 .b-catalog_entry,
+  body#profiles_show .Person-03 .b-catalog_entry,
+  body#profiles_show .Person-04 .b-catalog_entry,
+  body#profiles_show .Person-05 .b-catalog_entry,
+  body#profiles_show .Person-06 .b-catalog_entry,
+  body#profiles_show .Person-07 .b-catalog_entry,
+  body#profiles_show .Person-08 .b-catalog_entry,
+  body#profiles_show .Person-09 .b-catalog_entry,
+  body#profiles_show .Person-010 .b-catalog_entry {
+    box-shadow: none;
+    transition: none;
+    transform: none;
+  }
+  #profiles_show .Person-0 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-01 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-02 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-03 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-04 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-05 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-06 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-07 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-08 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-09 .b-catalog_entry .cover .image-cutter img,
+  #profiles_show .Person-010 .b-catalog_entry .cover .image-cutter img {
+    position: absolute;
+    z-index: -1;
+    transition: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #profiles_show .Person-0 .c-column,
+  #profiles_show .Person-01 .c-column,
+  #profiles_show .Person-02 .c-column,
+  #profiles_show .Person-03 .c-column,
+  #profiles_show .Person-04 .c-column,
+  #profiles_show .Person-05 .c-column,
+  #profiles_show .Person-06 .c-column,
+  #profiles_show .Person-07 .c-column,
+  #profiles_show .Person-08 .c-column,
+  #profiles_show .Person-09 .c-column,
+  #profiles_show .Person-010 .c-column {
+    display: inline-block;
+    margin: 0 !important;
+    float: none !important;
+    clear: none !important;
+    padding: 0.35rem;
+    max-width: none;
+    background: none;
+    width: calc(100% / 3) !important;
+  }
+  #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-01 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-02 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-03 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-04 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-05 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-06 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-07 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-08 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-09 .b-catalog_entry .cover .image-decor .image-cutter,
+  #profiles_show .Person-010 .b-catalog_entry .cover .image-decor .image-cutter {
+    max-height: 1px !important;
+    max-width: 100% !important;
+    padding: 0 0 140% 0;
+    margin: 0;
+    background-image: none;
+    background: url(/\x/i.ibb.co/2WZqD3C/tv011.gif), url(/\x/i.imgur.com/pOYKfnt.gif);
+    background-size: contain;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+  }
+  #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-01 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-02 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-03 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-04 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-05 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-06 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-07 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-08 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-09 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-010 .b-catalog_entry .cover .title.two_lined {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    white-space: normal;
+    pointer-events: none;
+    margin: 0 auto;
+    padding: 0 1rem;
+    bottom: 1rem;
+    right: 0;
+    left: 0;
+    max-width: 90px;
+    height: 17px;
+    font-size: 11.5px;
+    text-shadow: 1px 0 2px rgba(0, 0, 0, 0.8), -1px 0 2px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.8), 0 -1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    opacity: 1;
+    background: none;
+    line-height: 1.6;
+    transition: opacity 0.28s ease;
+    -webkit-transition: opacity 0.28s ease;
+  }
+  #profiles_show .Person-0 .c-column:hover > .cover .title,
+  #profiles_show .Person-01 .c-column:hover > .cover .title,
+  #profiles_show .Person-02 .c-column:hover > .cover .title,
+  #profiles_show .Person-03 .c-column:hover > .cover .title,
+  #profiles_show .Person-04 .c-column:hover > .cover .title,
+  #profiles_show .Person-05 .c-column:hover > .cover .title,
+  #profiles_show .Person-06 .c-column:hover > .cover .title,
+  #profiles_show .Person-07 .c-column:hover > .cover .title,
+  #profiles_show .Person-08 .c-column:hover > .cover .title,
+  #profiles_show .Person-09 .c-column:hover > .cover .title,
+  #profiles_show .Person-010 .c-column:hover > .cover .title {
+    opacity: 0;
+  }
+  #profiles_show .Person-0 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-01 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-02 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-03 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-04 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-05 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-06 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-07 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-08 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-09 .b-catalog_entry a .image-cutter::after,
+  #profiles_show .Person-010 .b-catalog_entry a .image-cutter::after {
+    position: absolute;
+    content: "";
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 0.4rem;
+    pointer-events: none;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-color: #333;
+    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.45s ease;
+    -webkit-transition: box-shadow 0.45s ease;
+  }
+  #profiles_show .Person-0 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-01 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-02 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-03 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-04 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-05 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-06 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-07 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-08 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-09 .b-catalog_entry:hover > a .image-cutter::after,
+  #profiles_show .Person-010 .b-catalog_entry:hover > a .image-cutter::after {
+    box-shadow: none;
+  }
+  #profiles_show .Person-0 .c-column .image-decor::after,
+  #profiles_show .Person-01 .c-column .image-decor::after,
+  #profiles_show .Person-02 .c-column .image-decor::after,
+  #profiles_show .Person-03 .c-column .image-decor::after,
+  #profiles_show .Person-04 .c-column .image-decor::after,
+  #profiles_show .Person-05 .c-column .image-decor::after,
+  #profiles_show .Person-06 .c-column .image-decor::after,
+  #profiles_show .Person-07 .c-column .image-decor::after,
+  #profiles_show .Person-08 .c-column .image-decor::after,
+  #profiles_show .Person-09 .c-column .image-decor::after,
+  #profiles_show .Person-010 .c-column .image-decor::after {
     position: absolute;
     display: grid;
     content: "";
@@ -117,10 +217,20 @@
     text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
     transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
-}
-#profiles_show .Person-0 .c-column:hover .image-decor::after {
+  }
+  #profiles_show .Person-0 .c-column:hover .image-decor::after,
+  #profiles_show .Person-01 .c-column:hover .image-decor::after,
+  #profiles_show .Person-02 .c-column:hover .image-decor::after,
+  #profiles_show .Person-03 .c-column:hover .image-decor::after,
+  #profiles_show .Person-04 .c-column:hover .image-decor::after,
+  #profiles_show .Person-05 .c-column:hover .image-decor::after,
+  #profiles_show .Person-06 .c-column:hover .image-decor::after,
+  #profiles_show .Person-07 .c-column:hover .image-decor::after,
+  #profiles_show .Person-08 .c-column:hover .image-decor::after,
+  #profiles_show .Person-09 .c-column:hover .image-decor::after,
+  #profiles_show .Person-010 .c-column:hover .image-decor::after {
     opacity: 1;
-}
+  }
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(1) .image-decor:nth-child(1)::after {content: "19 лет, Демон";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(2) .image-decor:nth-child(1)::after {content: "18 лет, Демон";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(3) .image-decor:nth-child(1)::after {content: "18 лет, Воплощение";}
@@ -170,7 +280,18 @@
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(47) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(48) .image-decor:nth-child(1)::after {content: "20 лет, Человек";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(49) .image-decor:nth-child(1)::after {content: "16 лет, Человек";}
-#profiles_show .Person-0 .c-column .image-decor::before {
+  
+  #profiles_show .Person-0 .c-column .image-decor::before,
+  #profiles_show .Person-01 .c-column .image-decor::before,
+  #profiles_show .Person-02 .c-column .image-decor::before,
+  #profiles_show .Person-03 .c-column .image-decor::before,
+  #profiles_show .Person-04 .c-column .image-decor::before,
+  #profiles_show .Person-05 .c-column .image-decor::before,
+  #profiles_show .Person-06 .c-column .image-decor::before,
+  #profiles_show .Person-07 .c-column .image-decor::before,
+  #profiles_show .Person-08 .c-column .image-decor::before,
+  #profiles_show .Person-09 .c-column .image-decor::before,
+  #profiles_show .Person-010 .c-column .image-decor::before {
     position: absolute;
     display: flex;
     content: "";
@@ -186,10 +307,20 @@
     text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
     transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
-}
-#profiles_show .Person-0 .c-column:hover .image-decor::before {
+  }
+  #profiles_show .Person-0 .c-column:hover .image-decor::before,
+  #profiles_show .Person-01 .c-column:hover .image-decor::before,
+  #profiles_show .Person-02 .c-column:hover .image-decor::before,
+  #profiles_show .Person-03 .c-column:hover .image-decor::before,
+  #profiles_show .Person-04 .c-column:hover .image-decor::before,
+  #profiles_show .Person-05 .c-column:hover .image-decor::before,
+  #profiles_show .Person-06 .c-column:hover .image-decor::before,
+  #profiles_show .Person-07 .c-column:hover .image-decor::before,
+  #profiles_show .Person-08 .c-column:hover .image-decor::before,
+  #profiles_show .Person-09 .c-column:hover .image-decor::before,
+  #profiles_show .Person-010 .c-column:hover .image-decor::before {
     opacity: 1;
-}
+  }
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(1) .image-decor:nth-child(1)::before {content: "90 Балов";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(2) .image-decor:nth-child(1)::before {content: "93 Балов";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(3) .image-decor:nth-child(1)::before {content: "70 Балов";}
@@ -240,7 +371,17 @@
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(48) .image-decor:nth-child(1)::before {content: "86 Балов";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(49) .image-decor:nth-child(1)::before {content: "79 Балов";}
 
-#profiles_show .Person-0 .c-column .image-cutter::before {
+  #profiles_show .Person-0 .c-column .image-cutter::before,
+  #profiles_show .Person-01 .c-column .image-cutter::before,
+  #profiles_show .Person-02 .c-column .image-cutter::before,
+  #profiles_show .Person-03 .c-column .image-cutter::before,
+  #profiles_show .Person-04 .c-column .image-cutter::before,
+  #profiles_show .Person-05 .c-column .image-cutter::before,
+  #profiles_show .Person-06 .c-column .image-cutter::before,
+  #profiles_show .Person-07 .c-column .image-cutter::before,
+  #profiles_show .Person-08 .c-column .image-cutter::before,
+  #profiles_show .Person-09 .c-column .image-cutter::before,
+  #profiles_show .Person-010 .c-column .image-cutter::before {
     position: absolute;
     top: 1rem;
     content: "💞";
@@ -250,36 +391,86 @@
     right: 0.4rem;
     transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
-}
-#profiles_show .Person-0 .c-column:hover .image-cutter::before {
+  }
+  #profiles_show .Person-0 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-01 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-02 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-03 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-04 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-05 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-06 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-07 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-08 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-09 .c-column:hover .image-cutter::before,
+  #profiles_show .Person-010 .c-column:hover .image-cutter::before {
     opacity: 1;
-    }
+  }
 }
 
 @media screen and (max-width: 980px) {
-    #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined {
-        display: none;
-    }
+  #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-01 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-02 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-03 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-04 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-05 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-06 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-07 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-08 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-09 .b-catalog_entry .cover .title.two_lined,
+  #profiles_show .Person-010 .b-catalog_entry .cover .title.two_lined {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    #profiles_show .Person-0 .c-column {
-        width: calc(100% / 5) !important;
-        }
-    #profiles_show .Blok-1 {
-        white-space: normal;
-        overflow-y: inherit;
-    }
+  #profiles_show .Person-0 .c-column,
+  #profiles_show .Person-01 .c-column,
+  #profiles_show .Person-02 .c-column,
+  #profiles_show .Person-03 .c-column,
+  #profiles_show .Person-04 .c-column,
+  #profiles_show .Person-05 .c-column,
+  #profiles_show .Person-06 .c-column,
+  #profiles_show .Person-07 .c-column,
+  #profiles_show .Person-08 .c-column,
+  #profiles_show .Person-09 .c-column,
+  #profiles_show .Person-010 .c-column {
+    width: calc(100% / 5) !important;
+  }
+  #profiles_show .Blok-1 {
+    white-space: normal;
+    overflow-y: inherit;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    #profiles_show .Person-0 .c-column {
-        width: calc(100% / 7) !important;
-    }
+  #profiles_show .Person-0 .c-column,
+  #profiles_show .Person-01 .c-column,
+  #profiles_show .Person-02 .c-column,
+  #profiles_show .Person-03 .c-column,
+  #profiles_show .Person-04 .c-column,
+  #profiles_show .Person-05 .c-column,
+  #profiles_show .Person-06 .c-column,
+  #profiles_show .Person-07 .c-column,
+  #profiles_show .Person-08 .c-column,
+  #profiles_show .Person-09 .c-column,
+  #profiles_show .Person-010 .c-column {
+    width: calc(100% / 7) !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    #profiles_show .Person-0 .c-column {
-        width: calc(100% / 8) !important;
-    }
+  #profiles_show .Person-0 .c-column,
+  #profiles_show .Person-01 .c-column,
+  #profiles_show .Person-02 .c-column,
+  #profiles_show .Person-03 .c-column,
+  #profiles_show .Person-04 .c-column,
+  #profiles_show .Person-05 .c-column,
+  #profiles_show .Person-06 .c-column,
+  #profiles_show .Person-07 .c-column,
+  #profiles_show .Person-08 .c-column,
+  #profiles_show .Person-09 .c-column,
+  #profiles_show .Person-010 .c-column {
+    width: calc(100% / 8) !important;
+  }
 }
