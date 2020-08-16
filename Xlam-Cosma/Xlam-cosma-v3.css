@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
     #profiles_show .Blok-2 {
         display: block;
-        padding: 0 0 4%;
+        padding: 1% 0 3%;
         max-width: 1400px;
         margin: auto;
     }
