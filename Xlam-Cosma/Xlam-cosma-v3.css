@@ -2,6 +2,8 @@
     #profiles_show .Blok-2 {
         display: block;
         padding: 0 0 4%;
+        max-width: 1400px;
+        margin: auto;
     }
     #profiles_show .Person-1 {
         position: relative;
