@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) {
+  #profiles_show .cc-favourites .c-column {
+    width: -webkit-calc(100% / 6 - 0.1 * 0.1em - 1 * 1.1%);
+    width: calc(100% / 6 - 0.1 * 0.1em - 1 * 1.1%);
+  }
+  #profiles_show .cc-favourites .image-cutter {
+    height: 1px;
+    padding-bottom: 59%;
+  }
+  /*------------------*/
+
+  .b-catalog_entry-tooltip::after {
+    visibility: hidden;
+  }
+  .b-catalog_entry-tooltip > a {
+    display: block;
+    width: 10rem;
+    height: 0;
+  }
+  .b-catalog_entry-tooltip > a::after {
+    content: "";
+    display: block;
+    padding-bottom: 155%;
+    border-radius: 0.125rem;
+  }
+  [class*="b-catalog_entry"] > a[href*="116275-"] img,
+  [class*="b-catalog_entry"] > a[href*="422-"] img,
+  [class*="b-catalog_entry"] > a[href*="119321-"] img,
+  [class*="b-catalog_entry"] > a[href*="35252-"] img,
+  [class*="b-catalog_entry"] > a[href*="50389-"] img,
+  [class*="b-catalog_entry"] > a[href*="2257-"] img,
+  [class*="b-catalog_entry"] > a[href*="67067-"] img,
+  [class*="b-catalog_entry"] > a[href*="458-"] img,
+  [class*="b-catalog_entry"] > a[href*="94-"] img,
+  [class*="b-catalog_entry"] > a[href*="43280-"] img,
+  [class*="b-catalog_entry"] > a[href*="624-"] img,
+  [class*="b-catalog_entry"] > a[href*="137825-"] img,
+  [class*="b-catalog_entry"] > a[href*="88577-"] img,
+  [class*="b-catalog_entry"] > a[href*="4963-"] img,
+  [class*="b-catalog_entry"] > a[href*="80-"] img,
+  [class*="b-catalog_entry"] > a[href*="119413-"] img {
+    opacity: 0;
+  }
+  .b-catalog_entry a[href*="116275-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="116275-"]::after {
+    background: url("//moe.shikimori.one/system/user_images/original/208335/1170532.jpg") no-repeat 38% 20% / 200%;
+  }
+  .b-catalog_entry a[href*="422-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="422-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1170589.jpg") no-repeat 50% 50% / cover;
+  }
+  .b-catalog_entry a[href*="119321-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="119321-"]::after {
+    background: url("//nyaa.shikimori.one/system/user_images/original/208335/1170590.jpg") no-repeat 50% 15% / cover;
+  }
+  .b-catalog_entry a[href*="35252-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="35252-"]::after {
+    background: url("//kawai.shikimori.one/system/user_images/original/208335/1170591.jpg") no-repeat 50% 15% / 150%;
+  }
+  .b-catalog_entry a[href*="50389-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="50389-"]::after {
+    background: url("//nyaa.shikimori.one/system/user_images/original/208335/1170620.jpg") no-repeat 5% 20% / 200%;
+  }
+  .b-catalog_entry a[href*="2257-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="2257-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1170628.jpg") no-repeat 0% 55% / 120%;
+  }
+  .b-catalog_entry a[href*="67067-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="67067-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1060633.jpg") no-repeat 30% 12% / 180%;
+  }
+  .b-catalog_entry a[href*="458-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="458-"]::after {
+    background: url("//kawai.shikimori.one/system/user_images/original/208335/1170731.jpg") no-repeat 50% 50% / 115%;
+  }
+  .b-catalog_entry a[href*="94-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="94-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1159614.jpg") no-repeat 74% 5% / 150%;
+  }
+  .b-catalog_entry a[href*="43280-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="43280-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1170784.jpg") no-repeat 0% 15% / 150%;
+  }
+  .b-catalog_entry a[href*="624-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="624-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1170899.jpg") no-repeat 48% 20% / 130%;
+  }
+  .b-catalog_entry a[href*="137825-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="137825-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1170843.jpg") no-repeat 50% 50% / 106%;
+  }
+  .b-catalog_entry a[href*="88577-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="88577-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1170888.jpg") no-repeat 68% 20% / 355%;
+  }
+  .b-catalog_entry a[href*="4963-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="4963-"]::after {
+    background: url("//kawai.shikimori.one/system/user_images/original/208335/1060486.jpg") no-repeat 50% 50% / 140%;
+  }
+  .b-catalog_entry a[href*="80-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="80-"]::after {
+    background: url("//i9.wampi.ru/2019/11/29/tudjo1_400.gif") no-repeat 50% 50% / 120%;
+  }
+  .b-catalog_entry a[href*="119413-"] .image-cutter,
+  .b-catalog_entry-tooltip > a[href*="119413-"]::after {
+    background: url("//i8.wampi.ru/2019/11/29/tum6o1_500.gif") no-repeat 50% 50% / 106%;
+  }
+}
