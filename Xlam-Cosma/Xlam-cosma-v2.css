@@ -474,3 +474,34 @@
     width: calc(100% / 8) !important;
   }
 }
+
+@media screen and (min-width: 1500px) {
+  #profiles_show .Person-0 .c-column,
+  #profiles_show .Person-01 .c-column,
+  #profiles_show .Person-02 .c-column,
+  #profiles_show .Person-03 .c-column,
+  #profiles_show .Person-04 .c-column,
+  #profiles_show .Person-05 .c-column,
+  #profiles_show .Person-06 .c-column,
+  #profiles_show .Person-07 .c-column,
+  #profiles_show .Person-08 .c-column,
+  #profiles_show .Person-09 .c-column,
+  #profiles_show .Person-010 .c-column {
+    width: calc(100% / 9) !important;
+  }
+}
+@media screen and (min-width: 1678px) {
+  #profiles_show .Person-0 .c-column,
+  #profiles_show .Person-01 .c-column,
+  #profiles_show .Person-02 .c-column,
+  #profiles_show .Person-03 .c-column,
+  #profiles_show .Person-04 .c-column,
+  #profiles_show .Person-05 .c-column,
+  #profiles_show .Person-06 .c-column,
+  #profiles_show .Person-07 .c-column,
+  #profiles_show .Person-08 .c-column,
+  #profiles_show .Person-09 .c-column,
+  #profiles_show .Person-010 .c-column {
+    width: calc(100% / 10) !important;
+  }
+}
