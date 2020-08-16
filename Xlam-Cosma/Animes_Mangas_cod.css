@@ -175,6 +175,7 @@
         background-position: center 5%;
         background-color: #333;
         pointer-events: none;
+        filter: contrast(102%);
         image-rendering: auto;
         box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
         transition: box-shadow 0.45s ease;
