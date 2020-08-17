@@ -281,7 +281,7 @@
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(47) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(48) .image-decor:nth-child(1)::after {content: "20 лет, Человек";}
 #profiles_show .Person-0:nth-child(1) .c-column:nth-child(49) .image-decor:nth-child(1)::after {content: "16 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(49) .image-decor:nth-child(1)::after {content: "19 лет на момент обращения, 49, Вампир";}
+#profiles_show .Person-0:nth-child(1) .c-column:nth-child(50) .image-decor:nth-child(1)::after {content: "19 лет на момент обращения, 49, Вампир";}
   
   #profiles_show .Person-0 .c-column .image-decor::before,
   #profiles_show .Person-01 .c-column .image-decor::before,
