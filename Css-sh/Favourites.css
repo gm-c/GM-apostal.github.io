@@ -2,13 +2,44 @@
   #profiles_show .cc-favourites .c-column {
     width: -webkit-calc(100% / 6 - 0.1 * 0.1em - 1 * 1.1%);
     width: calc(100% / 6 - 0.1 * 0.1em - 1 * 1.1%);
+    transform: none;
   }
   #profiles_show .cc-favourites .image-cutter {
     height: 1px;
     padding-bottom: 59%;
+    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    background-color: #333;
+    transition: box-shadow 0.45s ease;
+    -webkit-transition: box-shadow 0.45s ease;
+  }
+  #profiles_show .cc-favourites .c-column:hover .image-cutter {
+    box-shadow: none;
   }
   /*------------------*/
-
+  .p-profiles-favorites .cc-favourites > .c-character
+/*.p-profiles-favorites .cc-favourites>.c-person*/ {
+    width: -webkit-calc(100% / 5 - 0.1 * 0.1em - 1 * 1.1%);
+    width: calc(100% / 5 - 0.1 * 0.1em - 1 * 1.1%);
+    margin: 0rem 0.5% 0.5rem 0.5% !important;
+    transform: none;
+  }
+  .p-profiles-favorites .cc-favourites > .c-character  .image-cutter
+/*.p-profiles-favorites .cc-favourites>.c-person  .image-cutter*/ {
+    height: 1px;
+    padding-bottom: 59%;
+    background-color: #333;
+    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.45s ease;
+    -webkit-transition: box-shadow 0.45s ease;
+  }
+  .p-profiles-favorites .cc-favourites .c-column:hover .image-cutter {
+    box-shadow: none;
+  }
+  .p-profiles-favorites .cc-favourites > .c-character .title.two_lined {
+    text-align: center;
+    display: none;
+    /*------------------*/
+  }
   .b-catalog_entry-tooltip::after {
     visibility: hidden;
   }
@@ -23,86 +54,261 @@
     padding-bottom: 155%;
     border-radius: 0.125rem;
   }
-  [class*="b-catalog_entry"] > a[href*="116275-albedo"] img,
-  [class*="b-catalog_entry"] > a[href*="422-guts"] img,
-  [class*="b-catalog_entry"] > a[href*="119321-momo-"] img,
-  [class*="b-catalog_entry"] > a[href*="35252-rintarou-"] img,
-  [class*="b-catalog_entry"] > a[href*="50389-rias-"] img,
-  [class*="b-catalog_entry"] > a[href*="2257-simon"] img,
-  [class*="b-catalog_entry"] > a[href*="67067-"] img,
-  [class*="b-catalog_entry"] > a[href*="458-revy"] img,
-  [class*="b-catalog_entry"] > a[href*="94-asuka-"] img,
-  [class*="b-catalog_entry"] > a[href*="43280-inori-"] img,
-  [class*="b-catalog_entry"] > a[href*="624-seras-"] img,
-  [class*="b-catalog_entry"] > a[href*="137825-tanya-"] img,
-  [class*="b-catalog_entry"] > a[href*="88577-fremy-"] img,
-  [class*="b-catalog_entry"] > a[href*="4963-yuno-"] img,
-  [class*="b-catalog_entry"] > a[href*="80-light-"] img,
-  [class*="b-catalog_entry"] > a[href*="119413-yumeko-"] img {
+  .cc-favourites .c-character .image-cutter::after {
+    position: absolute;
+    display: flex;
+    content: "";
+    line-height: 1.45;
+    font-size: 13px;
+    font-weight: bold;
+    color: #bbb;
+    top: 0.5rem;
+    left: 0.5rem;
+    pointer-events: none;
+    z-index: 20;
+    opacity: 0;
+    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+  }
+  .cc-favourites .c-column:hover .image-cutter::after {
+    opacity: 1;
+  }
+  .cc-favourites .c-character a[href*="43280-inori-"] .image-cutter::after {content: "70 Балов";}
+  .cc-favourites .c-character a[href*="458-revy"] .image-cutter::after {content: "80 Балов";}
+  .cc-favourites .c-character a[href*="624-seras-"] .image-cutter::after {content: "66 Балов";}
+  .cc-favourites .c-character a[href*="67067-yukino-"] .image-cutter::after {content: "65 Балов";}
+  .cc-favourites .c-character a[href*="35252-rintarou-"] .image-cutter::after {content: "84 Балов";}
+  .cc-favourites .c-character a[href*="50389-rias-"] .image-cutter::after {content: "80 Балов";}
+  .cc-favourites .c-character a[href*="80-light-"] .image-cutter::after {content: "88 Балов";}
+  .cc-favourites .c-character a[href*="116275-albedo"] .image-cutter::after {content: "75 Балов";}
+  .cc-favourites .c-character a[href*="119321-momo-"] .image-cutter::after {content: "80 Балов";}
+  .cc-favourites .c-character a[href*="137825-tanya-"] .image-cutter::after {content: "80 Балов";}
+  .cc-favourites .c-character a[href*="422-guts"] .image-cutter::after {content: "98 Балов";}
+  .cc-favourites .c-character a[href*="94-asuka-"] .image-cutter::after {content: "90 Балов";}
+  .cc-favourites .c-character a[href*="119413-yumeko-"] .image-cutter::after {content: "54 Балов";}
+  .cc-favourites .c-character a[href*="88577-fremy-"] .image-cutter::after {content: "84 Балов";}
+  .cc-favourites .c-character a[href*="4963-yuno-gasai"] .image-cutter::after {content: "58 Балов";}
+  .cc-favourites .c-character a[href*="2257-simon"] .image-cutter::after { content: "100 Балов";}
+
+  .cc-favourites .c-character .image-cutter::before {
+    position: absolute;
+    display: grid;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 0.38rem;
+    font-size: 14px;
+    line-height: 1.45;
+    overflow: hidden;
+    align-items: flex-end;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+    font-weight: bold;
+    pointer-events: none;
+    color: #bbb;
+    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+    opacity: 0;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+  }
+  .cc-favourites .c-column:hover .image-cutter::before {
+    opacity: 1;
+  }
+  .cc-favourites .c-character a[href*="43280-inori-"] .image-cutter::before {content: "18 лет, Воплощение";}
+  .cc-favourites .c-character a[href*="458-revy"] .image-cutter::before {content: "26 лет, Человек";}
+  .cc-favourites .c-character a[href*="624-seras-"] .image-cutter::before {content: "19 лет, на момент обращения 49, Вампир";}
+  .cc-favourites .c-character a[href*="67067-yukino-"] .image-cutter::before {content: "17 лет, Человек";}
+  .cc-favourites .c-character a[href*="35252-rintarou-"] .image-cutter::before { content: "18 лет, Человек";}
+  .cc-favourites .c-character a[href*="50389-rias-"] .image-cutter::before {content: "19 лет, Демон";}
+  .cc-favourites .c-character a[href*="80-light-"] .image-cutter::before {content: "23 года, Человек";}
+  .cc-favourites .c-character a[href*="116275-albedo"] .image-cutter::before {content: "? возраст, Суккуб";}
+  .cc-favourites .c-character a[href*="119321-momo-"] .image-cutter::before {content: "16 лет, Человек";}
+  .cc-favourites .c-character a[href*="137825-tanya-"] .image-cutter::before {content: "14 лет, Человек";}
+  .cc-favourites .c-character a[href*="422-guts"] .image-cutter::before {content: "24 года, Человек";}
+  .cc-favourites .c-character a[href*="94-asuka-"] .image-cutter::before {content: "13 лет, Человек";}
+  .cc-favourites .c-character a[href*="119413-yumeko-"] .image-cutter::before {content: "17 лет, Человек";}
+  .cc-favourites .c-character a[href*="88577-fremy-"] .image-cutter::before {content: "18 лет, Полу-Кёма";}
+  .cc-favourites .c-character a[href*="4963-yuno-gasai"] .image-cutter::before {content: "16 лет, Человек, Бог";}
+  .cc-favourites .c-character a[href*="2257-simon"] .image-cutter::before {content: "21 год, Человек";}
+
+  .cc-favourites .c-character .cover .image-decor::before {
+    position: absolute;
+    display: grid;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 0.38rem;
+    font-size: 14px;
+    line-height: 1.45;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-end;
+    white-space: normal;
+    text-align: center;
+    font-weight: bold;
+    pointer-events: none;
+    color: #bbb;
+    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+    opacity: 1;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+  }
+  .cc-favourites .c-column:hover .image-decor::before {
     opacity: 0;
   }
-  .b-catalog_entry a[href*="116275-albedo"] .image-cutter,
+  .cc-favourites .c-character a[href*="2257-simon"] .image-decor::before {content: "Симон";}
+  .cc-favourites .c-character a[href*="67067-yukino-"] .image-decor::before {content: "Юкино";}
+  .cc-favourites .c-character a[href*="458-revy"] .image-decor::before {content: "Ребекка";}
+  .cc-favourites .c-character a[href*="624-seras-"] .image-decor::before {content: "Виктория";}
+  .cc-favourites .c-character a[href*="119413-yumeko-"] .image-decor::before {content: "Юмэко";}
+  .cc-favourites .c-character a[href*="137825-tanya-"] .image-decor::before {content: "Таня";}
+  .cc-favourites .c-character a[href*="35252-rintarou-"] .image-decor::before {content: "Ринтаро";}
+  .cc-favourites .c-character a[href*="50389-rias-"] .image-decor::before {content: "Риас";}
+  .cc-favourites .c-character a[href*="80-light-yagami"] .image-decor::before {content: "Лайт";}
+  .cc-favourites .c-character a[href*="119321-momo-"] .image-decor::before {content: "Момо";}
+  .cc-favourites .c-character a[href*="422-guts"] .image-decor::before {content: "Гатс";}
+  .cc-favourites .c-character a[href*="88577-fremy-"] .image-decor::before {content: "Фреми";}
+  .cc-favourites .c-character a[href*="94-asuka-langley-"] .image-decor::before {content: "Аска";}
+  .cc-favourites .c-character a[href*="4963-yuno-gasai"] .image-decor::before {content: "Юно";}
+  .cc-favourites .c-character a[href*="116275-albedo"] .image-decor::before {content: "Альбедо";}
+  .cc-favourites .c-character a[href*="43280-inori-yuzuriha"] .image-decor::before {content: "Инори";}
+
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="116275-albedo"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="116275-albedo"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="422-guts"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="422-guts"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="119321-momo-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="119321-momo-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="35252-rintarou-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="35252-rintarou-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="50389-rias-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="50389-rias-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="2257-simon"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="2257-simon"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="67067-yukino-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="67067-yukino-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="458-revy"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="458-revy"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="94-asuka-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="94-asuka-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="43280-inori-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="43280-inori-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="624-seras-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="624-seras-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="137825-tanya-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="137825-tanya-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="88577-fremy-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="88577-fremy-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="4963-yuno-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="4963-yuno-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="80-light-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="80-light-"] img,
+  .cc-favourites [class*="b-catalog_entry"] > a[href*="119413-yumeko-"] img,.tooltip-inner [class*="b-catalog_entry"] > a[href*="119413-yumeko-"] img {
+    opacity: 0;
+  }
+  .tooltip-details .b-catalog_entry a[href*="116275-albedo"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="116275-albedo"]::after {
+    background: url("//moe.shikimori.one/system/user_images/original/208335/1170532.jpg") no-repeat center / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="116275-albedo"] .image-cutter {
     background: url("//moe.shikimori.one/system/user_images/original/208335/1170532.jpg") no-repeat 38% 20% / 200%;
   }
-  .b-catalog_entry a[href*="422-guts"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="422-guts"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="422-guts"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1170589.jpg") no-repeat 26% 0 / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="422-guts"] .image-cutter {
     background: url("//dere.shikimori.one/system/user_images/original/208335/1170589.jpg") no-repeat 50% 50% / cover;
   }
-  .b-catalog_entry a[href*="119321-momo-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="119321-momo-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="119321-momo-"]::after {
+    background: url("//nyaa.shikimori.one/system/user_images/original/208335/1170590.jpg") no-repeat 50% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="119321-momo-"] .image-cutter {
     background: url("//nyaa.shikimori.one/system/user_images/original/208335/1170590.jpg") no-repeat 50% 15% / cover;
   }
-  .b-catalog_entry a[href*="35252-rintarou-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="35252-rintarou-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="35252-rintarou-"]::after {
+    background: url("//kawai.shikimori.one/system/user_images/original/208335/1170591.jpg") no-repeat 50% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="35252-rintarou-"] .image-cutter {
     background: url("//kawai.shikimori.one/system/user_images/original/208335/1170591.jpg") no-repeat 50% 15% / 150%;
   }
-  .b-catalog_entry a[href*="50389-rias-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="50389-rias-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="50389-rias-"]::after {
+    background: url("//nyaa.shikimori.one/system/user_images/original/208335/1170620.jpg") no-repeat 5% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="50389-rias-"] .image-cutter {
     background: url("//nyaa.shikimori.one/system/user_images/original/208335/1170620.jpg") no-repeat 5% 20% / 200%;
   }
-  .b-catalog_entry a[href*="2257-simon"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="2257-simon"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="2257-simon"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1170628.jpg") no-repeat 35% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="2257-simon"] .image-cutter {
     background: url("//desu.shikimori.one/system/user_images/original/208335/1170628.jpg") no-repeat 0% 55% / 120%;
   }
-  .b-catalog_entry a[href*="67067-yukino-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="67067-yukino-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="67067-yukino-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1060633.jpg") no-repeat 30% 10% / 180%;
+  }
+  .cc-favourites .b-catalog_entry a[href*="67067-yukino-"] .image-cutter {
     background: url("//desu.shikimori.one/system/user_images/original/208335/1060633.jpg") no-repeat 30% 12% / 180%;
   }
-  .b-catalog_entry a[href*="458-revy"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="458-revy"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="458-revy"]::after {
+    background: url("//kawai.shikimori.one/system/user_images/original/208335/1170731.jpg") no-repeat 58% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="458-revy"] .image-cutter {
     background: url("//kawai.shikimori.one/system/user_images/original/208335/1170731.jpg") no-repeat 50% 50% / 115%;
   }
-  .b-catalog_entry a[href*="94-asuka-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="94-asuka-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="94-asuka-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1159614.jpg") no-repeat 70% 5% / 200%;
+  }
+  .cc-favourites .b-catalog_entry a[href*="94-asuka-"] .image-cutter {
     background: url("//dere.shikimori.one/system/user_images/original/208335/1159614.jpg") no-repeat 74% 5% / 150%;
   }
-  .b-catalog_entry a[href*="43280-inori-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="43280-inori-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="43280-inori-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1170784.jpg") no-repeat 8% 3% / 150%;
+  }
+  .cc-favourites .b-catalog_entry a[href*="43280-inori-"] .image-cutter {
     background: url("//dere.shikimori.one/system/user_images/original/208335/1170784.jpg") no-repeat 0% 15% / 150%;
   }
-  .b-catalog_entry a[href*="624-seras-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="624-seras-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="624-seras-"]::after {
+    background: url("//dere.shikimori.one/system/user_images/original/208335/1170899.jpg") no-repeat 48% 25% / 220%;
+  }
+  .cc-favourites .b-catalog_entry a[href*="624-seras-"] .image-cutter {
     background: url("//dere.shikimori.one/system/user_images/original/208335/1170899.jpg") no-repeat 48% 20% / 130%;
   }
-  .b-catalog_entry a[href*="137825-tanya-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="137825-tanya-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="137825-tanya-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1170843.jpg") no-repeat 50% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="137825-tanya-"] .image-cutter {
     background: url("//desu.shikimori.one/system/user_images/original/208335/1170843.jpg") no-repeat 50% 50% / 106%;
   }
-  .b-catalog_entry a[href*="88577-fremy-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="88577-fremy-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="88577-fremy-"]::after {
+    background: url("//desu.shikimori.one/system/user_images/original/208335/1170888.jpg") no-repeat 65% 20% / 400%;
+  }
+  .cc-favourites .b-catalog_entry a[href*="88577-fremy-"] .image-cutter {
     background: url("//desu.shikimori.one/system/user_images/original/208335/1170888.jpg") no-repeat 68% 20% / 355%;
   }
-  .b-catalog_entry a[href*="4963-yuno-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="4963-yuno-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="4963-yuno-"]::after {
+    background: url("//kawai.shikimori.one/system/user_images/original/208335/1060486.jpg") no-repeat 50% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="4963-yuno-"] .image-cutter {
     background: url("//kawai.shikimori.one/system/user_images/original/208335/1060486.jpg") no-repeat 50% 50% / 140%;
   }
-  .b-catalog_entry a[href*="80-light-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="80-light-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="80-light-"]::after {
+    background: url("//i9.wampi.ru/2019/11/29/tudjo1_400.gif") no-repeat 50% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="80-light-"] .image-cutter {
     background: url("//i9.wampi.ru/2019/11/29/tudjo1_400.gif") no-repeat 50% 50% / 120%;
   }
-  .b-catalog_entry a[href*="119413-yumeko-"] .image-cutter,
+  .tooltip-details .b-catalog_entry a[href*="119413-yumeko-"] .image-cutter,
   .b-catalog_entry-tooltip > a[href*="119413-yumeko-"]::after {
+    background: url("//i8.wampi.ru/2019/11/29/tum6o1_500.gif") no-repeat 50% 50% / cover;
+  }
+  .cc-favourites .b-catalog_entry a[href*="119413-yumeko-"] .image-cutter {
     background: url("//i8.wampi.ru/2019/11/29/tum6o1_500.gif") no-repeat 50% 50% / 106%;
   }
 }
