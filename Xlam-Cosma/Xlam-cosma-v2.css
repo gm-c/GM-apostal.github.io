@@ -5,27 +5,11 @@
     white-space: nowrap;
     overflow-y: hidden;
   }
-  #profiles_show .Person-0,
-  #profiles_show .Person-01 {
-    position: relative;
-  }
-  body#profiles_show .Person-0 .b-catalog_entry,
-  body#profiles_show .Person-01 .b-catalog_entry {
-    box-shadow: none;
-    transition: none;
-    transform: none;
-  }
-  #profiles_show .Person-0 .b-catalog_entry .cover .image-cutter img,
-  #profiles_show .Person-01 .b-catalog_entry .cover .image-cutter img {
-    position: absolute;
-    z-index: -1;
-    transition: none;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  #profiles_show .Person-0 .c-column,
-  #profiles_show .Person-01 .c-column {
+  #profiles_show .Person-0 {position: relative;}
+  body#profiles_show .Person-0 .b-catalog_entry { box-shadow: none; transition: none; transform: none;}
+  #profiles_show .Person-0 .b-catalog_entry .cover .image-cutter img { opacity: 0; visibility: hidden;}
+
+  #profiles_show .Person-0 .c-column {
     display: inline-block;
     margin: 0 !important;
     float: none !important;
@@ -35,49 +19,45 @@
     background: none;
     width: calc(100% / 3) !important;
   }
-  #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter,
-  #profiles_show .Person-01 .b-catalog_entry .cover .image-decor .image-cutter {
+  #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
     max-height: 1px !important;
     max-width: 100% !important;
     padding: 0 0 140% 0;
     margin: 0;
     background-image: none;
-    background: url(/\x/i.ibb.co/2WZqD3C/tv011.gif), url(/\x/i.imgur.com/pOYKfnt.gif);
+    background: url("/\x/i.ibb.co/2WZqD3C/tv011.gif"), url("/\x/i.imgur.com/pOYKfnt.gif");
     background-size: contain;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 15%);
     border-radius: 0.5rem;
   }
-  #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined,
-  #profiles_show .Person-01 .b-catalog_entry .cover .title.two_lined {
+  #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined {
     position: absolute;
     display: grid;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    white-space: normal;
-    pointer-events: none;
+    max-width: 90px;
+    height: 17px;
     margin: 0 auto;
     padding: 0 1rem;
     bottom: 1rem;
     right: 0;
     left: 0;
-    max-width: 90px;
-    height: 17px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: normal;
+    pointer-events: none;
+    line-height: 1.6;
     font-size: 11.5px;
-    text-shadow: 1px 0 2px rgba(0, 0, 0, 0.8), -1px 0 2px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.8), 0 -1px 2px rgba(0, 0, 0, 0.8);
-    z-index: 10;
+    color: rgba(var(--white-color), var(--hundred));
+    text-shadow: 1px 0 2px rgb(0 0 0 / 80%), -1px 0 2px rgb(0 0 0 / 80%), 0 1px 2px rgb(0 0 0 / 80%), 0 -1px 2px rgb(0 0 0 / 80%);
+    z-index: 12;
     opacity: 1;
     background: none;
-    line-height: 1.6;
     transition: opacity 0.28s ease;
     -webkit-transition: opacity 0.28s ease;
   }
-  #profiles_show .Person-0 .c-column:hover > .cover .title,
-  #profiles_show .Person-01 .c-column:hover > .cover .title {
-    opacity: 0;
-  }
-  #profiles_show .Person-0 .b-catalog_entry a .image-cutter::after,
-  #profiles_show .Person-01 .b-catalog_entry a .image-cutter::after {
+  #profiles_show .Person-0 .c-column:hover > .cover .title {opacity: 0;}
+  
+  #profiles_show .Person-0 .b-catalog_entry a .image-cutter::after {
     position: absolute;
     content: "";
     display: flex;
@@ -95,196 +75,161 @@
     filter: contrast(102%);
     background-repeat: no-repeat;
     background-color: #333;
-    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 15px 5px rgb(0 0 0 / 80%);
+    will-change: transform;
     transition: box-shadow 0.45s ease;
     -webkit-transition: box-shadow 0.45s ease;
   }
-  #profiles_show .Person-0 .b-catalog_entry:hover > a .image-cutter::after,
-  #profiles_show .Person-01 .b-catalog_entry:hover > a .image-cutter::after {
-    box-shadow: none;
-  }
-  #profiles_show .Person-0 .c-column .image-decor::after,
-  #profiles_show .Person-01 .c-column .image-decor::after {
-    position: absolute;
-    display: grid;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 11;
-    padding: 0.38rem;
-    font-size: 14px;
-    line-height: 1.45;
-    overflow: hidden;
-    justify-content: center;
-    align-items: flex-end;
-    white-space: normal;
-    text-align: center;
-    font-weight: bold;
-    pointer-events: none;
-    color: #bbb;
-    opacity: 0;
-    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
-    transition: opacity 0.2s;
-    -webkit-transition: opacity 0.2s;
-  }
-  #profiles_show .Person-0 .c-column:hover .image-decor::after,
-  #profiles_show .Person-01 .c-column:hover .image-decor::after {
-    opacity: 1;
-  }
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(1) .image-decor:nth-child(1)::after {content: "19 лет, Демон";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(2) .image-decor:nth-child(1)::after {content: "18 лет, Демон";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(3) .image-decor:nth-child(1)::after {content: "18 лет, Воплощение";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(4) .image-decor:nth-child(1)::after {content: "11 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(5) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(6) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(7) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(8) .image-decor:nth-child(1)::after {content: "Возраст ?, Демон";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(9) .image-decor:nth-child(1)::after {content: "19 лет, Демон";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(10) .image-decor:nth-child(1)::after {content: "15 лет, Призрак";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(11) .image-decor:nth-child(1)::after {content: "16 лет, Человек, Бог";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(12) .image-decor:nth-child(1)::after {content: "13 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(13) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(14) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(15) .image-decor:nth-child(1)::after {content: "27 лет, Гуль";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(16) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(17) .image-decor:nth-child(1)::after {content: "800 лет, Волчица";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(18) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(19) .image-decor:nth-child(1)::after {content: "? возраст, Раса?";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(20) .image-decor:nth-child(1)::after {content: "18 лет, Полу-Кёма";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(21) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(22) .image-decor:nth-child(1)::after {content: "598 лет, Вампир";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(23) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(24) .image-decor:nth-child(1)::after {content: "14 лет, Человек, эспер";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(25) .image-decor:nth-child(1)::after {content: "15 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(26) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(27) .image-decor:nth-child(1)::after {content: "? возраст, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(28) .image-decor:nth-child(1)::after {content: "14 лет, новелла 18 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(29) .image-decor:nth-child(1)::after {content: "16 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(30) .image-decor:nth-child(1)::after {content: "19 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(31) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(32) .image-decor:nth-child(1)::after {content: "961 год, Полубог";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(33) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(34) .image-decor:nth-child(1)::after {content: "17 лет, 500 лет в теле птицы, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(35) .image-decor:nth-child(1)::after {content: "16 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(36) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(37) .image-decor:nth-child(1)::after {content: "Возраст ? раса?";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(38) .image-decor:nth-child(1)::after {content: "? возраст, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(39) .image-decor:nth-child(1)::after {content: "15 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(40) .image-decor:nth-child(1)::after {content: "15 лет, 25 в настоящее время, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(41) .image-decor:nth-child(1)::after {content: "? возраст, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(42) .image-decor:nth-child(1)::after {content: "16 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(43) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(44) .image-decor:nth-child(1)::after {content: "14 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(45) .image-decor:nth-child(1)::after {content: "18 лет, Ньярлатотеп";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(46) .image-decor:nth-child(1)::after {content: "17 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(47) .image-decor:nth-child(1)::after {content: "18 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(48) .image-decor:nth-child(1)::after {content: "20 лет, Человек";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(49) .image-decor:nth-child(1)::after {content: "16 лет, Человек";} 
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(50) .image-decor:nth-child(1)::after {content: "19 лет, на момент обращения 49, Вампир";}
-  
-  #profiles_show .Person-0 .c-column .image-decor::before,
-  #profiles_show .Person-01 .c-column .image-decor::before {
-    position: absolute;
-    display: flex;
-    content: "";
-    line-height: 1.45;
-    font-size: 13px;
-    font-weight: bold;
-    color: #bbb;
-    top: 0.5rem;
-    left: 0.5rem;
-    pointer-events: none;
-    z-index: 12;
-    opacity: 0;
-    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
-    transition: opacity 0.2s;
-    -webkit-transition: opacity 0.2s;
-  }
-  #profiles_show .Person-0 .c-column:hover .image-decor::before,
-  #profiles_show .Person-01 .c-column:hover .image-decor::before {
-    opacity: 1;
-  }
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(1) .image-decor:nth-child(1)::before {content: "90 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(2) .image-decor:nth-child(1)::before {content: "93 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(3) .image-decor:nth-child(1)::before {content: "70 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(4) .image-decor:nth-child(1)::before {content: "90 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(5) .image-decor:nth-child(1)::before {content: "65 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(6) .image-decor:nth-child(1)::before {content: "60 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(7) .image-decor:nth-child(1)::before {content: "77 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(8) .image-decor:nth-child(1)::before {content: "78 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(9) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(10) .image-decor:nth-child(1)::before {content: "79 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(11) .image-decor:nth-child(1)::before {content: "58 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(12) .image-decor:nth-child(1)::before {content: "90 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(13) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(14) .image-decor:nth-child(1)::before {content: "85 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(15) .image-decor:nth-child(1)::before {content: "73 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(16) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(17) .image-decor:nth-child(1)::before {content: "71 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(18) .image-decor:nth-child(1)::before {content: "82 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(19) .image-decor:nth-child(1)::before {content: "68 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(20) .image-decor:nth-child(1)::before {content: "84 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(21) .image-decor:nth-child(1)::before {content: "54 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(22) .image-decor:nth-child(1)::before {content: "69 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(23) .image-decor:nth-child(1)::before {content: "94 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(24) .image-decor:nth-child(1)::before {content: "81 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(25) .image-decor:nth-child(1)::before {content: "69 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(26) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(27) .image-decor:nth-child(1)::before {content: "60 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(28) .image-decor:nth-child(1)::before {content: "90 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(29) .image-decor:nth-child(1)::before {content: "85 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(30) .image-decor:nth-child(1)::before {content: "50 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(31) .image-decor:nth-child(1)::before {content: "82 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(32) .image-decor:nth-child(1)::before {content: "81 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(33) .image-decor:nth-child(1)::before {content: "79 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(34) .image-decor:nth-child(1)::before {content: "58 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(35) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(36) .image-decor:nth-child(1)::before {content: "88 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(37) .image-decor:nth-child(1)::before {content: "48 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(38) .image-decor:nth-child(1)::before {content: "76 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(39) .image-decor:nth-child(1)::before {content: "89 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(40) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(41) .image-decor:nth-child(1)::before {content: "80 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(42) .image-decor:nth-child(1)::before {content: "88 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(43) .image-decor:nth-child(1)::before {content: "74 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(44) .image-decor:nth-child(1)::before {content: "90 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(45) .image-decor:nth-child(1)::before {content: "83 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(46) .image-decor:nth-child(1)::before {content: "81 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(47) .image-decor:nth-child(1)::before {content: "84 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(48) .image-decor:nth-child(1)::before {content: "86 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(49) .image-decor:nth-child(1)::before {content: "79 Балов";}
-#profiles_show .Person-0:nth-child(1) .c-column:nth-child(50) .image-decor:nth-child(1)::before {content: "66 Балов";}
+  #profiles_show .Person-0 .b-catalog_entry:hover > a .image-cutter::after {box-shadow: none;}
 
-  #profiles_show .Person-0 .c-column .image-cutter::before,
-  #profiles_show .Person-01 .c-column .image-cutter::before{
-    position: absolute;
-    top: 1rem;
-    content: "💞";
-    opacity: 0;
-    z-index: 100;
-    font-size: 16px;
-    right: 0.4rem;
-    transition: opacity 0.2s;
-    -webkit-transition: opacity 0.2s;
-  }
-  #profiles_show .Person-0 .c-column:hover .image-cutter::before,
-  #profiles_show .Person-01 .c-column:hover .image-cutter::before {
-    opacity: 1;
+  #profiles_show .Person-0 .cover .image-decor::before {
+  position: absolute;
+  display: flex;
+  content: "💞";
+  top: 1rem;
+  right: 0.4rem;   
+  z-index: 15; 
+  opacity: 0;
+  font-size: 16px;
+  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+} 
+#profiles_show .Person-0 .c-column:hover .image-decor::before {opacity: 1;}
+
+#profiles_show .Person-0 .image-cutter::before,
+#profiles_show .Person-0 .cover .image-decor::after {
+  position: absolute;
+  display: grid;
+  content: "";
+  text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+  opacity: 0;
+  line-height: 1.45;
+  z-index: 20;
+  pointer-events: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+   -webkit-transition: opacity 0.2s;
+}  
+#profiles_show .Person-0 .image-cutter::before {font-size: 13px; color: #bbb; top: 0.5rem; left: 0.5rem;}
+#profiles_show .Person-0 .c-column:hover .image-cutter::before {opacity: 1;}
+
+#profiles_show .Person-0 a[href*="118765-ram"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 a[href*="118763-rem"] .image-cutter::before {content: "93 балла";}
+#profiles_show .Person-0 a[href*="43280-inori-"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 a[href*="82525-shiro"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 a[href*="67067-yukino-"] .image-cutter::before {content: "65 баллов";}
+#profiles_show .Person-0 a[href*="34470-kurisu-"] .image-cutter::before {content: "60 баллов";}
+#profiles_show .Person-0 a[href*="136-louise-fran-"] .image-cutter::before {content: "77 баллов";}
+#profiles_show .Person-0 a[href*="69133-liza-lizu"] .image-cutter::before {content: "78 баллов";}
+#profiles_show .Person-0 a[href*="50389-rias-"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="30273-yuuko-kanoe"] .image-cutter::before {content: "79 баллов";}
+#profiles_show .Person-0 a[href*="4963-yuno-gasai"] .image-cutter::before {content: "58 баллов";}
+#profiles_show .Person-0 a[href*="94-asuka-langley-"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 a[href*="160603-miku-nakano"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="161472-nino-nakano"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 a[href*="87277-touka-"] .image-cutter::before {content: "73 балла";}
+#profiles_show .Person-0 a[href*="61371-mashiro-"] .image-cutter::before {content: "86 баллов";}
+#profiles_show .Person-0 a[href*="7373-holo"] .image-cutter::before {content: "76 баллов";}
+#profiles_show .Person-0 a[href*="67069-yui-yuigahama"] .image-cutter::before {content: "88 баллов";}
+#profiles_show .Person-0 a[href*="40450-msyu"] .image-cutter::before {content: "68 баллов";}
+#profiles_show .Person-0 a[href*="88577-fremy-"] .image-cutter::before {content: "84 балла";}
+#profiles_show .Person-0 a[href*="119413-yumeko-"] .image-cutter::before {content: "54 балла";}
+#profiles_show .Person-0 a[href*="23602-shinobu-"] .image-cutter::before {content: "77 баллов";}
+#profiles_show .Person-0 a[href*="12064-taiga-aisaka"] .image-cutter::before {content: "89 баллов";}
+#profiles_show .Person-0 a[href*="13701-mikoto-misaka"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 a[href*="69411-kaori-miyazono"] .image-cutter::before {content: "75 баллов";}
+#profiles_show .Person-0 a[href*="43282-tsugumi"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="144487-ha-kyung-"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="117225-megumin"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 a[href*="89339-alice-nakiri"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 a[href*="40881-mikasa-"] .image-cutter::before {content: "55 баллов";}
+#profiles_show .Person-0 a[href*="118739-mai-sakurajima"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 a[href*="99661-rory-mercury"] .image-cutter::before {content: "76 баллов";}
+#profiles_show .Person-0 a[href*="9719-juvia-lockser"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="166026-nero"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 a[href*="119321-momo-yaoyorozu"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="22037-hitagi-senjougahara"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 a[href*="161954-kyouryuu-no-"] .image-cutter::before {content: "60 баллов";}
+#profiles_show .Person-0 a[href*="143196-ai-hayasaka"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="41374-subaru-konoe"] .image-cutter::before {content: "87 баллов";}
+#profiles_show .Person-0 a[href*="75284-erina-nakiri"] .image-cutter::before {content: "83 балла";}
+#profiles_show .Person-0 a[href*="13390-haruko-amaya"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="55133-eru-chitanda"] .image-cutter::before {content: "86 баллов";}
+#profiles_show .Person-0 a[href*="6043-saeko-busujima"] .image-cutter::before {content: "76 баллов";}
+#profiles_show .Person-0 a[href*="z37698-kobato-hasegawa"] .image-cutter::before {content: "94 балла";}
+#profiles_show .Person-0 a[href*="31418-nyaruko"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 a[href*="z52723-kosaki-onodera"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 a[href*="20476-charlotte-hazelrink"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 a[href*="5190-mirajane-strauss"] .image-cutter::before {content: "88 баллов";}
+#profiles_show .Person-0 a[href*="48993-masuzu-natsukawa"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 a[href*="624-seras-victoria"] .image-cutter::before {content: "78 баллов";}
+
+#profiles_show .Person-0 .cover .image-decor::after {top: 0; left: 0; right: 0; bottom: 0; 
+  padding: 0.38rem 0.38rem 0.5rem;
+  font-size: 14px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-end;
+  white-space: normal;
+  text-align: center;
+  color: #bbb;
+}
+#profiles_show .Person-0 .c-column:hover .image-decor::after {opacity: 1;}
+
+#profiles_show .Person-0 a[href*="118765-ram"] .image-decor::after {content: "19 лет, Демон";}
+#profiles_show .Person-0 a[href*="118763-rem"] .image-decor::after {content: "18 лет, Демон";}
+#profiles_show .Person-0 a[href*="43280-inori-"] .image-decor::after {content: "18 лет, Воплощение";}
+#profiles_show .Person-0 a[href*="82525-shiro"] .image-decor::after {content: "11 лет, Человек";}
+#profiles_show .Person-0 a[href*="67067-yukino-"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="34470-kurisu-"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 a[href*="136-louise-fran-"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="69133-liza-lizu"] .image-decor::after {content: "Возраст ?, Демон";}
+#profiles_show .Person-0 a[href*="50389-rias-"] .image-decor::after {content: "19 лет, Демон";}
+#profiles_show .Person-0 a[href*="30273-yuuko-kanoe"] .image-decor::after {content: "15 лет, Призрак";}
+#profiles_show .Person-0 a[href*="4963-yuno-gasai"] .image-decor::after {content: "16 лет, Человек, Бог";}
+#profiles_show .Person-0 a[href*="94-asuka-langley-"] .image-decor::after {content: "13 лет, Человек";}
+#profiles_show .Person-0 a[href*="160603-miku-nakano"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="161472-nino-nakano"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="87277-touka-"] .image-decor::after {content: "27 лет, Гуль";}
+#profiles_show .Person-0 a[href*="61371-mashiro-"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="7373-holo"] .image-decor::after {content: "800 лет, Волчица";}
+#profiles_show .Person-0 a[href*="67069-yui-yuigahama"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="40450-msyu"] .image-decor::after {content: "? возраст, Раса?";}
+#profiles_show .Person-0 a[href*="88577-fremy-"] .image-decor::after {content: "18 лет, Полу-Кёма";}
+#profiles_show .Person-0 a[href*="119413-yumeko-"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="23602-shinobu-"] .image-decor::after {content: "598 лет, Вампир";}
+#profiles_show .Person-0 a[href*="12064-taiga-aisaka"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="13701-mikoto-misaka"] .image-decor::after {content: "14 лет, Человек";}
+#profiles_show .Person-0 a[href*="69411-kaori-miyazono"] .image-decor::after {content: "15 лет, Человек";}
+#profiles_show .Person-0 a[href*="43282-tsugumi"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="144487-ha-kyung-"] .image-decor::after {content: "? возраст, Человек";}
+#profiles_show .Person-0 a[href*="117225-megumin"] .image-decor::after {content: "14 лет, новелла 18 лет, Человек";}
+#profiles_show .Person-0 a[href*="89339-alice-nakiri"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 a[href*="40881-mikasa-"] .image-decor::after {content: "19 лет, Человек";}
+#profiles_show .Person-0 a[href*="118739-mai-sakurajima"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 a[href*="99661-rory-mercury"] .image-decor::after {content: "961 год, Полубог";}
+#profiles_show .Person-0 a[href*="9719-juvia-lockser"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="166026-nero"] .image-decor::after {content: "17 лет, 500 лет в теле птицы, Человек";}
+#profiles_show .Person-0 a[href*="119321-momo-yaoyorozu"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 a[href*="22037-hitagi-senjougahara"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 a[href*="161954-kyouryuu-no-"] .image-decor::after {content: "Возраст ? раса?";}
+#profiles_show .Person-0 a[href*="143196-ai-hayasaka"] .image-decor::after {content: "? возраст, Человек";}
+#profiles_show .Person-0 a[href*="41374-subaru-konoe"] .image-decor::after {content: "15 лет, Человек";}
+#profiles_show .Person-0 a[href*="75284-erina-nakiri"] .image-decor::after {content: "15 лет, 25 в настоящее время, Человек";}
+#profiles_show .Person-0 a[href*="13390-haruko-amaya"] .image-decor::after {content: "? возраст, Человек";}
+#profiles_show .Person-0 a[href*="55133-eru-chitanda"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 a[href*="6043-saeko-busujima"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 a[href*="z37698-kobato-hasegawa"] .image-decor::after {content: "14 лет, Человек";}
+#profiles_show .Person-0 a[href*="31418-nyaruko"] .image-decor::after {content: "18 лет, Ньярлатотеп";}
+#profiles_show .Person-0 a[href*="z52723-kosaki-onodera"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 a[href*="20476-charlotte-hazelrink"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 a[href*="5190-mirajane-strauss"] .image-decor::after {content: "20 лет, Человек";}
+#profiles_show .Person-0 a[href*="48993-masuzu-natsukawa"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 a[href*="624-seras-victoria"] .image-decor::after {content: "19 лет, на момент обращения 49, Вампир";
   }
 }
-
-@media screen and (max-width: 980px) {
-  #profiles_show .Person-0 .b-catalog_entry .cover .title.two_lined,
-  #profiles_show .Person-01 .b-catalog_entry .cover .title.two_lined {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 800px) {
-  #profiles_show .Person-0 .c-column,
-  #profiles_show .Person-01 .c-column {
+  #profiles_show .Person-0 .c-column {
     width: calc(100% / 5) !important;
   }
   #profiles_show .Blok-1 {
@@ -292,30 +237,23 @@
     overflow-y: inherit;
   }
 }
-
 @media screen and (min-width: 1024px) {
-  #profiles_show .Person-0 .c-column,
-  #profiles_show .Person-01 .c-column {
+  #profiles_show .Person-0 .c-column {
     width: calc(100% / 7) !important;
   }
 }
-
 @media screen and (min-width: 1200px) {
-  #profiles_show .Person-0 .c-column,
-  #profiles_show .Person-01 .c-column {
+  #profiles_show .Person-0 .c-column {
     width: calc(100% / 8) !important;
   }
 }
-
 @media screen and (min-width: 1500px) {
-  #profiles_show .Person-0 .c-column,
-  #profiles_show .Person-01 .c-column {
+  #profiles_show .Person-0 .c-column {
     width: calc(100% / 9) !important;
   }
 }
 @media screen and (min-width: 1678px) {
-  #profiles_show .Person-0 .c-column,
-  #profiles_show .Person-01 .c-column {
+  #profiles_show .Person-0 .c-column {
     width: calc(100% / 10) !important;
   }
 }
