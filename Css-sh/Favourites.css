@@ -74,22 +74,22 @@
   .cc-favourites .c-column:hover .image-cutter::after {
     opacity: 1;
   }
-  .cc-favourites .c-character a[href*="43280-inori-"] .image-cutter::after {content: "70 Балов";}
-  .cc-favourites .c-character a[href*="458-revy"] .image-cutter::after {content: "80 Балов";}
-  .cc-favourites .c-character a[href*="624-seras-"] .image-cutter::after {content: "66 Балов";}
-  .cc-favourites .c-character a[href*="67067-yukino-"] .image-cutter::after {content: "65 Балов";}
-  .cc-favourites .c-character a[href*="35252-rintarou-"] .image-cutter::after {content: "84 Балов";}
-  .cc-favourites .c-character a[href*="50389-rias-"] .image-cutter::after {content: "80 Балов";}
-  .cc-favourites .c-character a[href*="80-light-"] .image-cutter::after {content: "88 Балов";}
-  .cc-favourites .c-character a[href*="116275-albedo"] .image-cutter::after {content: "75 Балов";}
-  .cc-favourites .c-character a[href*="119321-momo-"] .image-cutter::after {content: "80 Балов";}
-  .cc-favourites .c-character a[href*="137825-tanya-"] .image-cutter::after {content: "80 Балов";}
-  .cc-favourites .c-character a[href*="422-guts"] .image-cutter::after {content: "98 Балов";}
-  .cc-favourites .c-character a[href*="94-asuka-"] .image-cutter::after {content: "90 Балов";}
-  .cc-favourites .c-character a[href*="119413-yumeko-"] .image-cutter::after {content: "54 Балов";}
-  .cc-favourites .c-character a[href*="88577-fremy-"] .image-cutter::after {content: "84 Балов";}
-  .cc-favourites .c-character a[href*="4963-yuno-gasai"] .image-cutter::after {content: "58 Балов";}
-  .cc-favourites .c-character a[href*="2257-simon"] .image-cutter::after { content: "100 Балов";}
+  .cc-favourites .c-character a[href*="43280-inori-"] .image-cutter::after {content: "70 баллов";}
+  .cc-favourites .c-character a[href*="458-revy"] .image-cutter::after {content: "80 баллов";}
+  .cc-favourites .c-character a[href*="624-seras-"] .image-cutter::after {content: "66 баллов";}
+  .cc-favourites .c-character a[href*="67067-yukino-"] .image-cutter::after {content: "65 баллов";}
+  .cc-favourites .c-character a[href*="35252-rintarou-"] .image-cutter::after {content: "84 балла";}
+  .cc-favourites .c-character a[href*="50389-rias-"] .image-cutter::after {content: "80 баллов";}
+  .cc-favourites .c-character a[href*="80-light-"] .image-cutter::after {content: "88 баллов";}
+  .cc-favourites .c-character a[href*="116275-albedo"] .image-cutter::after {content: "75 баллов";}
+  .cc-favourites .c-character a[href*="119321-momo-"] .image-cutter::after {content: "80 баллов";}
+  .cc-favourites .c-character a[href*="137825-tanya-"] .image-cutter::after {content: "80 баллов";}
+  .cc-favourites .c-character a[href*="422-guts"] .image-cutter::after {content: "98 баллов";}
+  .cc-favourites .c-character a[href*="94-asuka-"] .image-cutter::after {content: "90 баллов";}
+  .cc-favourites .c-character a[href*="119413-yumeko-"] .image-cutter::after {content: "54 балла";}
+  .cc-favourites .c-character a[href*="88577-fremy-"] .image-cutter::after {content: "84 балла";}
+  .cc-favourites .c-character a[href*="4963-yuno-gasai"] .image-cutter::after {content: "58 баллов";}
+  .cc-favourites .c-character a[href*="2257-simon"] .image-cutter::after { content: "100 баллов";}
 
   .cc-favourites .c-character .image-cutter::before {
     position: absolute;
