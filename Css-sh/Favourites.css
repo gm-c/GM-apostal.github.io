@@ -7,7 +7,7 @@
   #profiles_show .cc-favourites .image-cutter {
     height: 1px;
     padding-bottom: 59%;
-    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 15px 5px rgb(0 0 0 / 50%);
     background-color: #333;
     transition: box-shadow 0.45s ease;
     -webkit-transition: box-shadow 0.45s ease;
@@ -67,7 +67,7 @@
     pointer-events: none;
     z-index: 20;
     opacity: 0;
-    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+     text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%);
     transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
   }
@@ -111,7 +111,7 @@
     font-weight: bold;
     pointer-events: none;
     color: #bbb;
-    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+    text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%);
     opacity: 0;
     transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
@@ -156,7 +156,7 @@
     font-weight: bold;
     pointer-events: none;
     color: #bbb;
-    text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+     text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%);
     opacity: 1;
     transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
