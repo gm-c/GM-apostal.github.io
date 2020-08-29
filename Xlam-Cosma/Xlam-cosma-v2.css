@@ -6,8 +6,7 @@
     overflow-y: hidden;
   }
   #profiles_show .Person-0 {position: relative;}
-  body#profiles_show .Person-0 .b-catalog_entry { box-shadow: none; transition: 0.2s ease-out; transform: none;}
-  body#profiles_show .Person-0 .b-catalog_entry:hover {transform: translateY(-4px);}
+  body#profiles_show .Person-0 .b-catalog_entry { box-shadow: none; transition: none; transform: none;}
   #profiles_show .Person-0 .b-catalog_entry .cover .image-cutter img { opacity: 0; visibility: hidden;}
 
   #profiles_show .Person-0 .c-column {
