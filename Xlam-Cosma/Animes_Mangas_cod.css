@@ -200,8 +200,9 @@
         background: linear-gradient(1145deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
         position: absolute;
         background-size: 600%;
+        border-radius: .4rem;
         z-index: -1;
-        filter: blur(2.8px);
+        filter: blur(3px);
         animation: glowing 20s linear infinite;
         transition: opacity 0.3s ease-in-out;
         left: 0;
