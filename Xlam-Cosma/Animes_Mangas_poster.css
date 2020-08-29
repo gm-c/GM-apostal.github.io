@@ -1,4 +1,4 @@
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 425px) {
     .Animes_Mangas a[href*="/38101-5-"] .image-cutter::after {
         background-image: url(https://moe.shikimori.one/system/user_images/original/274756/1080982.jpg);
     }
