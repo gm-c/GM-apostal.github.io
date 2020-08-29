@@ -31,7 +31,7 @@
         box-shadow: none;
         border-radius: 0.5rem;
         padding: 0;
-        width: calc(100% / 3 - 1 * 1.0%);
+        width: calc(100% / 2 - 1 * 1.01%);
     }
     #profiles_show .Animes_Mangas .b-catalog_entry .cover .title {
         position: absolute;
@@ -230,7 +230,7 @@
         overflow-y: inherit;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 880px) {
     #profiles_show .Animes_Mangas .c-column {
         width: calc(100% / 4 - 1 * 1.01%);
     }
@@ -240,8 +240,8 @@
        width: calc(100% / 5 - 1 * 1.01%);
     }
 }
-@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1480px) {
     #profiles_show .Animes_Mangas .c-column {
-      width: calc(100% / 6 - 1 * 1.01%);
+       width: calc(100% / 5 - 1 * 1.01%);
     }
 }
