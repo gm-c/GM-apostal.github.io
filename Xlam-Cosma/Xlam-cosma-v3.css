@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
     #profiles_show .Blok-2 {
         display: block;
         padding: 1% 0 3%;
@@ -34,13 +34,12 @@
         max-width: none;
         background: none;
         pointer-events: none;
-        width: calc(100% / 7) !important;
+        width: calc(100% / 7);
     }
     #profiles_show .Person-1 .b-catalog_entry .cover .image-decor .image-cutter {
-        height: 0;
-        padding-bottom: 100%;
-        background: url("//i.ibb.co/2WZqD3C/tv011.gif"), url("//i.imgur.com/pOYKfnt.gif");
         clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        height: 0; padding-bottom: 100%;
+        background: url("//i.imgur.com/pOYKfnt.gif");
         background-size: contain;
         pointer-events: auto;
     }
@@ -64,7 +63,7 @@
         height: 23px;
         font-size: 16px;
         color: #f58ebb;
-        text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+ text-shadow: 1px 0 2px rgb(0 0 0 / 78%), -1px 0 2px rgb(0 0 0 / 78%), 0 1px 2px rgb(0 0 0 / 78%), 0 -1px 2px rgb(0 0 0 / 78%), 1px 0 2px rgb(0 0 0 / 78%), -1px 0 2px rgb(0 0 0 / 78%), 0 1px 2px rgb(0 0 0 / 78%), 0 -1px 2px hsl(0deg 0% 0% / 78%);
         z-index: 10;
         opacity: 0;
         line-height: 1.6;
@@ -74,27 +73,14 @@
     #profiles_show .Person-1 .c-column:hover > .cover .title {
         opacity: 1;
     }
-    #profiles_show .Person-1:nth-child(1) .c-column {
-        left: calc(35% - 13.6%);
-    }
-    #profiles_show .Person-1:nth-child(2) .c-column {
-        left: calc(15% - 15%);
-    }
-    #profiles_show .Person-1:nth-child(3) .c-column {
-        left: calc(15% - 7.8%);
-    }
-    #profiles_show .Person-1:nth-child(4) .c-column {
-        left: calc(15% - 15%);
-    }
-    #profiles_show .Person-1:nth-child(5) .c-column {
-        left: calc(25% - 17.8%);
-    }
-    #profiles_show .Person-1:nth-child(6) .c-column {
-        left: calc(0% - 0%);
-    }
-    .Person-1 .image-cutter::after {
-        background: url("//ia.wampi.ru/2020/07/19/nyh.jpg") center 20% / cover, url("//i.imgur.com/qnLMaeC.jpg") center 20% / cover;
-    }
+    #profiles_show .Person-1:nth-child(1) .c-column {left: calc(35% - 13.6%);}
+    #profiles_show .Person-1:nth-child(2) .c-column {left: calc(15% - 15%);}
+    #profiles_show .Person-1:nth-child(3) .c-column {left: calc(15% - 7.8%);}
+    #profiles_show .Person-1:nth-child(4) .c-column {left: calc(15% - 15%);}
+    #profiles_show .Person-1:nth-child(5) .c-column {left: calc(25% - 17.8%);}
+    #profiles_show .Person-1:nth-child(6) .c-column {left: calc(0% - 0%);}
+
+    .Person-1 .image-cutter::after {background: url("//ia.wampi.ru/2020/07/19/nyh.jpg") center 20% / cover;}
     #profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {
         position: absolute;
         display: flex;
@@ -105,21 +91,36 @@
         right: 0;
         margin: auto;
         z-index: 10;
-        width: calc(100% - 15px);
-        height: calc(100% - 15px);
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
         border-radius: 0.5rem;
         background-repeat: no-repeat !important;
         background-color: #333;
         pointer-events: none;
         filter: contrast(102%);
         image-rendering: auto;
-        box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+        box-shadow: inset 0 0 15px 5px rgb(0 0 0 / 50%);
         transition: box-shadow 0.45s ease;
         -webkit-transition: box-shadow 0.45s ease;
         clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     }
     #profiles_show .Person-1 .b-catalog_entry:hover > a .image-cutter::after {
         box-shadow: none;
-        filter: blur(4px);     
+        filter: blur(4px);   
+    }
+    #profiles_show .Person-1 .b-catalog_entry .cover .title.two_lined {
+        display: none;
     }
 }
+
+@media screen and (min-width: 500px) {
+#profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {width: calc(100% - 7px);height: calc(100% - 7px);}}
+@media screen and (min-width: 650px) {
+#profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {width: calc(100% - 9px);height: calc(100% - 9px);}}
+@media screen and (min-width: 800px) {
+#profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {width: calc(100% - 12px);height: calc(100% - 12px);}
+
+#profiles_show .Person-1 .b-catalog_entry .cover .title.two_lined {display: block;}}
+
+@media screen and (min-width: 1024px) {
+#profiles_show .Person-1 .b-catalog_entry a .image-cutter::after {width: calc(100% - 15px);height: calc(100% - 15px);}} 
