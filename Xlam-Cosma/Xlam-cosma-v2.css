@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   #profiles_show .Blok-1 {
     display: block;
     padding: 1% 0 0 0;
@@ -17,7 +17,7 @@
     padding: 0.35rem;
     max-width: none;
     background: none;
-    width: calc(100% / 3) !important;
+    width: calc(100% / 3);
   }
   #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
     max-height: 1px !important;
@@ -25,7 +25,7 @@
     padding: 0 0 140% 0;
     margin: 0;
     background-image: none;
-    background: url("/\x/i.ibb.co/2WZqD3C/tv011.gif"), url("/\x/i.imgur.com/pOYKfnt.gif");
+    background: url("/\x/i.imgur.com/pOYKfnt.gif");
     background-size: contain;
     box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 15%);
     border-radius: 0.5rem;
@@ -75,7 +75,7 @@
     filter: contrast(102%);
     background-repeat: no-repeat;
     background-color: #333;
-    box-shadow: inset 0 0 15px 5px rgb(0 0 0 / 80%);
+    box-shadow: inset 0 0 15px 5px rgb(0 0 0 / 50%);
     will-change: transform;
     transition: box-shadow 0.45s ease;
     -webkit-transition: box-shadow 0.45s ease;
@@ -101,7 +101,7 @@
   position: absolute;
   display: grid;
   content: "";
-  text-shadow: 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black, 1px 0 2px black, -1px 0 2px black, 0 1px 2px black, 0 -1px 2px black;
+ text-shadow: 1px 0 2px rgb(0 0 0 / 78%), -1px 0 2px rgb(0 0 0 / 78%), 0 1px 2px rgb(0 0 0 / 78%), 0 -1px 2px rgb(0 0 0 / 78%), 1px 0 2px rgb(0 0 0 / 78%), -1px 0 2px rgb(0 0 0 / 78%), 0 1px 2px rgb(0 0 0 / 78%), 0 -1px 2px rgb(0 0 0 / 78%);
   opacity: 0;
   line-height: 1.45;
   z-index: 20;
@@ -228,32 +228,42 @@
 #profiles_show .Person-0 a[href*="624-seras-victoria"] .image-decor::after {content: "19 лет, на момент обращения 49, Вампир";
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 5) !important;
+    width: calc(100% / 4);
+  }
+}
+@media screen and (min-width: 767px) {
+  #profiles_show .Person-0 .c-column {
+    width: calc(100% / 5);
   }
   #profiles_show .Blok-1 {
     white-space: normal;
     overflow-y: inherit;
   }
 }
+@media screen and (min-width: 880px) {
+  #profiles_show .Person-0 .c-column {
+    width: calc(100% / 6);
+  }
+}
 @media screen and (min-width: 1024px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 7) !important;
+    width: calc(100% / 7);
   }
 }
 @media screen and (min-width: 1200px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 8) !important;
+    width: calc(100% / 8);
   }
 }
 @media screen and (min-width: 1500px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 9) !important;
+    width: calc(100% / 9);
   }
 }
 @media screen and (min-width: 1678px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 10) !important;
+    width: calc(100% / 10);
   }
 }
